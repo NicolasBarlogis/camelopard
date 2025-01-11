@@ -9,8 +9,8 @@
 
 <channel>
 	<title>nbarlogis &#8211; Camélopard</title>
-	<atom:link href="/camelopard//author/nbarlogis/feed/" rel="self" type="application/rss+xml" />
-	<link>/camelopard//</link>
+	<atom:link href="/camelopard/author/nbarlogis/feed/" rel="self" type="application/rss+xml" />
+	<link>/camelopard/</link>
 	<description></description>
 	<lastBuildDate>Sat, 11 Jan 2025 16:25:55 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,15 +21,15 @@
 	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>Devlog Semaine 6 &#8211; Animations de combat</title>
-		<link>/camelopard//devlog-semaine-6-animations-de-combat/</link>
-					<comments>/camelopard//devlog-semaine-6-animations-de-combat/#respond</comments>
+		<link>/camelopard/devlog-semaine-6-animations-de-combat/</link>
+					<comments>/camelopard/devlog-semaine-6-animations-de-combat/#respond</comments>
 		
 		<dc:creator><![CDATA[nbarlogis]]></dc:creator>
 		<pubDate>Fri, 10 Jan 2025 17:10:56 +0000</pubDate>
 				<category><![CDATA[Devlog]]></category>
 		<guid isPermaLink="false">http://192.168.2.239/wordpress/?p=107</guid>
 
-					<description><![CDATA[Semaine assez productive. Pour commencer gentiment, je me suis penché pour la première fois sur les modèles 3d. Pour l&#8217;instant j&#8217;utilise des placeholders, des éléments un peu par défaut, le temps que je produise les vrai visuels du jeu. Néanmoins, j&#8217;essaie de prendre des objets qui ressemblent à ce que<a class="moretag" href="/camelopard//devlog-semaine-6-animations-de-combat/"> Read more&#8230;</a>]]></description>
+					<description><![CDATA[Semaine assez productive. Pour commencer gentiment, je me suis penché pour la première fois sur les modèles 3d. Pour l&#8217;instant j&#8217;utilise des placeholders, des éléments un peu par défaut, le temps que je produise les vrai visuels du jeu. Néanmoins, j&#8217;essaie de prendre des objets qui ressemblent à ce que<a class="moretag" href="/camelopard/devlog-semaine-6-animations-de-combat/"> Read more&#8230;</a>]]></description>
 										<content:encoded><![CDATA[
 <p>Semaine assez productive. Pour commencer gentiment, je me suis penché pour la première fois sur les modèles 3d. Pour l&#8217;instant j&#8217;utilise des placeholders, des éléments un peu par défaut, le temps que je produise les vrai visuels du jeu. Néanmoins, j&#8217;essaie de prendre des objets qui ressemblent à ce que le jeu sera, pour que ce soit plus simple de se projeter.</p>
 
@@ -39,20 +39,20 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><img fetchpriority="high" decoding="async" width="1024" height="338" src="/camelopard//wp-content/uploads/2025/01/image-1024x338.png" alt="" class="wp-image-175" srcset="/camelopard//wp-content/uploads/2025/01/image-1024x338.png 1024w, /camelopard//wp-content/uploads/2025/01/image-300x99.png 300w, /camelopard//wp-content/uploads/2025/01/image-768x254.png 768w, /camelopard//wp-content/uploads/2025/01/image.png 1363w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption"><em>Le modèle d&#8217;origine, avec son trépied et les chargeurs à côté </em></figcaption></figure></div>
+<figure class="aligncenter size-large"><img fetchpriority="high" decoding="async" width="1024" height="338" src="/camelopard/wp-content/uploads/2025/01/image-1024x338.png" alt="" class="wp-image-175" srcset="/camelopard/wp-content/uploads/2025/01/image-1024x338.png 1024w, /camelopard/wp-content/uploads/2025/01/image-300x99.png 300w, /camelopard/wp-content/uploads/2025/01/image-768x254.png 768w, /camelopard/wp-content/uploads/2025/01/image.png 1363w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption"><em>Le modèle d&#8217;origine, avec son trépied et les chargeurs à côté </em></figcaption></figure></div>
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img decoding="async" width="596" height="517" src="/camelopard//wp-content/uploads/2025/01/image-1.png" alt="" class="wp-image-171" style="width:544px;height:auto" srcset="/camelopard//wp-content/uploads/2025/01/image-1.png 596w, /camelopard//wp-content/uploads/2025/01/image-1-300x260.png 300w" sizes="(max-width: 596px) 100vw, 596px" /><figcaption class="wp-element-caption"><em>Les éléments superflus qui polluent un peu l&#8217;image. On ne dira rien sur le fait que le personnage ne regarde pas dans le viseur, ni que c&#8217;est avec le côté sans œil</em></figcaption></figure></div>
+<figure class="aligncenter size-full is-resized"><img decoding="async" width="596" height="517" src="/camelopard/wp-content/uploads/2025/01/image-1.png" alt="" class="wp-image-171" style="width:544px;height:auto" srcset="/camelopard/wp-content/uploads/2025/01/image-1.png 596w, /camelopard/wp-content/uploads/2025/01/image-1-300x260.png 300w" sizes="(max-width: 596px) 100vw, 596px" /><figcaption class="wp-element-caption"><em>Les éléments superflus qui polluent un peu l&#8217;image. On ne dira rien sur le fait que le personnage ne regarde pas dans le viseur, ni que c&#8217;est avec le côté sans œil</em></figcaption></figure></div>
 
 
 <p>En guise de début d&#8217;initiation à la 3D, j&#8217;ai pu essayer blender pour supprimer ces éléments (le trépied, les chargeurs et les balles). Pour le coup c&#8217;est un chouillat plus compliqué que ce à quoi je m&#8217;attendais, juste pour retirer des éléments. J&#8217;ai dû apprendre à me servir de l&#8217;interface, comprendre son organisation en différents modules, correspondant aux différentes phase de la modélisation. J&#8217;ai néanmoins assez rapidement réussi à supprimer les éléments indésirables et mettre à jour la texture pour que l&#8217;apparence reste bonne.</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><img decoding="async" width="1024" height="589" src="/camelopard//wp-content/uploads/2025/01/image-3-1024x589.png" alt="" class="wp-image-173" srcset="/camelopard//wp-content/uploads/2025/01/image-3-1024x589.png 1024w, /camelopard//wp-content/uploads/2025/01/image-3-300x173.png 300w, /camelopard//wp-content/uploads/2025/01/image-3-768x442.png 768w, /camelopard//wp-content/uploads/2025/01/image-3.png 1180w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption"><em>Le modèle basiquement édité dans blender, sans les détails superflus</em></figcaption></figure></div>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="589" src="/camelopard/wp-content/uploads/2025/01/image-3-1024x589.png" alt="" class="wp-image-173" srcset="/camelopard/wp-content/uploads/2025/01/image-3-1024x589.png 1024w, /camelopard/wp-content/uploads/2025/01/image-3-300x173.png 300w, /camelopard/wp-content/uploads/2025/01/image-3-768x442.png 768w, /camelopard/wp-content/uploads/2025/01/image-3.png 1180w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption"><em>Le modèle basiquement édité dans blender, sans les détails superflus</em></figcaption></figure></div>
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="482" height="404" src="/camelopard//wp-content/uploads/2025/01/image-4.png" alt="" class="wp-image-174" srcset="/camelopard//wp-content/uploads/2025/01/image-4.png 482w, /camelopard//wp-content/uploads/2025/01/image-4-300x251.png 300w" sizes="auto, (max-width: 482px) 100vw, 482px" /><figcaption class="wp-element-caption"><em>Une position de visée un peu plus convaincante (on oublie toujours le cache-œil), et plus de chargeurs volants</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="482" height="404" src="/camelopard/wp-content/uploads/2025/01/image-4.png" alt="" class="wp-image-174" srcset="/camelopard/wp-content/uploads/2025/01/image-4.png 482w, /camelopard/wp-content/uploads/2025/01/image-4-300x251.png 300w" sizes="auto, (max-width: 482px) 100vw, 482px" /><figcaption class="wp-element-caption"><em>Une position de visée un peu plus convaincante (on oublie toujours le cache-œil), et plus de chargeurs volants</em></figcaption></figure></div>
 
 
 <p>Une fois ce détail réglé, j&#8217;ai continué mon entreprise de faire apparaître visuellement les éléments de combat implémentés la semaine dernière.</p>
@@ -67,7 +67,7 @@
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2025/01/attack-animation.mp4"></video><figcaption class="wp-element-caption"><em><em>Parfait pour faire des 360° quick scope</em></em></figcaption></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2025/01/attack-animation.mp4"></video><figcaption class="wp-element-caption"><em><em>Parfait pour faire des 360° quick scope</em></em></figcaption></figure>
 
 
 
@@ -87,7 +87,7 @@
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2025/01/attack-damage-visible.mp4"></video><figcaption class="wp-element-caption"><em><em>Encore des soucis d&#8217;espacement entre les deux types de dégâts, et de taille de la police, selon la position de la caméra, mais l&#8217;idée est là</em></em></figcaption></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2025/01/attack-damage-visible.mp4"></video><figcaption class="wp-element-caption"><em><em>Encore des soucis d&#8217;espacement entre les deux types de dégâts, et de taille de la police, selon la position de la caméra, mais l&#8217;idée est là</em></em></figcaption></figure>
 
 
 
@@ -95,32 +95,32 @@
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2025/01/fight-to-death.mp4"></video><figcaption class="wp-element-caption"><em>Le résultat final des travaux de la semaine</em></figcaption></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2025/01/fight-to-death.mp4"></video><figcaption class="wp-element-caption"><em>Le résultat final des travaux de la semaine</em></figcaption></figure>
 
 
 
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/camelopard//devlog-semaine-6-animations-de-combat/feed/</wfw:commentRss>
+					<wfw:commentRss>/camelopard/devlog-semaine-6-animations-de-combat/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
-		<enclosure url="/camelopard//wp-content/uploads/2025/01/attack-animation.mp4" length="544382" type="video/mp4" />
-<enclosure url="/camelopard//wp-content/uploads/2025/01/attack-damage-visible.mp4" length="1601972" type="video/mp4" />
-<enclosure url="/camelopard//wp-content/uploads/2025/01/fight-to-death.mp4" length="2527640" type="video/mp4" />
+		<enclosure url="/camelopard/wp-content/uploads/2025/01/attack-animation.mp4" length="544382" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2025/01/attack-damage-visible.mp4" length="1601972" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2025/01/fight-to-death.mp4" length="2527640" type="video/mp4" />
 
 			</item>
 		<item>
 		<title>DevLog Semaine 5 &#8211; Appliquer une compétence</title>
-		<link>/camelopard//devlog-semaine-5-appliquer-une-competence/</link>
-					<comments>/camelopard//devlog-semaine-5-appliquer-une-competence/#respond</comments>
+		<link>/camelopard/devlog-semaine-5-appliquer-une-competence/</link>
+					<comments>/camelopard/devlog-semaine-5-appliquer-une-competence/#respond</comments>
 		
 		<dc:creator><![CDATA[nbarlogis]]></dc:creator>
 		<pubDate>Sat, 04 Jan 2025 16:59:34 +0000</pubDate>
 				<category><![CDATA[Devlog]]></category>
 		<guid isPermaLink="false">http://192.168.2.239/wordpress/?p=95</guid>
 
-					<description><![CDATA[Pour reprendre tranquillement, j&#8217;ai amélioré un peu la sélection des compétences, pour éviter d&#8217;en sélectionner plusieurs à la fois ou de pouvoir cliquer sur un slot vide. Je n&#8217;y passe pas trop de temps, on est loin d&#8217;avoir l&#8217;interface finale. Cette semaine aura été assez peu visuelle, avec surtout beaucoup<a class="moretag" href="/camelopard//devlog-semaine-5-appliquer-une-competence/"> Read more&#8230;</a>]]></description>
+					<description><![CDATA[Pour reprendre tranquillement, j&#8217;ai amélioré un peu la sélection des compétences, pour éviter d&#8217;en sélectionner plusieurs à la fois ou de pouvoir cliquer sur un slot vide. Je n&#8217;y passe pas trop de temps, on est loin d&#8217;avoir l&#8217;interface finale. Cette semaine aura été assez peu visuelle, avec surtout beaucoup<a class="moretag" href="/camelopard/devlog-semaine-5-appliquer-une-competence/"> Read more&#8230;</a>]]></description>
 										<content:encoded><![CDATA[
 <p>Pour reprendre tranquillement, j&#8217;ai amélioré un peu la sélection des compétences, pour éviter d&#8217;en sélectionner plusieurs à la fois ou de pouvoir cliquer sur un slot vide. Je n&#8217;y passe pas trop de temps, on est loin d&#8217;avoir l&#8217;interface finale.</p>
 
@@ -163,17 +163,17 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="538" height="576" src="/camelopard//wp-content/uploads/2024/12/24-12-34-skill_show.png" alt="" class="wp-image-131" style="width:580px;height:auto" srcset="/camelopard//wp-content/uploads/2024/12/24-12-34-skill_show.png 538w, /camelopard//wp-content/uploads/2024/12/24-12-34-skill_show-280x300.png 280w" sizes="auto, (max-width: 538px) 100vw, 538px" /><figcaption class="wp-element-caption"><em>Les cases sélectionnables pour l&#8217;usage d&#8217;une compétence sont visibles. Ici avec une portée de 1 (au CaC), seul un des deux ennemis est atteignable.</em></figcaption></figure></div>
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="538" height="576" src="/camelopard/wp-content/uploads/2024/12/24-12-34-skill_show.png" alt="" class="wp-image-131" style="width:580px;height:auto" srcset="/camelopard/wp-content/uploads/2024/12/24-12-34-skill_show.png 538w, /camelopard/wp-content/uploads/2024/12/24-12-34-skill_show-280x300.png 280w" sizes="auto, (max-width: 538px) 100vw, 538px" /><figcaption class="wp-element-caption"><em>Les cases sélectionnables pour l&#8217;usage d&#8217;une compétence sont visibles. Ici avec une portée de 1 (au CaC), seul un des deux ennemis est atteignable.</em></figcaption></figure></div>
 
 
 <p>J&#8217;en profite pour changer un peu la couleur des cases survolées lors des déplacements et du ciblage, pour mieux la voir, et éviter qu&#8217;elle soit bleue dans toutes les situations.</p>
 
 
 <div class="wp-block-image is-style-default">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="383" height="390" src="/camelopard//wp-content/uploads/2024/12/24-12-34-move_hover.png" alt="" class="wp-image-130" srcset="/camelopard//wp-content/uploads/2024/12/24-12-34-move_hover.png 383w, /camelopard//wp-content/uploads/2024/12/24-12-34-move_hover-295x300.png 295w" sizes="auto, (max-width: 383px) 100vw, 383px" /><figcaption class="wp-element-caption"><em>La case visée lors du déplacement est maintenant dans une couleur proche </em>des autres</figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="383" height="390" src="/camelopard/wp-content/uploads/2024/12/24-12-34-move_hover.png" alt="" class="wp-image-130" srcset="/camelopard/wp-content/uploads/2024/12/24-12-34-move_hover.png 383w, /camelopard/wp-content/uploads/2024/12/24-12-34-move_hover-295x300.png 295w" sizes="auto, (max-width: 383px) 100vw, 383px" /><figcaption class="wp-element-caption"><em>La case visée lors du déplacement est maintenant dans une couleur proche </em>des autres</figcaption></figure></div>
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="369" height="292" src="/camelopard//wp-content/uploads/2024/12/24-12-34-target_hover.png" alt="" class="wp-image-132" style="width:429px;height:auto" srcset="/camelopard//wp-content/uploads/2024/12/24-12-34-target_hover.png 369w, /camelopard//wp-content/uploads/2024/12/24-12-34-target_hover-300x237.png 300w" sizes="auto, (max-width: 369px) 100vw, 369px" /><figcaption class="wp-element-caption"><em>De la même façon que pour le déplacement, la case survolée lors de l&#8217;usage d&#8217;une compétence a sa couleur</em></figcaption></figure></div>
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="369" height="292" src="/camelopard/wp-content/uploads/2024/12/24-12-34-target_hover.png" alt="" class="wp-image-132" style="width:429px;height:auto" srcset="/camelopard/wp-content/uploads/2024/12/24-12-34-target_hover.png 369w, /camelopard/wp-content/uploads/2024/12/24-12-34-target_hover-300x237.png 300w" sizes="auto, (max-width: 369px) 100vw, 369px" /><figcaption class="wp-element-caption"><em>De la même façon que pour le déplacement, la case survolée lors de l&#8217;usage d&#8217;une compétence a sa couleur</em></figcaption></figure></div>
 
 
 <p>Maintenant que je peux cibler une unité avec une compétence, j&#8217;ai tout ce qu&#8217;il fait niveau input du joueur pour mettre en place la suite. C&#8217;est à dire appliquer la compétence (ici faire des dégâts), appliquer le cooldown à la compétence, faire baisser ce cooldown en fin de tour, etc&#8230;</p>
@@ -184,7 +184,7 @@
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2025/01/one-attack.mp4"></video><figcaption class="wp-element-caption"><em><em>Aucun retour visuel pour l&#8217;instant, mais l&#8217;attaque a bien été appliquée</em></em></figcaption></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2025/01/one-attack.mp4"></video><figcaption class="wp-element-caption"><em><em>Aucun retour visuel pour l&#8217;instant, mais l&#8217;attaque a bien été appliquée</em></em></figcaption></figure>
 
 
 
@@ -192,7 +192,7 @@
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2025/01/basic-fight.mp4"></video><figcaption class="wp-element-caption"><em><em>Pas beaucoup plus de retours, mais on voit la vie descendre, le bouclier d&#8217;abord. J&#8217;ai rapidement ajouté la suppression de l&#8217;unité comme simple retour visuel, l&#8217;arme traîne pour l&#8217;instant, j&#8217;ai trouvé ça rigolo.</em></em></figcaption></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2025/01/basic-fight.mp4"></video><figcaption class="wp-element-caption"><em><em>Pas beaucoup plus de retours, mais on voit la vie descendre, le bouclier d&#8217;abord. J&#8217;ai rapidement ajouté la suppression de l&#8217;unité comme simple retour visuel, l&#8217;arme traîne pour l&#8217;instant, j&#8217;ai trouvé ça rigolo.</em></em></figcaption></figure>
 
 
 
@@ -207,24 +207,24 @@
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/camelopard//devlog-semaine-5-appliquer-une-competence/feed/</wfw:commentRss>
+					<wfw:commentRss>/camelopard/devlog-semaine-5-appliquer-une-competence/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
-		<enclosure url="/camelopard//wp-content/uploads/2025/01/one-attack.mp4" length="336051" type="video/mp4" />
-<enclosure url="/camelopard//wp-content/uploads/2025/01/basic-fight.mp4" length="1563518" type="video/mp4" />
+		<enclosure url="/camelopard/wp-content/uploads/2025/01/one-attack.mp4" length="336051" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2025/01/basic-fight.mp4" length="1563518" type="video/mp4" />
 
 			</item>
 		<item>
 		<title>DevLog Semaine 4 &#8211; Armes et début des compétences</title>
-		<link>/camelopard//devlog-semaine-4-armes-et-debut-des-competences/</link>
-					<comments>/camelopard//devlog-semaine-4-armes-et-debut-des-competences/#respond</comments>
+		<link>/camelopard/devlog-semaine-4-armes-et-debut-des-competences/</link>
+					<comments>/camelopard/devlog-semaine-4-armes-et-debut-des-competences/#respond</comments>
 		
 		<dc:creator><![CDATA[nbarlogis]]></dc:creator>
 		<pubDate>Sat, 21 Dec 2024 09:23:00 +0000</pubDate>
 				<category><![CDATA[Devlog]]></category>
 		<guid isPermaLink="false">http://192.168.2.239/wordpress/2024/12/21/devlog-semaine-4-armes-et-debut-des-competences/</guid>
 
-					<description><![CDATA[Nouvelle semaine, qui s&#8217;est étirée sur plusieurs, ça a été assez chaotique. Petite amélioration avant de commencer à creuser les mécanismes offensifs, pour ajouter une première commande afin de terminer un tour, sans avoir à dépenser l&#8217;ensemble des points de mouvements. Ça m&#8217;a permis de creuser le fonctionnement du Enhanced<a class="moretag" href="/camelopard//devlog-semaine-4-armes-et-debut-des-competences/"> Read more&#8230;</a>]]></description>
+					<description><![CDATA[Nouvelle semaine, qui s&#8217;est étirée sur plusieurs, ça a été assez chaotique. Petite amélioration avant de commencer à creuser les mécanismes offensifs, pour ajouter une première commande afin de terminer un tour, sans avoir à dépenser l&#8217;ensemble des points de mouvements. Ça m&#8217;a permis de creuser le fonctionnement du Enhanced<a class="moretag" href="/camelopard/devlog-semaine-4-armes-et-debut-des-competences/"> Read more&#8230;</a>]]></description>
 										<content:encoded><![CDATA[
 <p>Nouvelle semaine, qui s&#8217;est étirée sur plusieurs, ça a été assez chaotique.</p>
 
@@ -234,7 +234,7 @@
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/end-turn.mp4"></video><figcaption class="wp-element-caption"><em><em>Terminer le tour avec espace (même touche pour monter la caméra par défaut, d&#8217;où le petit recul)</em></em></figcaption></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/end-turn.mp4"></video><figcaption class="wp-element-caption"><em><em>Terminer le tour avec espace (même touche pour monter la caméra par défaut, d&#8217;où le petit recul)</em></em></figcaption></figure>
 
 
 
@@ -254,21 +254,21 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="293" height="243" src="/camelopard//wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205759.png" alt="" class="wp-image-112" style="width:332px;height:275px"/><figcaption class="wp-element-caption"><em>Les os du bras droit, avec les deux sockets, pour sniper et épée</em></figcaption></figure></div>
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="293" height="243" src="/camelopard/wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205759.png" alt="" class="wp-image-112" style="width:332px;height:275px"/><figcaption class="wp-element-caption"><em>Les os du bras droit, avec les deux sockets, pour sniper et épée</em></figcaption></figure></div>
 
 
 <p>Avec ce point, je place ensuite grossièrement l&#8217;arme dans la main, la met à la bonne échelle, etc&#8230; Ce qui m&#8217;embête un peu c&#8217;est que j&#8217;ai l&#8217;impression que je vais être obligé de le faire pour chaque modèle d&#8217;arme, à moins que je puisse m&#8217;arranger pour que les différentes épées aient toutes la même structure. je n&#8217;ai pas encore creusé ça à fond, c&#8217;est un problème pour plus tard.</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="955" height="363" src="/camelopard//wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205831.webp" alt="" class="wp-image-115" style="width:574px;height:218px" srcset="/camelopard//wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205831.webp 955w, /camelopard//wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205831-300x114.webp 300w, /camelopard//wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205831-768x292.webp 768w" sizes="auto, (max-width: 955px) 100vw, 955px" /><figcaption class="wp-element-caption"><em>L&#8217;épée vaguement placée dans la main</em></figcaption></figure></div>
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="955" height="363" src="/camelopard/wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205831.webp" alt="" class="wp-image-115" style="width:574px;height:218px" srcset="/camelopard/wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205831.webp 955w, /camelopard/wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205831-300x114.webp 300w, /camelopard/wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205831-768x292.webp 768w" sizes="auto, (max-width: 955px) 100vw, 955px" /><figcaption class="wp-element-caption"><em>L&#8217;épée vaguement placée dans la main</em></figcaption></figure></div>
 
 
 <p>Juste avec ça, on a déjà les unités qui se promènent avec des armes. Mais c&#8217;est pas très convaincant&#8230;</p>
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/weapon-no-move.mp4"></video><figcaption class="wp-element-caption"><em><em>Les armes sont juste accrochées au modèles, ce n&#8217;est pas encore du meilleur effet. Et elles ne deviennent pas grises en fin de tour&#8230;</em></em></figcaption></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/weapon-no-move.mp4"></video><figcaption class="wp-element-caption"><em><em>Les armes sont juste accrochées au modèles, ce n&#8217;est pas encore du meilleur effet. Et elles ne deviennent pas grises en fin de tour&#8230;</em></em></figcaption></figure>
 
 
 
@@ -280,14 +280,14 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1014" height="596" src="/camelopard//wp-content/uploads/2024/12/animation-tree-weapons.webp" alt="" class="wp-image-133" srcset="/camelopard//wp-content/uploads/2024/12/animation-tree-weapons.webp 1014w, /camelopard//wp-content/uploads/2024/12/animation-tree-weapons-300x176.webp 300w, /camelopard//wp-content/uploads/2024/12/animation-tree-weapons-768x451.webp 768w" sizes="auto, (max-width: 1014px) 100vw, 1014px" /><figcaption class="wp-element-caption"><em>L&#8217;arbre d&#8217;animation, où les différentes poses changent selon l&#8217;arme</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1014" height="596" src="/camelopard/wp-content/uploads/2024/12/animation-tree-weapons.webp" alt="" class="wp-image-133" srcset="/camelopard/wp-content/uploads/2024/12/animation-tree-weapons.webp 1014w, /camelopard/wp-content/uploads/2024/12/animation-tree-weapons-300x176.webp 300w, /camelopard/wp-content/uploads/2024/12/animation-tree-weapons-768x451.webp 768w" sizes="auto, (max-width: 1014px) 100vw, 1014px" /><figcaption class="wp-element-caption"><em>L&#8217;arbre d&#8217;animation, où les différentes poses changent selon l&#8217;arme</em></figcaption></figure></div>
 
 
 <p>Un peu de travail sur les transitions entre les différentes animations, et on obtient rapidement quelque chose d&#8217;assez convaincant: </p>
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/weapon-animations.mp4"></video><figcaption class="wp-element-caption"><em><em>C&#8217;est plus sympa avec des animations dédiées</em></em></figcaption></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/weapon-animations.mp4"></video><figcaption class="wp-element-caption"><em><em>C&#8217;est plus sympa avec des animations dédiées</em></em></figcaption></figure>
 
 
 
@@ -299,47 +299,47 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1023" height="820" src="/camelopard//wp-content/uploads/2024/12/skill-menu-init.webp" alt="" class="wp-image-159" srcset="/camelopard//wp-content/uploads/2024/12/skill-menu-init.webp 1023w, /camelopard//wp-content/uploads/2024/12/skill-menu-init-300x240.webp 300w, /camelopard//wp-content/uploads/2024/12/skill-menu-init-768x616.webp 768w" sizes="auto, (max-width: 1023px) 100vw, 1023px" /><figcaption class="wp-element-caption"><em>Le placeholder de la barre des compétences. Le détail de l&#8217;unité à subit une petite cure d&#8217;amaigrissement au passage.</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1023" height="820" src="/camelopard/wp-content/uploads/2024/12/skill-menu-init.webp" alt="" class="wp-image-159" srcset="/camelopard/wp-content/uploads/2024/12/skill-menu-init.webp 1023w, /camelopard/wp-content/uploads/2024/12/skill-menu-init-300x240.webp 300w, /camelopard/wp-content/uploads/2024/12/skill-menu-init-768x616.webp 768w" sizes="auto, (max-width: 1023px) 100vw, 1023px" /><figcaption class="wp-element-caption"><em>Le placeholder de la barre des compétences. Le détail de l&#8217;unité à subit une petite cure d&#8217;amaigrissement au passage.</em></figcaption></figure></div>
 
 
 <p>C&#8217;est finalement vendredi que j&#8217;ai pu mettre en place le côté dynamique du menu de sélection. Il remonte maintenant bien les compétences du personnage selectionné. </p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="530" height="220" src="/camelopard//wp-content/uploads/2024/12/image-2.webp" alt="" class="wp-image-149" srcset="/camelopard//wp-content/uploads/2024/12/image-2.webp 530w, /camelopard//wp-content/uploads/2024/12/image-2-300x125.webp 300w" sizes="auto, (max-width: 530px) 100vw, 530px" /><figcaption class="wp-element-caption"><em>Les compétences affichées dans le menu correspondent maintenant bien aux compétences de l&#8217;unité</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="530" height="220" src="/camelopard/wp-content/uploads/2024/12/image-2.webp" alt="" class="wp-image-149" srcset="/camelopard/wp-content/uploads/2024/12/image-2.webp 530w, /camelopard/wp-content/uploads/2024/12/image-2-300x125.webp 300w" sizes="auto, (max-width: 530px) 100vw, 530px" /><figcaption class="wp-element-caption"><em>Les compétences affichées dans le menu correspondent maintenant bien aux compétences de l&#8217;unité</em></figcaption></figure></div>
 
 
 <p>J&#8217;ai également avancé sur la sélection d&#8217;une compétence, même si il reste des ajustements à faire</p>
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/skill-selection-base.mp4"></video><figcaption class="wp-element-caption"><em><em>On peut sélectionner une action, mais pour l&#8217;instant il n&#8217;y a pas de contrôle sur le nombre ou le fait de sélectionner un slot de compétence vide.</em></em></figcaption></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/skill-selection-base.mp4"></video><figcaption class="wp-element-caption"><em><em>On peut sélectionner une action, mais pour l&#8217;instant il n&#8217;y a pas de contrôle sur le nombre ou le fait de sélectionner un slot de compétence vide.</em></em></figcaption></figure>
 
 
 
 <p>Prochaines étapes: finir le mécanisme de sélection et cibler une autre unité avec la compétence.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/camelopard//devlog-semaine-4-armes-et-debut-des-competences/feed/</wfw:commentRss>
+					<wfw:commentRss>/camelopard/devlog-semaine-4-armes-et-debut-des-competences/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
-		<enclosure url="/camelopard//wp-content/uploads/2024/12/end-turn.mp4" length="86837" type="video/mp4" />
-<enclosure url="/camelopard//wp-content/uploads/2024/12/weapon-no-move.mp4" length="1394014" type="video/mp4" />
-<enclosure url="/camelopard//wp-content/uploads/2024/12/weapon-animations.mp4" length="1320264" type="video/mp4" />
-<enclosure url="/camelopard//wp-content/uploads/2024/12/skill-selection-base.mp4" length="317046" type="video/mp4" />
+		<enclosure url="/camelopard/wp-content/uploads/2024/12/end-turn.mp4" length="86837" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/weapon-no-move.mp4" length="1394014" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/weapon-animations.mp4" length="1320264" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/skill-selection-base.mp4" length="317046" type="video/mp4" />
 
 			</item>
 		<item>
 		<title>DevLog Semaine 3 &#8211; Esquisse d&#8217;interface et meilleurs déplacement</title>
-		<link>/camelopard//devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/</link>
-					<comments>/camelopard//devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/#respond</comments>
+		<link>/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/</link>
+					<comments>/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/#respond</comments>
 		
 		<dc:creator><![CDATA[nbarlogis]]></dc:creator>
 		<pubDate>Sat, 23 Nov 2024 16:52:00 +0000</pubDate>
 				<category><![CDATA[Devlog]]></category>
-		<guid isPermaLink="false">/camelopard//devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/</guid>
+		<guid isPermaLink="false">/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/</guid>
 
-					<description><![CDATA[Petite semaine de trois jours cette fois ci, ça n&#8217;a pas empêché des avancées intéressantes. J&#8217;ai commencé par étudier le fonctionnement du HUD dans Unreal Engine. Le Heads-Up Display, ou affichage tête haute, fait référence à toute l&#8217;interface que l&#8217;on voit constamment à l&#8217;écran, qui reste immobile malgré les mouvements<a class="moretag" href="/camelopard//devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/"> Read more&#8230;</a>]]></description>
+					<description><![CDATA[Petite semaine de trois jours cette fois ci, ça n&#8217;a pas empêché des avancées intéressantes. J&#8217;ai commencé par étudier le fonctionnement du HUD dans Unreal Engine. Le Heads-Up Display, ou affichage tête haute, fait référence à toute l&#8217;interface que l&#8217;on voit constamment à l&#8217;écran, qui reste immobile malgré les mouvements<a class="moretag" href="/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/"> Read more&#8230;</a>]]></description>
 										<content:encoded><![CDATA[
 <p>Petite semaine de trois jours cette fois ci, ça n&#8217;a pas empêché des avancées intéressantes.</p>
 
@@ -353,14 +353,14 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="360" src="/camelopard//wp-content/uploads/2024/11/halloreach-hud.png" alt="" class="wp-image-185" srcset="/camelopard//wp-content/uploads/2024/11/halloreach-hud.png 640w, /camelopard//wp-content/uploads/2024/11/halloreach-hud-300x169.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Halo Reach: Les infos du HUD sont entourées en rouge</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="360" src="/camelopard/wp-content/uploads/2024/11/halloreach-hud.png" alt="" class="wp-image-185" srcset="/camelopard/wp-content/uploads/2024/11/halloreach-hud.png 640w, /camelopard/wp-content/uploads/2024/11/halloreach-hud-300x169.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Halo Reach: Les infos du HUD sont entourées en rouge</em></figcaption></figure></div>
 
 
 <p>Le design de l&#8217;interface graphique et du HUD en particulier est un point très important, car il vient fortement impacter le ressenti d&#8217;un jeu. Par exemple, les jeux Ubisoft sont assez réputés pour leur interface trop pleine, <a href="https://www.reddit.com/r/forhonor/comments/hq2bj9/ubisoft_need_to_reduce_the_amount_of_ui_clutter/">comme dans For Honor</a>, qui rend le jeu assez dur à lire, avec beaucoup d&#8217;informations superflues / pas toujours utiles :</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="357" src="/camelopard//wp-content/uploads/2024/11/forhonor-hud.png" alt="" class="wp-image-186" srcset="/camelopard//wp-content/uploads/2024/11/forhonor-hud.png 640w, /camelopard//wp-content/uploads/2024/11/forhonor-hud-300x167.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>For Honor: La majorité des informations à l&#8217;écran ne méritent probablement pas d&#8217;être toujours visibles&#8230;</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="357" src="/camelopard/wp-content/uploads/2024/11/forhonor-hud.png" alt="" class="wp-image-186" srcset="/camelopard/wp-content/uploads/2024/11/forhonor-hud.png 640w, /camelopard/wp-content/uploads/2024/11/forhonor-hud-300x167.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>For Honor: La majorité des informations à l&#8217;écran ne méritent probablement pas d&#8217;être toujours visibles&#8230;</em></figcaption></figure></div>
 
 
 <p>Bref, on en est pas encore là, d&#8217;autant que pour l&#8217;instant je me concentre plus sur la mise en place des composants et de leur logique, l&#8217;aspect graphique final viendra plus tard.</p>
@@ -371,7 +371,7 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="403" src="/camelopard//wp-content/uploads/2024/11/unit-hud.png" alt="" class="wp-image-188" srcset="/camelopard//wp-content/uploads/2024/11/unit-hud.png 640w, /camelopard//wp-content/uploads/2024/11/unit-hud-300x189.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Les infos de l&#8217;unité, en bas à gauche de l&#8217;écran</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="403" src="/camelopard/wp-content/uploads/2024/11/unit-hud.png" alt="" class="wp-image-188" srcset="/camelopard/wp-content/uploads/2024/11/unit-hud.png 640w, /camelopard/wp-content/uploads/2024/11/unit-hud-300x189.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Les infos de l&#8217;unité, en bas à gauche de l&#8217;écran</em></figcaption></figure></div>
 
 
 <p>Certaines infos sont manquantes, d&#8217;autres statiques, mais c&#8217;est un début.</p>
@@ -382,7 +382,7 @@
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/fight-ui.mp4"></video></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/fight-ui.mp4"></video></figure>
 
 
 
@@ -402,7 +402,7 @@
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/movement-preview.mp4"></video></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/movement-preview.mp4"></video></figure>
 
 
 
@@ -414,7 +414,7 @@
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/multiple-movement-preview.mp4"></video><figcaption class="wp-element-caption"><em>Le mouvement peut maintenant se faire en plusieurs étapes</em></figcaption></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/multiple-movement-preview.mp4"></video><figcaption class="wp-element-caption"><em>Le mouvement peut maintenant se faire en plusieurs étapes</em></figcaption></figure>
 
 
 
@@ -422,7 +422,7 @@
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/multiple-movement-ui.mp4"></video><figcaption class="wp-element-caption"><em>L&#8217;affichage du nombre de points de mouvement restant est à jour</em></figcaption></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/multiple-movement-ui.mp4"></video><figcaption class="wp-element-caption"><em>L&#8217;affichage du nombre de points de mouvement restant est à jour</em></figcaption></figure>
 
 
 
@@ -433,26 +433,26 @@
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/camelopard//devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/feed/</wfw:commentRss>
+					<wfw:commentRss>/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
-		<enclosure url="/camelopard//wp-content/uploads/2024/12/fight-ui.mp4" length="942834" type="video/mp4" />
-<enclosure url="/camelopard//wp-content/uploads/2024/12/movement-preview.mp4" length="323144" type="video/mp4" />
-<enclosure url="/camelopard//wp-content/uploads/2024/12/multiple-movement-preview.mp4" length="196564" type="video/mp4" />
-<enclosure url="/camelopard//wp-content/uploads/2024/12/multiple-movement-ui.mp4" length="125954" type="video/mp4" />
+		<enclosure url="/camelopard/wp-content/uploads/2024/12/fight-ui.mp4" length="942834" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/movement-preview.mp4" length="323144" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/multiple-movement-preview.mp4" length="196564" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/multiple-movement-ui.mp4" length="125954" type="video/mp4" />
 
 			</item>
 		<item>
 		<title>DevLog Semaine 2 &#8211; Gestion des tours</title>
-		<link>/camelopard//devlog-semaine-2-gestion-des-tours/</link>
-					<comments>/camelopard//devlog-semaine-2-gestion-des-tours/#respond</comments>
+		<link>/camelopard/devlog-semaine-2-gestion-des-tours/</link>
+					<comments>/camelopard/devlog-semaine-2-gestion-des-tours/#respond</comments>
 		
 		<dc:creator><![CDATA[nbarlogis]]></dc:creator>
 		<pubDate>Fri, 15 Nov 2024 16:45:00 +0000</pubDate>
 				<category><![CDATA[Devlog]]></category>
-		<guid isPermaLink="false">/camelopard//devlog-semaine-2-gestion-des-tours/</guid>
+		<guid isPermaLink="false">/camelopard/devlog-semaine-2-gestion-des-tours/</guid>
 
-					<description><![CDATA[Pour cette deuxième semaine, je continue sur la lancée des travaux précédents, à savoir la génération des niveaux à partir de descriptifs de texte. Au fur et à mesure de l&#8217;implémentation du chargement de ces fichiers, j&#8217;affine ma réflexion sur les éléments dont j&#8217;ai besoin, et je termine avec deux<a class="moretag" href="/camelopard//devlog-semaine-2-gestion-des-tours/"> Read more&#8230;</a>]]></description>
+					<description><![CDATA[Pour cette deuxième semaine, je continue sur la lancée des travaux précédents, à savoir la génération des niveaux à partir de descriptifs de texte. Au fur et à mesure de l&#8217;implémentation du chargement de ces fichiers, j&#8217;affine ma réflexion sur les éléments dont j&#8217;ai besoin, et je termine avec deux<a class="moretag" href="/camelopard/devlog-semaine-2-gestion-des-tours/"> Read more&#8230;</a>]]></description>
 										<content:encoded><![CDATA[
 <p>Pour cette deuxième semaine, je continue sur la lancée des travaux précédents, à savoir la génération des niveaux à partir de descriptifs de texte. Au fur et à mesure de l&#8217;implémentation du chargement de ces fichiers, j&#8217;affine ma réflexion sur les éléments dont j&#8217;ai besoin, et je termine avec deux fichiers nécessaires:</p>
 
@@ -462,14 +462,14 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="370" height="640" src="/camelopard//wp-content/uploads/2024/12/level-descriptor-2.webp" alt="" class="wp-image-151" srcset="/camelopard//wp-content/uploads/2024/12/level-descriptor-2.webp 370w, /camelopard//wp-content/uploads/2024/12/level-descriptor-2-173x300.webp 173w" sizes="auto, (max-width: 370px) 100vw, 370px" /><figcaption class="wp-element-caption"><em>Le nouveau fichier de niveau</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="370" height="640" src="/camelopard/wp-content/uploads/2024/12/level-descriptor-2.webp" alt="" class="wp-image-151" srcset="/camelopard/wp-content/uploads/2024/12/level-descriptor-2.webp 370w, /camelopard/wp-content/uploads/2024/12/level-descriptor-2-173x300.webp 173w" sizes="auto, (max-width: 370px) 100vw, 370px" /><figcaption class="wp-element-caption"><em>Le nouveau fichier de niveau</em></figcaption></figure></div>
 
 
 <p>On notera aussi l&#8217;apparition&nbsp; d&#8217;une dernière section, qui précise les cases sur lesquelles le joueur pourra placer ses unités en début de partie. Un grand classique des jeux de combat tactique (ici dans Fire Emblem: Path of Radiance):</p>
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/fe-pathofradiance-switchchar.mp4"></video></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/fe-pathofradiance-switchchar.mp4"></video></figure>
 
 
 
@@ -481,7 +481,7 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="354" height="307" src="/camelopard//wp-content/uploads/2024/12/player-team-descriptor.webp" alt="" class="wp-image-158" srcset="/camelopard//wp-content/uploads/2024/12/player-team-descriptor.webp 354w, /camelopard//wp-content/uploads/2024/12/player-team-descriptor-300x260.webp 300w" sizes="auto, (max-width: 354px) 100vw, 354px" /><figcaption class="wp-element-caption"><em>Le fichier de description de l&#8217;équipe du joueur</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="354" height="307" src="/camelopard/wp-content/uploads/2024/12/player-team-descriptor.webp" alt="" class="wp-image-158" srcset="/camelopard/wp-content/uploads/2024/12/player-team-descriptor.webp 354w, /camelopard/wp-content/uploads/2024/12/player-team-descriptor-300x260.webp 300w" sizes="auto, (max-width: 354px) 100vw, 354px" /><figcaption class="wp-element-caption"><em>Le fichier de description de l&#8217;équipe du joueur</em></figcaption></figure></div>
 
 
 <p>Après m&#8217;être bien battu avec Unreal Engine pour lire les fichiers (problème de packaging et d&#8217;accès aux ressources, pas forcément très intéressant a raconter), j&#8217;ai finalement bien la structure complète de mon niveau.</p>
@@ -504,7 +504,7 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="640" height="480" src="/camelopard//wp-content/uploads/2024/12/ff7-stats.webp" alt="" class="wp-image-138" style="width:497px;height:373px" srcset="/camelopard//wp-content/uploads/2024/12/ff7-stats.webp 640w, /camelopard//wp-content/uploads/2024/12/ff7-stats-300x225.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Final Fantasy 7: fiche d&#8217;un personnage</em></figcaption></figure></div>
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="640" height="480" src="/camelopard/wp-content/uploads/2024/12/ff7-stats.webp" alt="" class="wp-image-138" style="width:497px;height:373px" srcset="/camelopard/wp-content/uploads/2024/12/ff7-stats.webp 640w, /camelopard/wp-content/uploads/2024/12/ff7-stats-300x225.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Final Fantasy 7: fiche d&#8217;un personnage</em></figcaption></figure></div>
 
 
 <p>Dernier ajustement, j&#8217;ai découpé les points de santé (health point HP) en points de vie (life point LP) et points de bouclier (shield point SP). Les points de vie découlent de la stat de constitution du personnage, alors que ses points de bouclier viennent de son armure. Les équipements viendront bien plus tard, donc pour l&#8217;instant tout le monde commence avec 5 points de bouclier par défaut.</p>
@@ -535,14 +535,14 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="240" src="/camelopard//wp-content/uploads/2024/12/level-with-chars.webp" alt="" class="wp-image-153" srcset="/camelopard//wp-content/uploads/2024/12/level-with-chars.webp 640w, /camelopard//wp-content/uploads/2024/12/level-with-chars-300x113.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Un niveau tout juste créé</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="240" src="/camelopard/wp-content/uploads/2024/12/level-with-chars.webp" alt="" class="wp-image-153" srcset="/camelopard/wp-content/uploads/2024/12/level-with-chars.webp 640w, /camelopard/wp-content/uploads/2024/12/level-with-chars-300x113.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Un niveau tout juste créé</em></figcaption></figure></div>
 
 
 <p>J&#8217;en profite pour améliorer un petit peu mon algo de déplacement, en empêchant qu&#8217;une unité puisse passer au travers d&#8217;une autre, ou pire, que deux unités s&#8217;arrêtent sur la même case. C&#8217;est un peu mieux:</p>
 
 
 
-<figure class="wp-block-video"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/deplacement-units-obstacles.mp4"></video></figure>
+<figure class="wp-block-video"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/deplacement-units-obstacles.mp4"></video></figure>
 
 
 
@@ -554,21 +554,21 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="170" src="/camelopard//wp-content/uploads/2024/12/health-widget.webp" alt="" class="wp-image-143" srcset="/camelopard//wp-content/uploads/2024/12/health-widget.webp 640w, /camelopard//wp-content/uploads/2024/12/health-widget-300x80.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Le widget dans l&#8217;éditeur d&#8217;Unreal Engine</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="170" src="/camelopard/wp-content/uploads/2024/12/health-widget.webp" alt="" class="wp-image-143" srcset="/camelopard/wp-content/uploads/2024/12/health-widget.webp 640w, /camelopard/wp-content/uploads/2024/12/health-widget-300x80.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Le widget dans l&#8217;éditeur d&#8217;Unreal Engine</em></figcaption></figure></div>
 
 
 <p>Mais j&#8217;avance bien et j&#8217;arrive à afficher ces infos (en bleu les points de bouclier SP et en rouge les points de vie LP). Sans trop de difficulté, je peux faire en sorte que l&#8217;affichage suive la caméra. Il y a quand même des choses sympa dans l&#8217;Unreal Engine, j&#8217;ai juste beaucoup tendance à me plaindre.</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="639" height="470" src="/camelopard//wp-content/uploads/2024/12/health-on-units.webp" alt="" class="wp-image-142" srcset="/camelopard//wp-content/uploads/2024/12/health-on-units.webp 639w, /camelopard//wp-content/uploads/2024/12/health-on-units-300x221.webp 300w" sizes="auto, (max-width: 639px) 100vw, 639px" /><figcaption class="wp-element-caption"><em>L&#8217;aperçu des points de vie s&#8217;affiche au dessus des unités</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="639" height="470" src="/camelopard/wp-content/uploads/2024/12/health-on-units.webp" alt="" class="wp-image-142" srcset="/camelopard/wp-content/uploads/2024/12/health-on-units.webp 639w, /camelopard/wp-content/uploads/2024/12/health-on-units-300x221.webp 300w" sizes="auto, (max-width: 639px) 100vw, 639px" /><figcaption class="wp-element-caption"><em>L&#8217;aperçu des points de vie s&#8217;affiche au dessus des unités</em></figcaption></figure></div>
 
 
 <p>Pour tester un peu, et parce que je trouve que l&#8217;affichage prend beaucoup de place, je décide de faire en sorte que la barre soit un peu transparent, et qu&#8217;elle n&#8217;apparaisse qu&#8217;au survol de l&#8217;unité:</p>
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/hp-hover.mp4"></video></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/hp-hover.mp4"></video></figure>
 
 
 
@@ -576,7 +576,7 @@
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/hp-hover-move.mp4"></video></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/hp-hover-move.mp4"></video></figure>
 
 
 
@@ -600,7 +600,7 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="586" height="477" src="/camelopard//wp-content/uploads/2024/12/turns-in-logs.webp" alt="" class="wp-image-162" srcset="/camelopard//wp-content/uploads/2024/12/turns-in-logs.webp 586w, /camelopard//wp-content/uploads/2024/12/turns-in-logs-300x244.webp 300w" sizes="auto, (max-width: 586px) 100vw, 586px" /><figcaption class="wp-element-caption"><em>Les tours se passent pour l&#8217;instant uniquement dans les logs</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="586" height="477" src="/camelopard/wp-content/uploads/2024/12/turns-in-logs.webp" alt="" class="wp-image-162" srcset="/camelopard/wp-content/uploads/2024/12/turns-in-logs.webp 586w, /camelopard/wp-content/uploads/2024/12/turns-in-logs-300x244.webp 300w" sizes="auto, (max-width: 586px) 100vw, 586px" /><figcaption class="wp-element-caption"><em>Les tours se passent pour l&#8217;instant uniquement dans les logs</em></figcaption></figure></div>
 
 
 <p>J&#8217;ai pas mal souffert pour faire tout ça, et compris encore un peu plus pourquoi les développeurs de jeu vidéos ont du mal à faire du code propre. Beaucoup des choses considérées comme normales dans des langages de développement classique deviennent une corvée avec un résultat affreux en C++ de l&#8217;Unreal Engine. Voici deux exemples pour ceux qui savent lire du code, sur&nbsp;<a href="https://www.blogger.com/blog/post/edit/2835547799185233851/5190876584672150498#">comment créer une interface</a>&nbsp;et&nbsp;<a href="https://www.blogger.com/blog/post/edit/2835547799185233851/5190876584672150498#">comment instancier un blueprint en C++</a>.</p>
@@ -611,7 +611,7 @@
 
 
 
-<figure class="wp-block-video"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/turns-in-logs.mp4"></video></figure>
+<figure class="wp-block-video"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/turns-in-logs.mp4"></video></figure>
 
 
 
@@ -622,27 +622,27 @@
 <p>Ensuite ça sera soit l&#8217;amélioration des déplacements (ne pouvoir se déplacer que de x cases, avoir une prévisualisation de la portée de déplacement), soit le début du système de combat. Surprise dans le prochain devlog.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/camelopard//devlog-semaine-2-gestion-des-tours/feed/</wfw:commentRss>
+					<wfw:commentRss>/camelopard/devlog-semaine-2-gestion-des-tours/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
-		<enclosure url="/camelopard//wp-content/uploads/2024/12/fe-pathofradiance-switchchar.mp4" length="108219" type="video/mp4" />
-<enclosure url="/camelopard//wp-content/uploads/2024/12/deplacement-units-obstacles.mp4" length="84394" type="video/mp4" />
-<enclosure url="/camelopard//wp-content/uploads/2024/12/hp-hover.mp4" length="51833" type="video/mp4" />
-<enclosure url="/camelopard//wp-content/uploads/2024/12/hp-hover-move.mp4" length="45363" type="video/mp4" />
-<enclosure url="/camelopard//wp-content/uploads/2024/12/turns-in-logs.mp4" length="581245" type="video/mp4" />
+		<enclosure url="/camelopard/wp-content/uploads/2024/12/fe-pathofradiance-switchchar.mp4" length="108219" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/deplacement-units-obstacles.mp4" length="84394" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/hp-hover.mp4" length="51833" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/hp-hover-move.mp4" length="45363" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/turns-in-logs.mp4" length="581245" type="video/mp4" />
 
 			</item>
 		<item>
 		<title>DevLog Semaine 1 &#8211; La grille et le déplacement</title>
-		<link>/camelopard//devlog-semaine-1-la-grille-et-le-deplacement/</link>
-					<comments>/camelopard//devlog-semaine-1-la-grille-et-le-deplacement/#respond</comments>
+		<link>/camelopard/devlog-semaine-1-la-grille-et-le-deplacement/</link>
+					<comments>/camelopard/devlog-semaine-1-la-grille-et-le-deplacement/#respond</comments>
 		
 		<dc:creator><![CDATA[nbarlogis]]></dc:creator>
 		<pubDate>Fri, 08 Nov 2024 19:34:00 +0000</pubDate>
 				<category><![CDATA[Devlog]]></category>
-		<guid isPermaLink="false">/camelopard//devlog-semaine-1-la-grille-et-le-deplacement/</guid>
+		<guid isPermaLink="false">/camelopard/devlog-semaine-1-la-grille-et-le-deplacement/</guid>
 
-					<description><![CDATA[Première semaine de travail sur un futur jeu de combat tactique au tour par tour. Cela fait une semaine que j&#8217;ai ouvert pour la première fois l&#8217;Unreal Engine. Mais après avoir suivi quelques tutos sur les blueprints, les animations, rafraîchi mon C++ (et découvert le C++ de l&#8217;Unreal Engine…), j&#8217;ai<a class="moretag" href="/camelopard//devlog-semaine-1-la-grille-et-le-deplacement/"> Read more&#8230;</a>]]></description>
+					<description><![CDATA[Première semaine de travail sur un futur jeu de combat tactique au tour par tour. Cela fait une semaine que j&#8217;ai ouvert pour la première fois l&#8217;Unreal Engine. Mais après avoir suivi quelques tutos sur les blueprints, les animations, rafraîchi mon C++ (et découvert le C++ de l&#8217;Unreal Engine…), j&#8217;ai<a class="moretag" href="/camelopard/devlog-semaine-1-la-grille-et-le-deplacement/"> Read more&#8230;</a>]]></description>
 										<content:encoded><![CDATA[
 <p>Première semaine de travail sur un futur jeu de combat tactique au tour par tour. Cela fait une semaine que j&#8217;ai ouvert pour la première fois l&#8217;Unreal Engine. Mais après avoir suivi quelques tutos sur les blueprints, les animations, rafraîchi mon C++ (et découvert le C++ de l&#8217;Unreal Engine…), j&#8217;ai pu me lancer sur les bases de mon concept cette semaine.</p>
 
@@ -660,14 +660,14 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="334" src="/camelopard//wp-content/uploads/2024/11/blueprint.png" alt="" class="wp-image-177" srcset="/camelopard//wp-content/uploads/2024/11/blueprint.png 640w, /camelopard//wp-content/uploads/2024/11/blueprint-300x157.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Un script Blueprint</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="334" src="/camelopard/wp-content/uploads/2024/11/blueprint.png" alt="" class="wp-image-177" srcset="/camelopard/wp-content/uploads/2024/11/blueprint.png 640w, /camelopard/wp-content/uploads/2024/11/blueprint-300x157.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Un script Blueprint</em></figcaption></figure></div>
 
 
 <p>Et un C++, très customisé pour le moteur, qui est du code plus classique:</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="302" src="/camelopard//wp-content/uploads/2024/11/cpp.png" alt="" class="wp-image-179" srcset="/camelopard//wp-content/uploads/2024/11/cpp.png 640w, /camelopard//wp-content/uploads/2024/11/cpp-300x142.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Extrait d&#8217;une class C++, qui gère notamment le path finding</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="302" src="/camelopard/wp-content/uploads/2024/11/cpp.png" alt="" class="wp-image-179" srcset="/camelopard/wp-content/uploads/2024/11/cpp.png 640w, /camelopard/wp-content/uploads/2024/11/cpp-300x142.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Extrait d&#8217;une class C++, qui gère notamment le path finding</em></figcaption></figure></div>
 
 
 <p>Bref, première étape pour le jeu, mettre en place un système de grille, le plateau de jeu, sur lequel les personnages pourront se déplacer et se taper dessus. Je crée donc le gestionnaire de grille, de position, et trois types de case pour commencer, préparation des obstacles et du système de couverture à venir.</p>
@@ -678,35 +678,35 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="288" src="/camelopard//wp-content/uploads/2024/11/cells.png" alt="" class="wp-image-180" srcset="/camelopard//wp-content/uploads/2024/11/cells.png 640w, /camelopard//wp-content/uploads/2024/11/cells-300x135.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Les 3 types de cases: mur, demi mur et vide</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="288" src="/camelopard/wp-content/uploads/2024/11/cells.png" alt="" class="wp-image-180" srcset="/camelopard/wp-content/uploads/2024/11/cells.png 640w, /camelopard/wp-content/uploads/2024/11/cells-300x135.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Les 3 types de cases: mur, demi mur et vide</em></figcaption></figure></div>
 
 
 <p>Ces petites cases anodines avec des murs plus ou moins élevés ont d&#8217;ailleurs été le premier choix un peu signifiant que j&#8217;ai du faire. D&#8217;ailleurs, je m&#8217;en suis rendu compte après l&#8217;avoir fait. Je pouvais soit faire en sorte que les couvertures / murs / obstacles soit entre deux cases, soit faire qu&#8217;ils prennent une case entière. Le premier choix est ce que fait XCom par exemple, où le mur ici se trouve entre les deux cases, et n&#8217;en prend pas une entière.</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="400" height="250" src="/camelopard//wp-content/uploads/2024/12/xcom2-wall.webp" alt="" class="wp-image-165" style="width:603px;height:377px" srcset="/camelopard//wp-content/uploads/2024/12/xcom2-wall.webp 400w, /camelopard//wp-content/uploads/2024/12/xcom2-wall-300x188.webp 300w" sizes="auto, (max-width: 400px) 100vw, 400px" /><figcaption class="wp-element-caption"><em>XCom 2, </em>les murs sont entre deux cases</figcaption></figure></div>
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="400" height="250" src="/camelopard/wp-content/uploads/2024/12/xcom2-wall.webp" alt="" class="wp-image-165" style="width:603px;height:377px" srcset="/camelopard/wp-content/uploads/2024/12/xcom2-wall.webp 400w, /camelopard/wp-content/uploads/2024/12/xcom2-wall-300x188.webp 300w" sizes="auto, (max-width: 400px) 100vw, 400px" /><figcaption class="wp-element-caption"><em>XCom 2, </em>les murs sont entre deux cases</figcaption></figure></div>
 
 
 <p>Et donc ce n&#8217;est pas ce que je vais faire, en tout cas pour l&#8217;instant. Cela aura un impact sur le design des maps, qui seront plus étalées, comme dans un Fire Emblem, où les murs et les obstacles prennent une case</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="400" height="225" src="/camelopard//wp-content/uploads/2024/12/fire-emblem-wall.webp" alt="" class="wp-image-140" style="width:553px;height:311px" srcset="/camelopard//wp-content/uploads/2024/12/fire-emblem-wall.webp 400w, /camelopard//wp-content/uploads/2024/12/fire-emblem-wall-300x169.webp 300w" sizes="auto, (max-width: 400px) 100vw, 400px" /><figcaption class="wp-element-caption"><em>Fire Emblem three houses: les murs occupent une case de la grille de jeu</em></figcaption></figure></div>
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="400" height="225" src="/camelopard/wp-content/uploads/2024/12/fire-emblem-wall.webp" alt="" class="wp-image-140" style="width:553px;height:311px" srcset="/camelopard/wp-content/uploads/2024/12/fire-emblem-wall.webp 400w, /camelopard/wp-content/uploads/2024/12/fire-emblem-wall-300x169.webp 300w" sizes="auto, (max-width: 400px) 100vw, 400px" /><figcaption class="wp-element-caption"><em>Fire Emblem three houses: les murs occupent une case de la grille de jeu</em></figcaption></figure></div>
 
 
 <p>Pour me faciliter la vie pour la suite, je crée un système de chargement, qui me permet de décrire un niveau sous forme de texte, et automatiquement de le générer dans l&#8217;engine. Avec ça, en partant de cet exemple là:</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="188" height="137" src="/camelopard//wp-content/uploads/2024/12/map-descriptor.webp" alt="" class="wp-image-154" style="width:220px;height:161px"/><figcaption class="wp-element-caption"><em>Description d&#8217;un niveau en texte</em></figcaption></figure></div>
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="188" height="137" src="/camelopard/wp-content/uploads/2024/12/map-descriptor.webp" alt="" class="wp-image-154" style="width:220px;height:161px"/><figcaption class="wp-element-caption"><em>Description d&#8217;un niveau en texte</em></figcaption></figure></div>
 
 
 <p>On obtient ça en jeu:</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="334" src="/camelopard//wp-content/uploads/2024/11/image.webp" alt="" class="wp-image-122" srcset="/camelopard//wp-content/uploads/2024/11/image.webp 640w, /camelopard//wp-content/uploads/2024/11/image-300x157.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Le niveau dans le moteur de jeu</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="334" src="/camelopard/wp-content/uploads/2024/11/image.webp" alt="" class="wp-image-122" srcset="/camelopard/wp-content/uploads/2024/11/image.webp 640w, /camelopard/wp-content/uploads/2024/11/image-300x157.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Le niveau dans le moteur de jeu</em></figcaption></figure></div>
 
 
 <p>Je passe ensuite au path finding. C&#8217;est l&#8217;algorithme qui permettra aux personnages de se déplacer sur la grille, en évitant les obstacles et sans traverser les murs. J&#8217;ai pu remettre à jour certaines connaissances de l&#8217;école d&#8217;ingé, notamment sur l&#8217;algo de Dijkstra, et je décide d&#8217;implémenter une version spécialisé de celui ci, le A*.</p>
@@ -725,7 +725,7 @@
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard//wp-content/uploads/2024/12/deplacement-2.mp4"></video></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/deplacement-2.mp4"></video></figure>
 
 
 
@@ -737,16 +737,16 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="635" height="615" src="/camelopard//wp-content/uploads/2024/12/level-descriptor.webp" alt="" class="wp-image-152" srcset="/camelopard//wp-content/uploads/2024/12/level-descriptor.webp 635w, /camelopard//wp-content/uploads/2024/12/level-descriptor-300x291.webp 300w" sizes="auto, (max-width: 635px) 100vw, 635px" /><figcaption class="wp-element-caption"><em>Un descripteur de niveau</em></figcaption></figure></div>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="635" height="615" src="/camelopard/wp-content/uploads/2024/12/level-descriptor.webp" alt="" class="wp-image-152" srcset="/camelopard/wp-content/uploads/2024/12/level-descriptor.webp 635w, /camelopard/wp-content/uploads/2024/12/level-descriptor-300x291.webp 300w" sizes="auto, (max-width: 635px) 100vw, 635px" /><figcaption class="wp-element-caption"><em>Un descripteur de niveau</em></figcaption></figure></div>
 
 
 <p>Ce qui nous amène à la fin de cette première semaine. Rien de bien fantastique encore, mais c&#8217;est un début.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/camelopard//devlog-semaine-1-la-grille-et-le-deplacement/feed/</wfw:commentRss>
+					<wfw:commentRss>/camelopard/devlog-semaine-1-la-grille-et-le-deplacement/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
-		<enclosure url="/camelopard//wp-content/uploads/2024/12/deplacement-2.mp4" length="519110" type="video/mp4" />
+		<enclosure url="/camelopard/wp-content/uploads/2024/12/deplacement-2.mp4" length="519110" type="video/mp4" />
 
 			</item>
 	</channel>
