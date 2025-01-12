@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Devlog &#8211; Camélopard</title>
+	<atom:link href="/camelopard/category/devlog/feed/" rel="self" type="application/rss+xml" />
+	<link>/camelopard/</link>
+	<description></description>
+	<lastBuildDate>Sat, 11 Jan 2025 16:25:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
+	<item>
+		<title>Devlog Semaine 6 &#8211; Animations de combat</title>
+		<link>/camelopard/devlog-semaine-6-animations-de-combat/</link>
+					<comments>/camelopard/devlog-semaine-6-animations-de-combat/#respond</comments>
+		
+		<dc:creator><![CDATA[nbarlogis]]></dc:creator>
+		<pubDate>Fri, 10 Jan 2025 17:10:56 +0000</pubDate>
+				<category><![CDATA[Devlog]]></category>
+		<guid isPermaLink="false">http://192.168.2.239/wordpress/?p=107</guid>
+
+					<description><![CDATA[Semaine assez productive. Pour commencer gentiment, je me suis penché pour la première fois sur les modèles 3d. Pour l&#8217;instant j&#8217;utilise des placeholders, des éléments un peu par défaut, le temps que je produise les vrai visuels du jeu. Néanmoins, j&#8217;essaie de prendre des objets qui ressemblent à ce que<a class="moretag" href="/camelopard/devlog-semaine-6-animations-de-combat/"> Read more&#8230;</a>]]></description>
+										<content:encoded><![CDATA[
+<p>Semaine assez productive. Pour commencer gentiment, je me suis penché pour la première fois sur les modèles 3d. Pour l&#8217;instant j&#8217;utilise des placeholders, des éléments un peu par défaut, le temps que je produise les vrai visuels du jeu. Néanmoins, j&#8217;essaie de prendre des objets qui ressemblent à ce que le jeu sera, pour que ce soit plus simple de se projeter.</p>
+
+
+
+<p>L&#8217;un de ces modèles temporaire m&#8217;embête depuis que je l&#8217;ai récupéré, le sniper. En effet, le modèle gratuit que j&#8217;ai pu récupérer a des éléments en trop :</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img fetchpriority="high" decoding="async" width="1024" height="338" src="/camelopard/wp-content/uploads/2025/01/image-1024x338.png" alt="" class="wp-image-175" srcset="/camelopard/wp-content/uploads/2025/01/image-1024x338.png 1024w, /camelopard/wp-content/uploads/2025/01/image-300x99.png 300w, /camelopard/wp-content/uploads/2025/01/image-768x254.png 768w, /camelopard/wp-content/uploads/2025/01/image.png 1363w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption"><em>Le modèle d&#8217;origine, avec son trépied et les chargeurs à côté </em></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" width="596" height="517" src="/camelopard/wp-content/uploads/2025/01/image-1.png" alt="" class="wp-image-171" style="width:544px;height:auto" srcset="/camelopard/wp-content/uploads/2025/01/image-1.png 596w, /camelopard/wp-content/uploads/2025/01/image-1-300x260.png 300w" sizes="(max-width: 596px) 100vw, 596px" /><figcaption class="wp-element-caption"><em>Les éléments superflus qui polluent un peu l&#8217;image. On ne dira rien sur le fait que le personnage ne regarde pas dans le viseur, ni que c&#8217;est avec le côté sans œil</em></figcaption></figure></div>
+
+
+<p>En guise de début d&#8217;initiation à la 3D, j&#8217;ai pu essayer blender pour supprimer ces éléments (le trépied, les chargeurs et les balles). Pour le coup c&#8217;est un chouillat plus compliqué que ce à quoi je m&#8217;attendais, juste pour retirer des éléments. J&#8217;ai dû apprendre à me servir de l&#8217;interface, comprendre son organisation en différents modules, correspondant aux différentes phase de la modélisation. J&#8217;ai néanmoins assez rapidement réussi à supprimer les éléments indésirables et mettre à jour la texture pour que l&#8217;apparence reste bonne.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="589" src="/camelopard/wp-content/uploads/2025/01/image-3-1024x589.png" alt="" class="wp-image-173" srcset="/camelopard/wp-content/uploads/2025/01/image-3-1024x589.png 1024w, /camelopard/wp-content/uploads/2025/01/image-3-300x173.png 300w, /camelopard/wp-content/uploads/2025/01/image-3-768x442.png 768w, /camelopard/wp-content/uploads/2025/01/image-3.png 1180w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption"><em>Le modèle basiquement édité dans blender, sans les détails superflus</em></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="482" height="404" src="/camelopard/wp-content/uploads/2025/01/image-4.png" alt="" class="wp-image-174" srcset="/camelopard/wp-content/uploads/2025/01/image-4.png 482w, /camelopard/wp-content/uploads/2025/01/image-4-300x251.png 300w" sizes="auto, (max-width: 482px) 100vw, 482px" /><figcaption class="wp-element-caption"><em>Une position de visée un peu plus convaincante (on oublie toujours le cache-œil), et plus de chargeurs volants</em></figcaption></figure></div>
+
+
+<p>Une fois ce détail réglé, j&#8217;ai continué mon entreprise de faire apparaître visuellement les éléments de combat implémentés la semaine dernière.</p>
+
+
+
+<p>Première étape, à la sélection d&#8217;une compétence, je souhaite que l&#8217;unité commence l&#8217;animation liée à cette compétence. L&#8217;objectif est d&#8217;avoir des visuel sympas, tout en réduisant le temps où le joueur attend juste que les animations défilent, ce qui est souvent un point gênant des tactical RPG (le style de jeu que je suis en train de faire).</p>
+
+
+
+<p>Exemple, pour le sniper, l&#8217;attaque de base, la préparation consiste à se mettre en position de visée. Une fois la cible validé, il n&#8217;y aura plus qu&#8217;à attendre que l&#8217;unité tire pour que l&#8217;animation soit terminée. J&#8217;ajoute aussi le fait que l&#8217;unité suive le curseur de la souris. Cela évite qu&#8217;elle ait à se tourner pour jouer l&#8217;animation, et ajoute un petit côté ludique à la visée</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2025/01/attack-animation.mp4"></video><figcaption class="wp-element-caption"><em><em>Parfait pour faire des 360° quick scope</em></em></figcaption></figure>
+
+
+
+<p>Une fois cette première étape en place, avant d&#8217;enchainer sur l&#8217;animation de l&#8217;attaque en elle même, j&#8217;ai dû faire une pose pour refactorer -refaire et améliorer- une partie de mon côté pour la partie affichage. En effet, jusqu&#8217;à présent, à part pour les déplacements, les actions se passaient en même temps entre le moteur de jeu et l&#8217;affichage. Je tape une unité ennemie, les dégâts sont calculés et appliqués instantanément, le tour de l&#8217;unité est finit, je peux choisir l&#8217;unité suivante. Niveau moteur de jeu cela se fait en un instant, et jusqu&#8217;à présent sur l&#8217;affichage aussi.</p>
+
+
+
+<p>Sauf que maintenant, j&#8217;ai besoin d&#8217;attendre que l&#8217;animation de combat soit terminée avant que l&#8217;unité ne soit plus active, et qu&#8217;elle soit affichée en grisée. Et plein d&#8217;autres petits éléments comme ça qui avant était synchrones, instantanés, deviennent asynchrones du fait des animations. Bref, problème simple que je n&#8217;avais pas vraiment anticipé, mais c&#8217;est le but aussi, je préfère avancer avec des solutions simples, puis refactorer mon code au fur et à mesure que le besoin s&#8217;en fait ressentir.</p>
+
+
+
+<p>Une fois ces bases saines posées, j&#8217;ajoute l&#8217;animation de l&#8217;attaque en elle même, puis passe sur l&#8217;impact côté unité cible. Je fais en sorte que l&#8217;unité ennemie se tourne vers son agresseur, ça simplifie le besoin d&#8217;animation (le coup viendra toujours d&#8217;en face), et ça ajoute aussi du mouvement.</p>
+
+
+
+<p>J&#8217;ajoute également les animations dédiées pour l&#8217;épée, que ce soit l&#8217;attaque ou le coup, des affichages qui apparaissent pour montrer les dégâts infligés, et tout ça avance :</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2025/01/attack-damage-visible.mp4"></video><figcaption class="wp-element-caption"><em><em>Encore des soucis d&#8217;espacement entre les deux types de dégâts, et de taille de la police, selon la position de la caméra, mais l&#8217;idée est là</em></em></figcaption></figure>
+
+
+
+<p>Et je termine cette semaine en gérant l&#8217;affichage du décès d&#8217;une unité. C&#8217;est un changement graphique, mais aussi un peu dans le code pour prendre en compte la disparition de cette unité pour les autres traitements. Avec un dernier petit peaufinage sur le code et certains éléments cassés entre temps (typiquement passer le tour avec espace), je clos cette semaine très visuelle.</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2025/01/fight-to-death.mp4"></video><figcaption class="wp-element-caption"><em>Le résultat final des travaux de la semaine</em></figcaption></figure>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/camelopard/devlog-semaine-6-animations-de-combat/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="/camelopard/wp-content/uploads/2025/01/attack-animation.mp4" length="544382" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2025/01/attack-damage-visible.mp4" length="1601972" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2025/01/fight-to-death.mp4" length="2527640" type="video/mp4" />
+
+			</item>
+		<item>
+		<title>DevLog Semaine 5 &#8211; Appliquer une compétence</title>
+		<link>/camelopard/devlog-semaine-5-appliquer-une-competence/</link>
+					<comments>/camelopard/devlog-semaine-5-appliquer-une-competence/#respond</comments>
+		
+		<dc:creator><![CDATA[nbarlogis]]></dc:creator>
+		<pubDate>Sat, 04 Jan 2025 16:59:34 +0000</pubDate>
+				<category><![CDATA[Devlog]]></category>
+		<guid isPermaLink="false">http://192.168.2.239/wordpress/?p=95</guid>
+
+					<description><![CDATA[Pour reprendre tranquillement, j&#8217;ai amélioré un peu la sélection des compétences, pour éviter d&#8217;en sélectionner plusieurs à la fois ou de pouvoir cliquer sur un slot vide. Je n&#8217;y passe pas trop de temps, on est loin d&#8217;avoir l&#8217;interface finale. Cette semaine aura été assez peu visuelle, avec surtout beaucoup<a class="moretag" href="/camelopard/devlog-semaine-5-appliquer-une-competence/"> Read more&#8230;</a>]]></description>
+										<content:encoded><![CDATA[
+<p>Pour reprendre tranquillement, j&#8217;ai amélioré un peu la sélection des compétences, pour éviter d&#8217;en sélectionner plusieurs à la fois ou de pouvoir cliquer sur un slot vide. Je n&#8217;y passe pas trop de temps, on est loin d&#8217;avoir l&#8217;interface finale.</p>
+
+
+
+<p>Cette semaine aura été assez peu visuelle, avec surtout beaucoup de code. Le premier aura été d&#8217;ajouter la notion de ciblage des compétences. Chaque compétence va potentiellement cibler des cases différentes, donc chacune doit pouvoir indiquer, parmi les cases à portée, sur lesquelles elles sont applicables. Exemples:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Une compétence infligeant des dégâts sur une seule case (typiquement l&#8217;attaque d&#8217;une arme comme j&#8217;ai actuellement) pourra uniquement cibler des unités ennemies</li>
+
+
+
+<li>Une compétence de dégâts de zone pourra toucher les unités ennemies, mais aussi des cases vides, proche des ennemis. On peut même avoir des zones de formes différentes: en croix, en T, en ligne, &#8230;</li>
+
+
+
+<li>Une compétence de soin elle visera les unités alliées, et potentiellement le lanceur, selon la compétence</li>
+</ul>
+
+
+
+<p>Bref, plein de règles potentielles, certaines que je n&#8217;imagine probablement pas encore, d&#8217;où le fait que j&#8217;y passe un peu de temps pour faire une base extensible propre.</p>
+
+
+
+<p>Outre ces règles, j&#8217;ai aussi besoin d&#8217;un algorithme pour déterminer mes lignes de vues, pour savoir quelles cases sont accessibles. En gros une fois l&#8217;unité déplacée, je dois pouvoir savoir qu&#8217;elles cases elle voit, et lesquels sont hors de porté, derrière un mur, etc&#8230;</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img decoding="async" src="https://attach2process.wordpress.com/wp-content/uploads/2018/02/losfactor.png" alt=""/><figcaption class="wp-element-caption"><em>Une illustration d&#8217;un<a href="https://attach2process.wordpress.com/2018/02/17/creating-a-line-of-sight-map/"> très bon article</a>, des cases que peut voir batman ou non</em></figcaption></figure></div>
+
+
+<p>J&#8217;ai repéré, a priori, deux méthodes assez efficaces pour situation simple (je n&#8217;essaie pas de déterminer une ligne de vue sur des objets complexes en 3D, juste entre des cases, qui sont soit entièrement visibles, soit totalement bloquées visuellement). Je dois donc creuser un peu plus entre le <a href="https://fr.wikipedia.org/wiki/Raycasting">ray casting</a> et l<a href="https://fr.wikipedia.org/wiki/Algorithme_de_trac%C3%A9_de_segment_de_Bresenham">&#8216;algorithme de lignes de Bresenham</a>, voir même d&#8217;autres candidats que je n&#8217;ai pas encore identifiés. Je verrai ça plus tard, et j&#8217;utilise pour l&#8217;instant l&#8217;algo de calcul de la portée des déplacement. Il va créer des résultats un peu bizarre devant des murs (possibilité de tirer au travers car l&#8217;unité pourrait le contourner en bougeant), mais en attendant ça marche suffisamment pour avancer.</p>
+
+
+
+<p>Un fois que ça c&#8217;est bon, j&#8217;ajoute, en plus du déplacement, une phase d&#8217;action au tour, une fois une compétence sélectionnée. C&#8217;est là que je verrai les cases ciblables et pourrai utiliser la compétence.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="538" height="576" src="/camelopard/wp-content/uploads/2024/12/24-12-34-skill_show.png" alt="" class="wp-image-131" style="width:580px;height:auto" srcset="/camelopard/wp-content/uploads/2024/12/24-12-34-skill_show.png 538w, /camelopard/wp-content/uploads/2024/12/24-12-34-skill_show-280x300.png 280w" sizes="auto, (max-width: 538px) 100vw, 538px" /><figcaption class="wp-element-caption"><em>Les cases sélectionnables pour l&#8217;usage d&#8217;une compétence sont visibles. Ici avec une portée de 1 (au CaC), seul un des deux ennemis est atteignable.</em></figcaption></figure></div>
+
+
+<p>J&#8217;en profite pour changer un peu la couleur des cases survolées lors des déplacements et du ciblage, pour mieux la voir, et éviter qu&#8217;elle soit bleue dans toutes les situations.</p>
+
+
+<div class="wp-block-image is-style-default">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="383" height="390" src="/camelopard/wp-content/uploads/2024/12/24-12-34-move_hover.png" alt="" class="wp-image-130" srcset="/camelopard/wp-content/uploads/2024/12/24-12-34-move_hover.png 383w, /camelopard/wp-content/uploads/2024/12/24-12-34-move_hover-295x300.png 295w" sizes="auto, (max-width: 383px) 100vw, 383px" /><figcaption class="wp-element-caption"><em>La case visée lors du déplacement est maintenant dans une couleur proche </em>des autres</figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="369" height="292" src="/camelopard/wp-content/uploads/2024/12/24-12-34-target_hover.png" alt="" class="wp-image-132" style="width:429px;height:auto" srcset="/camelopard/wp-content/uploads/2024/12/24-12-34-target_hover.png 369w, /camelopard/wp-content/uploads/2024/12/24-12-34-target_hover-300x237.png 300w" sizes="auto, (max-width: 369px) 100vw, 369px" /><figcaption class="wp-element-caption"><em>De la même façon que pour le déplacement, la case survolée lors de l&#8217;usage d&#8217;une compétence a sa couleur</em></figcaption></figure></div>
+
+
+<p>Maintenant que je peux cibler une unité avec une compétence, j&#8217;ai tout ce qu&#8217;il fait niveau input du joueur pour mettre en place la suite. C&#8217;est à dire appliquer la compétence (ici faire des dégâts), appliquer le cooldown à la compétence, faire baisser ce cooldown en fin de tour, etc&#8230;</p>
+
+
+
+<p>Cette étape, qui a l&#8217;air simple, est au final assez complexe, car j&#8217;ai besoin de nombreuses remontées d&#8217;informations, de mon domaine en C++ vers, soit l&#8217;interface visible en blueprints, soit les futures IA en C++. Donc j&#8217;ai passé pas mal de temps pour avoir les remontées d&#8217;info des coups qui touchent, la quantité de dégâts infligés, &#8230; tout en prévoyant à nouveau un terrain modulables pour des compétences faisant autre chose que des dommages. In fine, j&#8217;arrive à faire porter une attaque:</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2025/01/one-attack.mp4"></video><figcaption class="wp-element-caption"><em><em>Aucun retour visuel pour l&#8217;instant, mais l&#8217;attaque a bien été appliquée</em></em></figcaption></figure>
+
+
+
+<p>Je décide de finir ma semaine en poussant jusqu&#8217;à la mort d&#8217;une unité. Beaucoup d&#8217;étapes et de retours à mettre en place à nouveau, mais j&#8217;y parviens tout juste</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2025/01/basic-fight.mp4"></video><figcaption class="wp-element-caption"><em><em>Pas beaucoup plus de retours, mais on voit la vie descendre, le bouclier d&#8217;abord. J&#8217;ai rapidement ajouté la suppression de l&#8217;unité comme simple retour visuel, l&#8217;arme traîne pour l&#8217;instant, j&#8217;ai trouvé ça rigolo.</em></em></figcaption></figure>
+
+
+
+<p>Au moins mon système de base fonctionne. Je suis déjà libre d&#8217;ajouter des compétences de dégâts, des armes et d&#8217;éliminer les unités ennemis.</p>
+
+
+
+<p>Comme cette semaine était beaucoup passée sur le code, je vais m&#8217;occuper la semaine prochaine principalement des animations et de rendre toutes ces mécaniques plus visibles, mais si ça sera toujours via des interfaces temporaires, ça me permet de monter les briques du jeu petit à petit.</p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/camelopard/devlog-semaine-5-appliquer-une-competence/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="/camelopard/wp-content/uploads/2025/01/one-attack.mp4" length="336051" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2025/01/basic-fight.mp4" length="1563518" type="video/mp4" />
+
+			</item>
+		<item>
+		<title>DevLog Semaine 4 &#8211; Armes et début des compétences</title>
+		<link>/camelopard/devlog-semaine-4-armes-et-debut-des-competences/</link>
+					<comments>/camelopard/devlog-semaine-4-armes-et-debut-des-competences/#respond</comments>
+		
+		<dc:creator><![CDATA[nbarlogis]]></dc:creator>
+		<pubDate>Sat, 21 Dec 2024 09:23:00 +0000</pubDate>
+				<category><![CDATA[Devlog]]></category>
+		<guid isPermaLink="false">http://192.168.2.239/wordpress/2024/12/21/devlog-semaine-4-armes-et-debut-des-competences/</guid>
+
+					<description><![CDATA[Nouvelle semaine, qui s&#8217;est étirée sur plusieurs, ça a été assez chaotique. Petite amélioration avant de commencer à creuser les mécanismes offensifs, pour ajouter une première commande afin de terminer un tour, sans avoir à dépenser l&#8217;ensemble des points de mouvements. Ça m&#8217;a permis de creuser le fonctionnement du Enhanced<a class="moretag" href="/camelopard/devlog-semaine-4-armes-et-debut-des-competences/"> Read more&#8230;</a>]]></description>
+										<content:encoded><![CDATA[
+<p>Nouvelle semaine, qui s&#8217;est étirée sur plusieurs, ça a été assez chaotique.</p>
+
+
+
+<p>Petite amélioration avant de commencer à creuser les mécanismes offensifs, pour ajouter une première commande afin de terminer un tour, sans avoir à dépenser l&#8217;ensemble des points de mouvements. Ça m&#8217;a permis de creuser le fonctionnement du Enhanced Input qui gère les entrées clavier / manette.</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/end-turn.mp4"></video><figcaption class="wp-element-caption"><em><em>Terminer le tour avec espace (même touche pour monter la caméra par défaut, d&#8217;où le petit recul)</em></em></figcaption></figure>
+
+
+
+<p>Une fois ce point de détail réglé, je commence mon système de combat. L&#8217;idée est que les unités auront un ensemble de compétences, certaines passives, d&#8217;autres actives. Elles proviendront soit des classes des unités, des équipements, d&#8217;effets spécifiques à un niveau ou encore d&#8217;autres sources.</p>
+
+
+
+<p>Pour commencer simple, je décide de partir sur l&#8217;implémentation des armes. Celles-ci prodigueront pour la plupart une seule compétence, permettant d&#8217;attaquer avec cette arme. Je crée donc le code nécessaire pour que mes unités aient maintenant un slot d&#8217;arme, vraiment basiquement. Je commence avec deux modèles simples, un sniper et une épée, pour avoir des attaques à distance et au corps à corps</p>
+
+
+
+<p>Une fois ok niveau code, je décide de passer à l&#8217;affichage. Comme je ne m&#8217;attaque pas encore vraiment aux graphismes, je trouve deux modèles simples sur le store de l&#8217;Unreal Engine, puis je découvre la façon d&#8217;accrocher des éléments dynamiquement au model de mes unités.</p>
+
+
+
+<p>En gros, mes unités sont &#8220;rigged&#8221;, c&#8217;est à dire qu&#8217;elles ont un squelette invisible, définissant des articulations, que l&#8217;on peut bouger lors des animations (les traits bleus sur la deuxième capture). Sur un de ces os, je peux créer des points d&#8217;attaches (socket), auquel je pourrais ensuite raccrocher mes armes:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="293" height="243" src="/camelopard/wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205759.png" alt="" class="wp-image-112" style="width:332px;height:275px"/><figcaption class="wp-element-caption"><em>Les os du bras droit, avec les deux sockets, pour sniper et épée</em></figcaption></figure></div>
+
+
+<p>Avec ce point, je place ensuite grossièrement l&#8217;arme dans la main, la met à la bonne échelle, etc&#8230; Ce qui m&#8217;embête un peu c&#8217;est que j&#8217;ai l&#8217;impression que je vais être obligé de le faire pour chaque modèle d&#8217;arme, à moins que je puisse m&#8217;arranger pour que les différentes épées aient toutes la même structure. je n&#8217;ai pas encore creusé ça à fond, c&#8217;est un problème pour plus tard.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="955" height="363" src="/camelopard/wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205831.webp" alt="" class="wp-image-115" style="width:574px;height:218px" srcset="/camelopard/wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205831.webp 955w, /camelopard/wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205831-300x114.webp 300w, /camelopard/wp-content/uploads/2024/11/Capture-20d-E2-80-99-C3-A9cran-202024-11-25-20205831-768x292.webp 768w" sizes="auto, (max-width: 955px) 100vw, 955px" /><figcaption class="wp-element-caption"><em>L&#8217;épée vaguement placée dans la main</em></figcaption></figure></div>
+
+
+<p>Juste avec ça, on a déjà les unités qui se promènent avec des armes. Mais c&#8217;est pas très convaincant&#8230;</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/weapon-no-move.mp4"></video><figcaption class="wp-element-caption"><em><em>Les armes sont juste accrochées au modèles, ce n&#8217;est pas encore du meilleur effet. Et elles ne deviennent pas grises en fin de tour&#8230;</em></em></figcaption></figure>
+
+
+
+<p>Je passe donc la journée suivante à améliorer ça. Première étape, qui me dérange un peu esthétiquement, je fais en sorte que, comme le personnage, les armes soient grisées lorsque le tour de l&#8217;unité est terminé.</p>
+
+
+
+<p>Ensuite je travaille sur les animations. Retour sur mixamo pour trouver des animations toutes faites, pour l&#8217;épée et le sniper. Je passe un peu de temps à tenter de faire un système propre pour assigner à une unité les animations sans armes / avec épée / avec sniper, mais a priori je suis limité à un arbre d&#8217;animation par modèle. Du coup, je finis sur un gros arbre, qui décrit toutes les animations pour chaque type d&#8217;arme, puis choisi un ensemble d&#8217;animation selon l&#8217;arme sélectionnée :</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1014" height="596" src="/camelopard/wp-content/uploads/2024/12/animation-tree-weapons.webp" alt="" class="wp-image-133" srcset="/camelopard/wp-content/uploads/2024/12/animation-tree-weapons.webp 1014w, /camelopard/wp-content/uploads/2024/12/animation-tree-weapons-300x176.webp 300w, /camelopard/wp-content/uploads/2024/12/animation-tree-weapons-768x451.webp 768w" sizes="auto, (max-width: 1014px) 100vw, 1014px" /><figcaption class="wp-element-caption"><em>L&#8217;arbre d&#8217;animation, où les différentes poses changent selon l&#8217;arme</em></figcaption></figure></div>
+
+
+<p>Un peu de travail sur les transitions entre les différentes animations, et on obtient rapidement quelque chose d&#8217;assez convaincant: </p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/weapon-animations.mp4"></video><figcaption class="wp-element-caption"><em><em>C&#8217;est plus sympa avec des animations dédiées</em></em></figcaption></figure>
+
+
+
+<p>Les armes c&#8217;est bon, j&#8217;enchaine sur les compétences. Pas mal de code ici pour créer des fondations solides, qui me permettront à terme d&#8217;avoir des compétences venant de plusieurs sources (armes, classe, environnement,&#8230;) et de plusieurs types (dégâts / soin, monocible / en zone, avec cooldown ou non, &#8230;).</p>
+
+
+
+<p>A la fin de cette 4ème journée j&#8217;ai la partie code et juste fait une ébauche de l&#8217;interface qui permettra de sélectionner une compétence à utiliser:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1023" height="820" src="/camelopard/wp-content/uploads/2024/12/skill-menu-init.webp" alt="" class="wp-image-159" srcset="/camelopard/wp-content/uploads/2024/12/skill-menu-init.webp 1023w, /camelopard/wp-content/uploads/2024/12/skill-menu-init-300x240.webp 300w, /camelopard/wp-content/uploads/2024/12/skill-menu-init-768x616.webp 768w" sizes="auto, (max-width: 1023px) 100vw, 1023px" /><figcaption class="wp-element-caption"><em>Le placeholder de la barre des compétences. Le détail de l&#8217;unité à subit une petite cure d&#8217;amaigrissement au passage.</em></figcaption></figure></div>
+
+
+<p>C&#8217;est finalement vendredi que j&#8217;ai pu mettre en place le côté dynamique du menu de sélection. Il remonte maintenant bien les compétences du personnage selectionné. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="530" height="220" src="/camelopard/wp-content/uploads/2024/12/image-2.webp" alt="" class="wp-image-149" srcset="/camelopard/wp-content/uploads/2024/12/image-2.webp 530w, /camelopard/wp-content/uploads/2024/12/image-2-300x125.webp 300w" sizes="auto, (max-width: 530px) 100vw, 530px" /><figcaption class="wp-element-caption"><em>Les compétences affichées dans le menu correspondent maintenant bien aux compétences de l&#8217;unité</em></figcaption></figure></div>
+
+
+<p>J&#8217;ai également avancé sur la sélection d&#8217;une compétence, même si il reste des ajustements à faire</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/skill-selection-base.mp4"></video><figcaption class="wp-element-caption"><em><em>On peut sélectionner une action, mais pour l&#8217;instant il n&#8217;y a pas de contrôle sur le nombre ou le fait de sélectionner un slot de compétence vide.</em></em></figcaption></figure>
+
+
+
+<p>Prochaines étapes: finir le mécanisme de sélection et cibler une autre unité avec la compétence.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/camelopard/devlog-semaine-4-armes-et-debut-des-competences/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="/camelopard/wp-content/uploads/2024/12/end-turn.mp4" length="86837" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/weapon-no-move.mp4" length="1394014" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/weapon-animations.mp4" length="1320264" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/skill-selection-base.mp4" length="317046" type="video/mp4" />
+
+			</item>
+		<item>
+		<title>DevLog Semaine 3 &#8211; Esquisse d&#8217;interface et meilleurs déplacement</title>
+		<link>/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/</link>
+					<comments>/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/#respond</comments>
+		
+		<dc:creator><![CDATA[nbarlogis]]></dc:creator>
+		<pubDate>Sat, 23 Nov 2024 16:52:00 +0000</pubDate>
+				<category><![CDATA[Devlog]]></category>
+		<guid isPermaLink="false">/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/</guid>
+
+					<description><![CDATA[Petite semaine de trois jours cette fois ci, ça n&#8217;a pas empêché des avancées intéressantes. J&#8217;ai commencé par étudier le fonctionnement du HUD dans Unreal Engine. Le Heads-Up Display, ou affichage tête haute, fait référence à toute l&#8217;interface que l&#8217;on voit constamment à l&#8217;écran, qui reste immobile malgré les mouvements<a class="moretag" href="/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/"> Read more&#8230;</a>]]></description>
+										<content:encoded><![CDATA[
+<p>Petite semaine de trois jours cette fois ci, ça n&#8217;a pas empêché des avancées intéressantes.</p>
+
+
+
+<p>J&#8217;ai commencé par étudier le fonctionnement du HUD dans Unreal Engine. Le Heads-Up Display, ou affichage tête haute, fait référence à toute l&#8217;interface que l&#8217;on voit constamment à l&#8217;écran, qui reste immobile malgré les mouvements de la caméra.</p>
+
+
+
+<p>Par exemple, voici tous les éléments du HUD de Halo Reach. On y met les informations qui sont nécessaires au joueur.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="360" src="/camelopard/wp-content/uploads/2024/11/halloreach-hud.png" alt="" class="wp-image-185" srcset="/camelopard/wp-content/uploads/2024/11/halloreach-hud.png 640w, /camelopard/wp-content/uploads/2024/11/halloreach-hud-300x169.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Halo Reach: Les infos du HUD sont entourées en rouge</em></figcaption></figure></div>
+
+
+<p>Le design de l&#8217;interface graphique et du HUD en particulier est un point très important, car il vient fortement impacter le ressenti d&#8217;un jeu. Par exemple, les jeux Ubisoft sont assez réputés pour leur interface trop pleine, <a href="https://www.reddit.com/r/forhonor/comments/hq2bj9/ubisoft_need_to_reduce_the_amount_of_ui_clutter/">comme dans For Honor</a>, qui rend le jeu assez dur à lire, avec beaucoup d&#8217;informations superflues / pas toujours utiles :</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="357" src="/camelopard/wp-content/uploads/2024/11/forhonor-hud.png" alt="" class="wp-image-186" srcset="/camelopard/wp-content/uploads/2024/11/forhonor-hud.png 640w, /camelopard/wp-content/uploads/2024/11/forhonor-hud-300x167.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>For Honor: La majorité des informations à l&#8217;écran ne méritent probablement pas d&#8217;être toujours visibles&#8230;</em></figcaption></figure></div>
+
+
+<p>Bref, on en est pas encore là, d&#8217;autant que pour l&#8217;instant je me concentre plus sur la mise en place des composants et de leur logique, l&#8217;aspect graphique final viendra plus tard.</p>
+
+
+
+<p>Je commence donc par faire une ébauche de fiche d&#8217;unité, qui permet de voir les info d&#8217;une unité lorsque l&#8217;on clique sur elle.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="403" src="/camelopard/wp-content/uploads/2024/11/unit-hud.png" alt="" class="wp-image-188" srcset="/camelopard/wp-content/uploads/2024/11/unit-hud.png 640w, /camelopard/wp-content/uploads/2024/11/unit-hud-300x189.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Les infos de l&#8217;unité, en bas à gauche de l&#8217;écran</em></figcaption></figure></div>
+
+
+<p>Certaines infos sont manquantes, d&#8217;autres statiques, mais c&#8217;est un début.</p>
+
+
+
+<p>Je continue à améliorer un peu l&#8217;interface pour montrer les mécaniques implémentées. J&#8217;ajoute un effet brillant sur l&#8217;unité active, celle qui va bouger. Une fois son action faite, l&#8217;unité est grisée, pour que l&#8217;on sache qu&#8217;elle ne peut plus être déplacée. Enfin, j&#8217;ajoute un petit texte en haut à gauche du HUD, pour indiquer le tour et l&#8217;unité active.</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/fight-ui.mp4"></video></figure>
+
+
+
+<p>Pour l&#8217;instant, c&#8217;est toujours le tour du joueur, car l&#8217;équipe ennemie passe instantanément. L&#8217;IA viendra plus tard.</p>
+
+
+
+<p>Enfin je m&#8217;attaque un peu plus au déplacement.</p>
+
+
+
+<p>Actuellement les unités avaient des points de mouvement, mais je n&#8217;en tenais pas compte. Je commence donc par implémenter un simple algo de&nbsp;<a href="https://fr.wikipedia.org/wiki/Algorithme_de_parcours_en_largeur">Breadth-First Search</a>, que j&#8217;adapte un peu pour tenir compte du coût de traversée de chaque case, qui peut être différent (ex: actuellement les demi murs en brique peuvent être enjambés, mais cela coûte 5 pm). Il me permet de déterminer quelles sont les cases accessibles par l&#8217;unité, avec ses pm actuels.</p>
+
+
+
+<p>J&#8217;ajoute la visualisation, et j&#8217;en profite pour refactoriser (améliorer) le code des mes cases. Ça nous donne ça :</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/movement-preview.mp4"></video></figure>
+
+
+
+<p>La deuxième unité est bloquée par la première, et l&#8217;aperçu de la portée nous le montre bien.</p>
+
+
+
+<p>Actuellement, l&#8217;unité se déplace une fois et son tour se termine. Je décide donc de faire en sorte qu&#8217;elle puisse se déplacer plusieurs fois dans un tour, du moment qu&#8217;il lui reste des points de mouvements:</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/multiple-movement-preview.mp4"></video><figcaption class="wp-element-caption"><em>Le mouvement peut maintenant se faire en plusieurs étapes</em></figcaption></figure>
+
+
+
+<p>Enfin, je termine la semaine en améliorant un peu ma fiche unité, et en lui faisant afficher le nombre de MP (movement points, les points de mouvements) que l&#8217;unité possède. On les voit réduire à chaque déplacement:</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/multiple-movement-ui.mp4"></video><figcaption class="wp-element-caption"><em>L&#8217;affichage du nombre de points de mouvement restant est à jour</em></figcaption></figure>
+
+
+
+<p>Les mouvements commencent à être pas mal. Prochaine étape, pouvoir se taper !</p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="/camelopard/wp-content/uploads/2024/12/fight-ui.mp4" length="942834" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/movement-preview.mp4" length="323144" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/multiple-movement-preview.mp4" length="196564" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/multiple-movement-ui.mp4" length="125954" type="video/mp4" />
+
+			</item>
+		<item>
+		<title>DevLog Semaine 2 &#8211; Gestion des tours</title>
+		<link>/camelopard/devlog-semaine-2-gestion-des-tours/</link>
+					<comments>/camelopard/devlog-semaine-2-gestion-des-tours/#respond</comments>
+		
+		<dc:creator><![CDATA[nbarlogis]]></dc:creator>
+		<pubDate>Fri, 15 Nov 2024 16:45:00 +0000</pubDate>
+				<category><![CDATA[Devlog]]></category>
+		<guid isPermaLink="false">/camelopard/devlog-semaine-2-gestion-des-tours/</guid>
+
+					<description><![CDATA[Pour cette deuxième semaine, je continue sur la lancée des travaux précédents, à savoir la génération des niveaux à partir de descriptifs de texte. Au fur et à mesure de l&#8217;implémentation du chargement de ces fichiers, j&#8217;affine ma réflexion sur les éléments dont j&#8217;ai besoin, et je termine avec deux<a class="moretag" href="/camelopard/devlog-semaine-2-gestion-des-tours/"> Read more&#8230;</a>]]></description>
+										<content:encoded><![CDATA[
+<p>Pour cette deuxième semaine, je continue sur la lancée des travaux précédents, à savoir la génération des niveaux à partir de descriptifs de texte. Au fur et à mesure de l&#8217;implémentation du chargement de ces fichiers, j&#8217;affine ma réflexion sur les éléments dont j&#8217;ai besoin, et je termine avec deux fichiers nécessaires:</p>
+
+
+
+<p class="has-text-align-left"><strong>1. Celui qui décrit le niveau, la map, les unités qui ne sont contrôlées par le joueur:</strong></p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="370" height="640" src="/camelopard/wp-content/uploads/2024/12/level-descriptor-2.webp" alt="" class="wp-image-151" srcset="/camelopard/wp-content/uploads/2024/12/level-descriptor-2.webp 370w, /camelopard/wp-content/uploads/2024/12/level-descriptor-2-173x300.webp 173w" sizes="auto, (max-width: 370px) 100vw, 370px" /><figcaption class="wp-element-caption"><em>Le nouveau fichier de niveau</em></figcaption></figure></div>
+
+
+<p>On notera aussi l&#8217;apparition&nbsp; d&#8217;une dernière section, qui précise les cases sur lesquelles le joueur pourra placer ses unités en début de partie. Un grand classique des jeux de combat tactique (ici dans Fire Emblem: Path of Radiance):</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/fe-pathofradiance-switchchar.mp4"></video></figure>
+
+
+
+<p><strong>2. le fichier qui décrit l&#8217;actuelle équipe du joueur.</strong></p>
+
+
+
+<p>Elle est séparée car ne sera pas statique. Elle ne sera probablement pas dans un fichier à terme, mais c&#8217;est bien pour commencer, et je peux réutiliser la même logique que j&#8217;ai déjà codé donc c&#8217;est tout bénef</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="354" height="307" src="/camelopard/wp-content/uploads/2024/12/player-team-descriptor.webp" alt="" class="wp-image-158" srcset="/camelopard/wp-content/uploads/2024/12/player-team-descriptor.webp 354w, /camelopard/wp-content/uploads/2024/12/player-team-descriptor-300x260.webp 300w" sizes="auto, (max-width: 354px) 100vw, 354px" /><figcaption class="wp-element-caption"><em>Le fichier de description de l&#8217;équipe du joueur</em></figcaption></figure></div>
+
+
+<p>Après m&#8217;être bien battu avec Unreal Engine pour lire les fichiers (problème de packaging et d&#8217;accès aux ressources, pas forcément très intéressant a raconter), j&#8217;ai finalement bien la structure complète de mon niveau.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>Petit aparté sur les stats. Plutôt que de mettre en dur la quantité de point de vie et de points de mouvement que possède une unité, j&#8217;ai directement été faire quelque chose qui s&#8217;approche plus du système final, où les attributs d&#8217;une unité dépendront principalement de ses statistiques.&nbsp;</p>
+
+
+
+<p>La force influencera les attaques au corps à corps, la précision celles à distance, la constitution détermine les points de vie et la vitesse les points de mouvement. Donc actuellement, je calcule les points de vie et de mouvement d&#8217;une unité à partir de sa constitution&nbsp;et de sa vitesse.</p>
+
+
+
+<p>A priori, je n&#8217;aurai pas besoin d&#8217;autre chose, j&#8217;aimerais éviter de trop compliquer le système. Exemple parmi tant d&#8217;autres, Final Fantasy 7, qui a 13 stats différentes:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="640" height="480" src="/camelopard/wp-content/uploads/2024/12/ff7-stats.webp" alt="" class="wp-image-138" style="width:497px;height:373px" srcset="/camelopard/wp-content/uploads/2024/12/ff7-stats.webp 640w, /camelopard/wp-content/uploads/2024/12/ff7-stats-300x225.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Final Fantasy 7: fiche d&#8217;un personnage</em></figcaption></figure></div>
+
+
+<p>Dernier ajustement, j&#8217;ai découpé les points de santé (health point HP) en points de vie (life point LP) et points de bouclier (shield point SP). Les points de vie découlent de la stat de constitution du personnage, alors que ses points de bouclier viennent de son armure. Les équipements viendront bien plus tard, donc pour l&#8217;instant tout le monde commence avec 5 points de bouclier par défaut.</p>
+
+
+
+<p>L&#8217;idée de cette différentiation est de pouvoir par la suite ajouter une couche de réflexion tactique en plus. Les attaques normales devront d&#8217;abord réduire les SP d&#8217;une unité à 0 avant de pourvoir grignoter les LP et tuer l&#8217;unité, là où certaines attaques pourront directement attaquer les LP, et donc se débarrasser d&#8217;un personnage plus facilement. On pourra même introduire des équipements / compétences qui empêcheront de toucher les LP tant qu&#8217;il reste des SP.&nbsp;</p>
+
+
+
+<p>Bref, beaucoup de pistes pour plus tard.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>Maintenant que tout système est correctement généré en code, il reste à l&#8217;afficher. Pour la partie grille de jeu, pas de soucis, c&#8217;était déjà en place, il n&#8217;y a donc plus qu&#8217;à faire apparaître les personnages.</p>
+
+
+
+<p>Ceux du joueur spawn pour l&#8217;instant sur les premières cases décrites dans le fichier du niveau, la mécanique de choix des cases viendra plus tard.</p>
+
+
+
+<p>Ça donne finalement ça:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="240" src="/camelopard/wp-content/uploads/2024/12/level-with-chars.webp" alt="" class="wp-image-153" srcset="/camelopard/wp-content/uploads/2024/12/level-with-chars.webp 640w, /camelopard/wp-content/uploads/2024/12/level-with-chars-300x113.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Un niveau tout juste créé</em></figcaption></figure></div>
+
+
+<p>J&#8217;en profite pour améliorer un petit peu mon algo de déplacement, en empêchant qu&#8217;une unité puisse passer au travers d&#8217;une autre, ou pire, que deux unités s&#8217;arrêtent sur la même case. C&#8217;est un peu mieux:</p>
+
+
+
+<figure class="wp-block-video"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/deplacement-units-obstacles.mp4"></video></figure>
+
+
+
+<p>Je continue ensuite sur l&#8217;affichage, en décidant de m&#8217;attaque à mon premier widget, un composant graphique permettant d&#8217;afficher des infos.</p>
+
+
+
+<p>Ça a été un peu long pour pas grand chose, le fonctionnement me rappelle des mauvais souvenir de Qt en Java avec des structures assez complexes pour un affichage simple. Ici, pour deux barres de progression avec deux textes, j&#8217;ai 10 composants&#8230;</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="170" src="/camelopard/wp-content/uploads/2024/12/health-widget.webp" alt="" class="wp-image-143" srcset="/camelopard/wp-content/uploads/2024/12/health-widget.webp 640w, /camelopard/wp-content/uploads/2024/12/health-widget-300x80.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Le widget dans l&#8217;éditeur d&#8217;Unreal Engine</em></figcaption></figure></div>
+
+
+<p>Mais j&#8217;avance bien et j&#8217;arrive à afficher ces infos (en bleu les points de bouclier SP et en rouge les points de vie LP). Sans trop de difficulté, je peux faire en sorte que l&#8217;affichage suive la caméra. Il y a quand même des choses sympa dans l&#8217;Unreal Engine, j&#8217;ai juste beaucoup tendance à me plaindre.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="639" height="470" src="/camelopard/wp-content/uploads/2024/12/health-on-units.webp" alt="" class="wp-image-142" srcset="/camelopard/wp-content/uploads/2024/12/health-on-units.webp 639w, /camelopard/wp-content/uploads/2024/12/health-on-units-300x221.webp 300w" sizes="auto, (max-width: 639px) 100vw, 639px" /><figcaption class="wp-element-caption"><em>L&#8217;aperçu des points de vie s&#8217;affiche au dessus des unités</em></figcaption></figure></div>
+
+
+<p>Pour tester un peu, et parce que je trouve que l&#8217;affichage prend beaucoup de place, je décide de faire en sorte que la barre soit un peu transparent, et qu&#8217;elle n&#8217;apparaisse qu&#8217;au survol de l&#8217;unité:</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/hp-hover.mp4"></video></figure>
+
+
+
+<p>J&#8217;ai aussi réussi à faire en sorte que la barre s&#8217;affiche lorsque c&#8217;est l&#8217;unité qui vient sous la souris et non l&#8217;inverse. Un cas d&#8217;usage particulier mais qui m&#8217;a permis d&#8217;expérimenter un peu plus.</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/hp-hover-move.mp4"></video></figure>
+
+
+
+<p>Enfin, pour finir la semaine en apothéose, je m&#8217;attaque à un gros morceau, la gestion des tours.</p>
+
+
+
+<p>Maintenant que j&#8217;ai un plateau de jeu, des équipes avec des unités, et que je peux les déplacer, j&#8217;aimerais pouvoir alterner entre toutes pour dans un premier les déplacer, puis à terme les faire se taper.</p>
+
+
+
+<p>Je passe un peu de temps en conception car je dois mélanger plusieurs étapes (choix du joueur de l&#8217;équipe, fin du tour d&#8217;un joueur, fin du tour d&#8217;une équipe, passage à l&#8217;équipe suivante,&#8230;). Certaines peuvent être enchainées de façon synchrone, c&#8217;est à dire instantanément.</p>
+
+
+
+<p>Par exemple l&#8217;ordinateur va mettre quelques millièmes de seconde à choisir quelle unité il souhaite faire agir, avant d&#8217;enchaîner sur l&#8217;action de cette unité. Alors que d&#8217;autres actions seront asynchrones, donc avec potentiellement beaucoup de délai. C&#8217;est le cas de toutes les actions du joueurs, qui pourra mettre de quelques secondes à quelques minutes, à choisir une unité ou une case où déplacer l&#8217;unité active.</p>
+
+
+
+<p>J&#8217;arrive finalement à faire un système modulaire, sur lequel je pourrait construire la suite. Je commence très simplement avec des unités qui passent leur tour, les IA viendront plus tard, et le choix de l&#8217;unité qui joue qui consiste juste à prendre la première unité de la liste. Pour l&#8217;instant rien de graphique, mais j&#8217;arrive à confirmer que le système marche, avec les logs:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="586" height="477" src="/camelopard/wp-content/uploads/2024/12/turns-in-logs.webp" alt="" class="wp-image-162" srcset="/camelopard/wp-content/uploads/2024/12/turns-in-logs.webp 586w, /camelopard/wp-content/uploads/2024/12/turns-in-logs-300x244.webp 300w" sizes="auto, (max-width: 586px) 100vw, 586px" /><figcaption class="wp-element-caption"><em>Les tours se passent pour l&#8217;instant uniquement dans les logs</em></figcaption></figure></div>
+
+
+<p>J&#8217;ai pas mal souffert pour faire tout ça, et compris encore un peu plus pourquoi les développeurs de jeu vidéos ont du mal à faire du code propre. Beaucoup des choses considérées comme normales dans des langages de développement classique deviennent une corvée avec un résultat affreux en C++ de l&#8217;Unreal Engine. Voici deux exemples pour ceux qui savent lire du code, sur&nbsp;<a href="https://www.blogger.com/blog/post/edit/2835547799185233851/5190876584672150498#">comment créer une interface</a>&nbsp;et&nbsp;<a href="https://www.blogger.com/blog/post/edit/2835547799185233851/5190876584672150498#">comment instancier un blueprint en C++</a>.</p>
+
+
+
+<p>Bref. J&#8217;enchaine en créant mes deux composants pour prendre en charge les actions du joueurs. Un pour l&#8217;étape où il choisi un personnage qui n&#8217;a pas encore joué ce tour, et l&#8217;autre pour gérer le déplacement du personnage sélectionné. Les ennemis continueront à passer leur tour, c&#8217;est tout ce qu&#8217;ils méritent !</p>
+
+
+
+<figure class="wp-block-video"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/turns-in-logs.mp4"></video></figure>
+
+
+
+<p>Ça fonctionne, mais pour l&#8217;instant le gros des informations sont dans les logs. La semaine prochaine je travaillerai sur l&#8217;affichage de ces infos dans le jeu, au moins de façon basique.</p>
+
+
+
+<p>Ensuite ça sera soit l&#8217;amélioration des déplacements (ne pouvoir se déplacer que de x cases, avoir une prévisualisation de la portée de déplacement), soit le début du système de combat. Surprise dans le prochain devlog.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/camelopard/devlog-semaine-2-gestion-des-tours/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="/camelopard/wp-content/uploads/2024/12/fe-pathofradiance-switchchar.mp4" length="108219" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/deplacement-units-obstacles.mp4" length="84394" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/hp-hover.mp4" length="51833" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/hp-hover-move.mp4" length="45363" type="video/mp4" />
+<enclosure url="/camelopard/wp-content/uploads/2024/12/turns-in-logs.mp4" length="581245" type="video/mp4" />
+
+			</item>
+		<item>
+		<title>DevLog Semaine 1 &#8211; La grille et le déplacement</title>
+		<link>/camelopard/devlog-semaine-1-la-grille-et-le-deplacement/</link>
+					<comments>/camelopard/devlog-semaine-1-la-grille-et-le-deplacement/#respond</comments>
+		
+		<dc:creator><![CDATA[nbarlogis]]></dc:creator>
+		<pubDate>Fri, 08 Nov 2024 19:34:00 +0000</pubDate>
+				<category><![CDATA[Devlog]]></category>
+		<guid isPermaLink="false">/camelopard/devlog-semaine-1-la-grille-et-le-deplacement/</guid>
+
+					<description><![CDATA[Première semaine de travail sur un futur jeu de combat tactique au tour par tour. Cela fait une semaine que j&#8217;ai ouvert pour la première fois l&#8217;Unreal Engine. Mais après avoir suivi quelques tutos sur les blueprints, les animations, rafraîchi mon C++ (et découvert le C++ de l&#8217;Unreal Engine…), j&#8217;ai<a class="moretag" href="/camelopard/devlog-semaine-1-la-grille-et-le-deplacement/"> Read more&#8230;</a>]]></description>
+										<content:encoded><![CDATA[
+<p>Première semaine de travail sur un futur jeu de combat tactique au tour par tour. Cela fait une semaine que j&#8217;ai ouvert pour la première fois l&#8217;Unreal Engine. Mais après avoir suivi quelques tutos sur les blueprints, les animations, rafraîchi mon C++ (et découvert le C++ de l&#8217;Unreal Engine…), j&#8217;ai pu me lancer sur les bases de mon concept cette semaine.</p>
+
+
+
+<p>Première axe de travail, le cœur du jeu, à savoir le système de combat. Mon objectif est de séparer &#8211; le plus possible en tout cas, donc vraiment pas beaucoup &#8211; les règles et la logique de mon jeu, du fonctionnement du moteur. J&#8217;ai travaillé plusieurs années sur la qualité de code, j&#8217;essaie de ne pas tout oublier d&#8217;un coup.&nbsp;</p>
+
+
+
+<p>Je sépare mon application en 3 couches. La couche d&#8217;affichage, dans unreal, avec des blueprints, la couche domaine, les règles de mon jeu, en C++ et enfin une petite couche infra &#8211; notamment pour lire des fichiers et initialiser des éléments de mon domaine &#8211; pour l&#8217;instant uniquement en C++, mais qui aura surement des composants en blueprints.</p>
+
+
+
+<p>Petit aparté pour ceux qui ne connaissent pas du tout, Unreal Engine, le moteur de jeu que je vais utiliser, propose deux façon de coder son jeu: les blueprints, un langage graphique:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="334" src="/camelopard/wp-content/uploads/2024/11/blueprint.png" alt="" class="wp-image-177" srcset="/camelopard/wp-content/uploads/2024/11/blueprint.png 640w, /camelopard/wp-content/uploads/2024/11/blueprint-300x157.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Un script Blueprint</em></figcaption></figure></div>
+
+
+<p>Et un C++, très customisé pour le moteur, qui est du code plus classique:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="302" src="/camelopard/wp-content/uploads/2024/11/cpp.png" alt="" class="wp-image-179" srcset="/camelopard/wp-content/uploads/2024/11/cpp.png 640w, /camelopard/wp-content/uploads/2024/11/cpp-300x142.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Extrait d&#8217;une class C++, qui gère notamment le path finding</em></figcaption></figure></div>
+
+
+<p>Bref, première étape pour le jeu, mettre en place un système de grille, le plateau de jeu, sur lequel les personnages pourront se déplacer et se taper dessus. Je crée donc le gestionnaire de grille, de position, et trois types de case pour commencer, préparation des obstacles et du système de couverture à venir.</p>
+
+
+
+<p>Je lie tout ça à un affichage, pour l&#8217;instant très simple, dans l&#8217;engine qui permet de visualiser le plateau.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="288" src="/camelopard/wp-content/uploads/2024/11/cells.png" alt="" class="wp-image-180" srcset="/camelopard/wp-content/uploads/2024/11/cells.png 640w, /camelopard/wp-content/uploads/2024/11/cells-300x135.png 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Les 3 types de cases: mur, demi mur et vide</em></figcaption></figure></div>
+
+
+<p>Ces petites cases anodines avec des murs plus ou moins élevés ont d&#8217;ailleurs été le premier choix un peu signifiant que j&#8217;ai du faire. D&#8217;ailleurs, je m&#8217;en suis rendu compte après l&#8217;avoir fait. Je pouvais soit faire en sorte que les couvertures / murs / obstacles soit entre deux cases, soit faire qu&#8217;ils prennent une case entière. Le premier choix est ce que fait XCom par exemple, où le mur ici se trouve entre les deux cases, et n&#8217;en prend pas une entière.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="400" height="250" src="/camelopard/wp-content/uploads/2024/12/xcom2-wall.webp" alt="" class="wp-image-165" style="width:603px;height:377px" srcset="/camelopard/wp-content/uploads/2024/12/xcom2-wall.webp 400w, /camelopard/wp-content/uploads/2024/12/xcom2-wall-300x188.webp 300w" sizes="auto, (max-width: 400px) 100vw, 400px" /><figcaption class="wp-element-caption"><em>XCom 2, </em>les murs sont entre deux cases</figcaption></figure></div>
+
+
+<p>Et donc ce n&#8217;est pas ce que je vais faire, en tout cas pour l&#8217;instant. Cela aura un impact sur le design des maps, qui seront plus étalées, comme dans un Fire Emblem, où les murs et les obstacles prennent une case</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="400" height="225" src="/camelopard/wp-content/uploads/2024/12/fire-emblem-wall.webp" alt="" class="wp-image-140" style="width:553px;height:311px" srcset="/camelopard/wp-content/uploads/2024/12/fire-emblem-wall.webp 400w, /camelopard/wp-content/uploads/2024/12/fire-emblem-wall-300x169.webp 300w" sizes="auto, (max-width: 400px) 100vw, 400px" /><figcaption class="wp-element-caption"><em>Fire Emblem three houses: les murs occupent une case de la grille de jeu</em></figcaption></figure></div>
+
+
+<p>Pour me faciliter la vie pour la suite, je crée un système de chargement, qui me permet de décrire un niveau sous forme de texte, et automatiquement de le générer dans l&#8217;engine. Avec ça, en partant de cet exemple là:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="188" height="137" src="/camelopard/wp-content/uploads/2024/12/map-descriptor.webp" alt="" class="wp-image-154" style="width:220px;height:161px"/><figcaption class="wp-element-caption"><em>Description d&#8217;un niveau en texte</em></figcaption></figure></div>
+
+
+<p>On obtient ça en jeu:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="334" src="/camelopard/wp-content/uploads/2024/11/image.webp" alt="" class="wp-image-122" srcset="/camelopard/wp-content/uploads/2024/11/image.webp 640w, /camelopard/wp-content/uploads/2024/11/image-300x157.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px" /><figcaption class="wp-element-caption"><em>Le niveau dans le moteur de jeu</em></figcaption></figure></div>
+
+
+<p>Je passe ensuite au path finding. C&#8217;est l&#8217;algorithme qui permettra aux personnages de se déplacer sur la grille, en évitant les obstacles et sans traverser les murs. J&#8217;ai pu remettre à jour certaines connaissances de l&#8217;école d&#8217;ingé, notamment sur l&#8217;algo de Dijkstra, et je décide d&#8217;implémenter une version spécialisé de celui ci, le A*.</p>
+
+
+
+<p>Je commence par introduire une notion d&#8217;unité très simple, qui me permettra de tester facilement cet algo. Je prends un modèle et quelques animations sur mixamo, pas du tout le résultat final, mais ça permet au moins que ce soit agréable à regarder.</p>
+
+
+
+<p>J&#8217;implémente ensuite mon algo. Ça me prend une journée et demi et j&#8217;en bave un peu. C&#8217;est la que je comprends à quel point le C++ version Unreal Engine est différent du C++ classique. Je me décrasse un peu aussi en dév C++, je n&#8217;en avait fais qu&#8217;en cours&#8230;</p>
+
+
+
+<p>Mais ça finit par marcher. J&#8217;assemble tout ça sur le terrain, fait spawner une unité pour tester, ajoute un peu de logique pour enchainer les animations d&#8217;arrêt, de course, et permettre au personnage de se tourner vers là où il va, et on obtient ça:</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/deplacement-2.mp4"></video></figure>
+
+
+
+<p>Voilà pour les déplacements. Prochaine objectif, générer des niveaux complets, avec leur grille comme c&#8217;est déjà le cas, mais aussi des unités, appartenant à différentes équipes, avec des points de vie, de déplacement, etc &#8230;</p>
+
+
+
+<p>J&#8217;ai donc créé la structure en C++, mon langage de description des niveaux en pseudo XML (pourquoi pas du json ou du yaml, aucune idée), et j&#8217;ai commencé à écrire le parseur qui va analyser ces fichiers et le générateur qui va créer les objets décrits.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="635" height="615" src="/camelopard/wp-content/uploads/2024/12/level-descriptor.webp" alt="" class="wp-image-152" srcset="/camelopard/wp-content/uploads/2024/12/level-descriptor.webp 635w, /camelopard/wp-content/uploads/2024/12/level-descriptor-300x291.webp 300w" sizes="auto, (max-width: 635px) 100vw, 635px" /><figcaption class="wp-element-caption"><em>Un descripteur de niveau</em></figcaption></figure></div>
+
+
+<p>Ce qui nous amène à la fin de cette première semaine. Rien de bien fantastique encore, mais c&#8217;est un début.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/camelopard/devlog-semaine-1-la-grille-et-le-deplacement/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="/camelopard/wp-content/uploads/2024/12/deplacement-2.mp4" length="519110" type="video/mp4" />
+
+			</item>
+	</channel>
+</rss>
