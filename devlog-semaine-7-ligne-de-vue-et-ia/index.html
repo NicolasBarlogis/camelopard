@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+			<link rel="pingback" href="/camelopard/xmlrpc.php">
+		<title>DevLog semaine 7 &#8211; Ligne de vue et IA &#8211; Camélopard</title>
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Feed" href="/camelopard/feed/">
+<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Comments Feed" href="/camelopard/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; DevLog semaine 7 &#8211; Ligne de vue et IA Comments Feed" href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/camelopard\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🐦‍⬛","🐦​⬛")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}</style>
+<link rel="stylesheet" id="wp-block-library-css" href="/camelopard/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id="global-styles-inline-css" type="text/css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--accent: #e91e63;--wp--preset--color--background-color: #E5E5E5;--wp--preset--color--header-gradient: #a81d84;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-accent-color{color: var(--wp--preset--color--accent) !important;}.has-background-color-color{color: var(--wp--preset--color--background-color) !important;}.has-header-gradient-color{color: var(--wp--preset--color--header-gradient) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-accent-background-color{background-color: var(--wp--preset--color--accent) !important;}.has-background-color-background-color{background-color: var(--wp--preset--color--background-color) !important;}.has-header-gradient-background-color{background-color: var(--wp--preset--color--header-gradient) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-accent-border-color{border-color: var(--wp--preset--color--accent) !important;}.has-background-color-border-color{border-color: var(--wp--preset--color--background-color) !important;}.has-header-gradient-border-color{border-color: var(--wp--preset--color--header-gradient) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="bootstrap-css" href="/camelopard/wp-content/themes/hestia/assets/bootstrap/css/bootstrap.min.css?ver=1.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="hestia-font-sizes-css" href="/camelopard/wp-content/themes/hestia/assets/css/font-sizes.min.css?ver=3.2.7" type="text/css" media="all">
+<link rel="stylesheet" id="hestia_style-css" href="/camelopard/wp-content/themes/hestia/style.min.css?ver=3.2.7" type="text/css" media="all">
+<style id="hestia_style-inline-css" type="text/css">.hestia-top-bar,.hestia-top-bar .widget.widget_shopping_cart .cart_list{background-color:#363537}.hestia-top-bar .widget .label-floating input[type=search]:-webkit-autofill{-webkit-box-shadow:inset 0 0 0 9999px #363537}.hestia-top-bar,.hestia-top-bar .widget .label-floating input[type=search],.hestia-top-bar .widget.widget_search form.form-group:before,.hestia-top-bar .widget.widget_product_search form.form-group:before,.hestia-top-bar .widget.widget_shopping_cart:before{color:#fff}.hestia-top-bar .widget .label-floating input[type=search]{-webkit-text-fill-color:#fff !important}.hestia-top-bar div.widget.widget_shopping_cart:before,.hestia-top-bar .widget.widget_product_search form.form-group:before,.hestia-top-bar .widget.widget_search form.form-group:before{background-color:#fff}.hestia-top-bar a,.hestia-top-bar .top-bar-nav li a{color:#fff}.hestia-top-bar ul li a[href*="mailto:"]:before,.hestia-top-bar ul li a[href*="tel:"]:before{background-color:#fff}.hestia-top-bar a:hover,.hestia-top-bar .top-bar-nav li a:hover{color:#eee}.hestia-top-bar ul li:hover a[href*="mailto:"]:before,.hestia-top-bar ul li:hover a[href*="tel:"]:before{background-color:#eee}
+:root{--hestia-primary-color:#e91e63}a,.navbar .dropdown-menu li:hover>a,.navbar .dropdown-menu li:focus>a,.navbar .dropdown-menu li:active>a,.navbar .navbar-nav>li .dropdown-menu li:hover>a,body:not(.home) .navbar-default .navbar-nav>.active:not(.btn)>a,body:not(.home) .navbar-default .navbar-nav>.active:not(.btn)>a:hover,body:not(.home) .navbar-default .navbar-nav>.active:not(.btn)>a:focus,a:hover,.card-blog a.moretag:hover,.card-blog a.more-link:hover,.widget a:hover,.has-text-color.has-accent-color,p.has-text-color a{color:#e91e63}.svg-text-color{fill:#e91e63}.pagination span.current,.pagination span.current:focus,.pagination span.current:hover{border-color:#e91e63}button,button:hover,.woocommerce .track_order button[type="submit"],.woocommerce .track_order button[type="submit"]:hover,div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover,input[type="button"],input[type="button"]:hover,input[type="submit"],input[type="submit"]:hover,input#searchsubmit,.pagination span.current,.pagination span.current:focus,.pagination span.current:hover,.btn.btn-primary,.btn.btn-primary:link,.btn.btn-primary:hover,.btn.btn-primary:focus,.btn.btn-primary:active,.btn.btn-primary.active,.btn.btn-primary.active:focus,.btn.btn-primary.active:hover,.btn.btn-primary:active:hover,.btn.btn-primary:active:focus,.btn.btn-primary:active:hover,.hestia-sidebar-open.btn.btn-rose,.hestia-sidebar-close.btn.btn-rose,.hestia-sidebar-open.btn.btn-rose:hover,.hestia-sidebar-close.btn.btn-rose:hover,.hestia-sidebar-open.btn.btn-rose:focus,.hestia-sidebar-close.btn.btn-rose:focus,.label.label-primary,.hestia-work .portfolio-item:nth-child(6n+1) .label,.nav-cart .nav-cart-content .widget .buttons .button,.has-accent-background-color[class*="has-background"]{background-color:#e91e63}@media(max-width:768px){.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus,.navbar .navbar-nav .dropdown .dropdown-menu li a:hover,.navbar .navbar-nav .dropdown .dropdown-menu li a:focus,.navbar button.navbar-toggle:hover,.navbar .navbar-nav li:hover>a i{color:#e91e63}}body:not(.woocommerce-page) button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.close),body:not(.woocommerce-page) .button:not([class^="fl-"]):not(hestia-scroll-to-top):not(.navbar-toggle):not(.add_to_cart_button):not(.product_type_grouped):not(.product_type_external),div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,input[type="submit"],input[type="button"],.btn.btn-primary,.widget_product_search button[type="submit"],.hestia-sidebar-open.btn.btn-rose,.hestia-sidebar-close.btn.btn-rose,.everest-forms button[type=submit].everest-forms-submit-button{-webkit-box-shadow:0 2px 2px 0 rgba(233,30,99,0.14),0 3px 1px -2px rgba(233,30,99,0.2),0 1px 5px 0 rgba(233,30,99,0.12);box-shadow:0 2px 2px 0 rgba(233,30,99,0.14),0 3px 1px -2px rgba(233,30,99,0.2),0 1px 5px 0 rgba(233,30,99,0.12)}.card .header-primary,.card .content-primary,.everest-forms button[type=submit].everest-forms-submit-button{background:#e91e63}body:not(.woocommerce-page) .button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.add_to_cart_button):hover,body:not(.woocommerce-page) button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.close):hover,div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover,input[type="submit"]:hover,input[type="button"]:hover,input#searchsubmit:hover,.widget_product_search button[type="submit"]:hover,.pagination span.current,.btn.btn-primary:hover,.btn.btn-primary:focus,.btn.btn-primary:active,.btn.btn-primary.active,.btn.btn-primary:active:focus,.btn.btn-primary:active:hover,.hestia-sidebar-open.btn.btn-rose:hover,.hestia-sidebar-close.btn.btn-rose:hover,.pagination span.current:hover,.everest-forms button[type=submit].everest-forms-submit-button:hover,.everest-forms button[type=submit].everest-forms-submit-button:focus,.everest-forms button[type=submit].everest-forms-submit-button:active{-webkit-box-shadow:0 14px 26px -12px rgba(233,30,99,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(233,30,99,0.2);box-shadow:0 14px 26px -12px rgba(233,30,99,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(233,30,99,0.2);color:#fff}.form-group.is-focused .form-control{background-image:-webkit-gradient(linear,left top,left bottom,from(#e91e63),to(#e91e63)),-webkit-gradient(linear,left top,left bottom,from(#d2d2d2),to(#d2d2d2));background-image:-webkit-linear-gradient(linear,left top,left bottom,from(#e91e63),to(#e91e63)),-webkit-linear-gradient(linear,left top,left bottom,from(#d2d2d2),to(#d2d2d2));background-image:linear-gradient(linear,left top,left bottom,from(#e91e63),to(#e91e63)),linear-gradient(linear,left top,left bottom,from(#d2d2d2),to(#d2d2d2))}.navbar:not(.navbar-transparent) li:not(.btn):hover>a,.navbar li.on-section:not(.btn)>a,.navbar.full-screen-menu.navbar-transparent li:not(.btn):hover>a,.navbar.full-screen-menu .navbar-toggle:hover,.navbar:not(.navbar-transparent) .nav-cart:hover,.navbar:not(.navbar-transparent) .hestia-toggle-search:hover{color:#e91e63}.header-filter-gradient{background:linear-gradient(45deg,rgba(168,29,132,1) 0,rgb(234,57,111) 100%)}.has-text-color.has-header-gradient-color{color:#a81d84}.has-header-gradient-background-color[class*="has-background"]{background-color:#a81d84}.has-text-color.has-background-color-color{color:#E5E5E5}.has-background-color-background-color[class*="has-background"]{background-color:#E5E5E5}
+.btn.btn-primary:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item),input[type="submit"]:not(.search-submit),body:not(.woocommerce-account) .woocommerce .button.woocommerce-Button,.woocommerce .product button.button,.woocommerce .product button.button.alt,.woocommerce .product #respond input#submit,.woocommerce-cart .blog-post .woocommerce .cart-collaterals .cart_totals .checkout-button,.woocommerce-checkout #payment #place_order,.woocommerce-account.woocommerce-page button.button,.woocommerce .track_order button[type="submit"],.nav-cart .nav-cart-content .widget .buttons .button,.woocommerce a.button.wc-backward,body.woocommerce .wccm-catalog-item a.button,body.woocommerce a.wccm-button.button,form.woocommerce-form-coupon button.button,div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,div.woocommerce a.button.alt,div.woocommerce table.my_account_orders .button,.btn.colored-button,.btn.btn-left,.btn.btn-right,.btn:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item):not(.hestia-sidebar-open):not(.hestia-sidebar-close){padding-top:15px;padding-bottom:15px;padding-left:33px;padding-right:33px}
+:root{--hestia-button-border-radius:3px}.btn.btn-primary:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item),input[type="submit"]:not(.search-submit),body:not(.woocommerce-account) .woocommerce .button.woocommerce-Button,.woocommerce .product button.button,.woocommerce .product button.button.alt,.woocommerce .product #respond input#submit,.woocommerce-cart .blog-post .woocommerce .cart-collaterals .cart_totals .checkout-button,.woocommerce-checkout #payment #place_order,.woocommerce-account.woocommerce-page button.button,.woocommerce .track_order button[type="submit"],.nav-cart .nav-cart-content .widget .buttons .button,.woocommerce a.button.wc-backward,body.woocommerce .wccm-catalog-item a.button,body.woocommerce a.wccm-button.button,form.woocommerce-form-coupon button.button,div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,div.woocommerce a.button.alt,div.woocommerce table.my_account_orders .button,input[type="submit"].search-submit,.hestia-view-cart-wrapper .added_to_cart.wc-forward,.woocommerce-product-search button,.woocommerce-cart .actions .button,#secondary div[id^=woocommerce_price_filter] .button,.woocommerce div[id^=woocommerce_widget_cart].widget .buttons .button,.searchform input[type=submit],.searchform button,.search-form:not(.media-toolbar-primary) input[type=submit],.search-form:not(.media-toolbar-primary) button,.woocommerce-product-search input[type=submit],.btn.colored-button,.btn.btn-left,.btn.btn-right,.btn:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item):not(.hestia-sidebar-open):not(.hestia-sidebar-close){border-radius:3px}
+body,ul,.tooltip-inner{font-family:Roboto}
+@media(min-width:769px){.page-header.header-small .hestia-title,.page-header.header-small .title,h1.hestia-title.title-in-content,.main article.section .has-title-font-size{font-size:42px}}</style>
+<link rel="stylesheet" id="hestia_fonts-css" href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CRoboto+Slab%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=3.2.7" type="text/css" media="all">
+<link rel="stylesheet" id="hestia-google-font-roboto-css" href="//fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700&#038;subset=latin&#038;ver=6.7.1" type="text/css" media="all">
+<link rel="stylesheet" id="hcb-style-css" href="/camelopard/wp-content/plugins/highlighting-code-block/build/css/hcb--light.css?ver=2.0.1" type="text/css" media="all">
+<style id="hcb-style-inline-css" type="text/css">:root{--hcb--fz--base: 14px}:root{--hcb--fz--mobile: 13px}:root{--hcb--ff:Menlo, Consolas, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;}</style>
+<script type="text/javascript" src="/camelopard/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/camelopard/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="/camelopard/wp-json/">
+<link rel="alternate" title="JSON" type="application/json" href="/camelopard/wp-json/wp/v2/posts/223">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/camelopard/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.7.1">
+<link rel="canonical" href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/">
+<link rel="shortlink" href="/camelopard/?p=223">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/camelopard/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fdevlog-semaine-7-ligne-de-vue-et-ia%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/camelopard/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fdevlog-semaine-7-ligne-de-vue-et-ia%2F#038;format=xml">
+<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/camelopard/wp-content/uploads/2025/01/test2-detourre.png"); background-position: center center; background-size: auto; background-repeat: no-repeat; background-attachment: scroll; }</style>
+			<style type="text/css" id="wp-custom-css">#comments {
+  display: none;
+}</style>
+		</head>
+
+<body class="post-template-default single single-post postid-223 single-format-standard custom-background wp-custom-logo blog-post header-layout-default">
+		<div class="wrapper post-223 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog default ">
+		<header class="header ">
+			<div style="display: none"></div>		<nav class="navbar navbar-default  hestia_left navbar-not-transparent navbar-fixed-top">
+						<div class="container">
+						<div class="navbar-header">
+			<div class="title-logo-wrapper">
+				<a class="navbar-brand" href="/camelopard/" title="Camélopard">
+					<div class="hestia-title-with-logo hestia-text-right">
+<div class="hestia-logo">
+<img class="hestia-hide-if-transparent" src="/camelopard/wp-content/uploads/2025/01/cropped-cropped-test2-detourre.png" alt="Camélopard" width="627" height="418"><img class="hestia-transparent-logo" src="/camelopard/wp-content/uploads/2025/01/cropped-test2-detourre.png" alt="Camélopard" width="628" height="418">
+</div>
+<div class="hestia-title-tagline-wrap">
+<div class="site-title">Camélopard</div>
+<small></small>
+</div>
+</div></a>
+			</div>
+								<div class="navbar-toggle-wrapper">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
+								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>				<span class="sr-only">Toggle Navigation</span>
+			</button>
+					</div>
+				</div>
+		<div id="main-navigation" class="collapse navbar-collapse"><ul id="menu-base" class="nav navbar-nav">
+<li id="menu-item-31" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-31"><a title="Devlog" href="/camelopard/category/devlog/">Devlog</a></li>
+</ul></div>			</div>
+					</nav>
+				</header>
+<div id="primary" class="boxed-layout-header page-header header-small" data-parallax="active">
+<div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center">
+<h1 class="hestia-title entry-title">DevLog semaine 7 &#8211; Ligne de vue et IA</h1>
+<h4 class="author">Published by <a href="/camelopard/author/nbarlogis/" class="vcard author"><strong class="fn">nbarlogis</strong></a> on <time class="entry-date published" datetime="2025-01-18T11:48:34+00:00" content="2025-01-18">January 18, 2025</time><time class="updated hestia-hidden" datetime="2025-01-18T11:50:05+00:00">January 18, 2025</time>
+</h4>
+</div></div></div>
+<div class="header-filter" style="background-image: url(/camelopard/wp-content/uploads/2025/01/cropped-test2-detourre-colore.png);"></div>
+</div>
+<div class="main  main-raised ">
+	<div class="blog-post blog-post-wrapper">
+		<div class="container">
+			<article id="post-223" class="section section-text">
+	<div class="row">
+				<div class="col-md-8 single-post-container col-md-offset-2" data-layout="full-width">
+
+			<div class="single-post-wrap entry-content">
+<p>Pour commencer la semaine, je reprend un tâche que j&#8217;avais mise de côté durant la semaine 5, à savoir le calcul des lignes de vue. Une fois n&#8217;est pas coutume, comme c&#8217;est quelque chose d&#8217;assez visuel, je vais vous expliquer pas à pas le fonctionnement de ces calculs. Je me dis que ça peut être intéressant pour ceux qui ne connaissent pas de voir un peu le schéma de pensé d&#8217;un développeur. Enfin du mien au moins. Et qui sait, ça aidera peut être même un autre dév qui fait face au même problème.</p>
+
+
+
+<h2 class="wp-block-heading">En profondeur: l&#8217;algorithme de ligne de vue</h2>
+
+
+
+<p>Avant toute chose, je défini une petite map simple qui me permettra facilement de voir si mes calculs fonctionnent ou non. Des tests unitaires font la même chose, mais c&#8217;est moins sympa pour illustrer un article.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img fetchpriority="high" decoding="async" width="409" height="395" src="/camelopard/wp-content/uploads/2025/01/image-8.png" alt="" class="wp-image-227" srcset="/camelopard/wp-content/uploads/2025/01/image-8.png 409w, /camelopard/wp-content/uploads/2025/01/image-8-300x290.png 300w" sizes="(max-width: 409px) 100vw, 409px"><figcaption class="wp-element-caption"><em>Avec l&#8217;algo de déplacement, les cibles à portée (sur les cases rouges) ne sont pas les bonnes</em></figcaption></figure>
+</div>
+
+
+<p>Niveau algorithme, j&#8217;ai à ma disposition deux outils. En premier, <a href="https://fr.wikipedia.org/wiki/Algorithme_de_trac%C3%A9_de_segment_de_Bresenham" data-type="link" data-id="https://fr.wikipedia.org/wiki/Algorithme_de_trac%C3%A9_de_segment_de_Bresenham">l&#8217;algorithme de Bresenham</a>, qui trace une ligne entre deux cases, et permet de déterminer les cases qui sont parcourues par cette ligne. Il existe des alternatives (<a href="https://fr.wikipedia.org/wiki/Algorithme_de_trac%C3%A9_de_segment_de_Xiaolin_Wu" data-type="link" data-id="https://fr.wikipedia.org/wiki/Algorithme_de_trac%C3%A9_de_segment_de_Xiaolin_Wu">Xiaolin Wu</a>, mais il est plus fait pour du tracé graphique de ligne, ou le <a href="https://groups.google.com/g/comp.graphics.algorithms/c/0L5MGm7kVVY" data-type="link" data-id="https://groups.google.com/g/comp.graphics.algorithms/c/0L5MGm7kVVY">EFLA Extremely Fast Line Algorithm</a>, mais je trouve trop peu de documentation à son sujet et il n&#8217;a pas l&#8217;air libre pour les applications commerciales).</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img decoding="async" width="1920" height="1034" src="/camelopard/wp-content/uploads/2025/01/1920px-Bresenham.svg_.png" alt="" class="wp-image-290" style="width:361px;height:auto" srcset="/camelopard/wp-content/uploads/2025/01/1920px-Bresenham.svg_.png 1920w, /camelopard/wp-content/uploads/2025/01/1920px-Bresenham.svg_-300x162.png 300w, /camelopard/wp-content/uploads/2025/01/1920px-Bresenham.svg_-1024x551.png 1024w, /camelopard/wp-content/uploads/2025/01/1920px-Bresenham.svg_-768x414.png 768w, /camelopard/wp-content/uploads/2025/01/1920px-Bresenham.svg_-1536x827.png 1536w" sizes="(max-width: 1920px) 100vw, 1920px"><figcaption class="wp-element-caption"><em>Illustration l&#8217;algo de Bresenham</em></figcaption></figure>
+</div>
+
+
+<p>Le second outil est le <a href="https://fr.wikipedia.org/wiki/Raycasting" data-type="link" data-id="https://fr.wikipedia.org/wiki/Raycasting">ray casting</a>. Ça peut être assez complexe, mais dans ce cas c&#8217;est très simple. En gros c&#8217;est soit on peut voir à travers une case, soit on ne peut pas. Il n&#8217;y a pas besoin de calculs complexes pour savoir à quel endroit passe la ligne de vue, et si les pixels traversés sont visibles ou non. Ici il me suffit de parcourir les cases de la ligne, et de voir si on peut attaquer à travers ou non. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="747" height="439" src="/camelopard/wp-content/uploads/2025/01/image-10.png" alt="" class="wp-image-233" srcset="/camelopard/wp-content/uploads/2025/01/image-10.png 747w, /camelopard/wp-content/uploads/2025/01/image-10-300x176.png 300w" sizes="(max-width: 747px) 100vw, 747px"><figcaption class="wp-element-caption"><em>Pour l&#8217;instant, les cases vides ou avec des demi-murs laissent passer les attaques, les cases avec des unités ou des murs complets non</em></figcaption></figure>
+</div>
+
+
+<p>Une solution simple, lors de la visée, serait de lister les ennemis, puis tester pour chacun d&#8217;eux de tracer la ligne et de voir si ils sont accessibles, en prenant aussi en compte la notion de portée des armes/compétences.  Le problème de cette solution, c&#8217;est que ça ne permet pas de mettre un aperçu de la portée des attaques, ce que je souhaiterais faire, pas uniquement afficher les unités atteignables comme actuellement.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="804" height="784" src="/camelopard/wp-content/uploads/2025/01/image-9.png" alt="" class="wp-image-231" style="width:550px;height:auto" srcset="/camelopard/wp-content/uploads/2025/01/image-9.png 804w, /camelopard/wp-content/uploads/2025/01/image-9-300x293.png 300w, /camelopard/wp-content/uploads/2025/01/image-9-768x749.png 768w" sizes="auto, (max-width: 804px) 100vw, 804px"><figcaption class="wp-element-caption"><em>Warhammer 40K Mechanicus: Les cases ciblables par une arme sont ici en rouge, c&#8217;est cette fonctionnalité que je vise</em></figcaption></figure>
+</div>
+
+
+<p>En y allant brutalement, je pourrais juste faire le process de la ligne vers toutes les cases à portée, ça ne poserait probablement pas de soucis niveau performance, mais franchement, on peut clairement faire plus efficace. Je vais essayer de vous présenter un peu mon raisonnement.</p>
+
+
+
+<p>Première étape, lister la liste des cases potentiellement visibles, tracer le carré autour de l&#8217;unité, selon la portée de la compétence utilisée. Un simple algorithme, qui commence par la case la plus haute, puis descends ligne par ligne, permet de faire ça:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="800" height="293" src="/camelopard/wp-content/uploads/2025/01/image-11.png" alt="" class="wp-image-235" srcset="/camelopard/wp-content/uploads/2025/01/image-11.png 800w, /camelopard/wp-content/uploads/2025/01/image-11-300x110.png 300w, /camelopard/wp-content/uploads/2025/01/image-11-768x281.png 768w" sizes="auto, (max-width: 800px) 100vw, 800px"></figure>
+</div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="802" height="697" src="/camelopard/wp-content/uploads/2025/01/image-12.png" alt="" class="wp-image-236" srcset="/camelopard/wp-content/uploads/2025/01/image-12.png 802w, /camelopard/wp-content/uploads/2025/01/image-12-300x261.png 300w, /camelopard/wp-content/uploads/2025/01/image-12-768x667.png 768w" sizes="auto, (max-width: 802px) 100vw, 802px"><figcaption class="wp-element-caption"><em>Le carré avec une portée de 5 cases</em></figcaption></figure>
+</div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="201" height="203" src="/camelopard/wp-content/uploads/2025/01/image-16.png" alt="" class="wp-image-241" srcset="/camelopard/wp-content/uploads/2025/01/image-16.png 201w, /camelopard/wp-content/uploads/2025/01/image-16-150x150.png 150w" sizes="auto, (max-width: 201px) 100vw, 201px"><figcaption class="wp-element-caption"><em>Portée de 1</em></figcaption></figure>
+</div>
+
+
+<p>J&#8217;en profite pour ajouter la notion de portée minimum, pour illustrer la contrainte que certaines compétence ne peuvent pas être utilisées au corps à corps. </p>
+
+
+
+<p>Plutôt que de faire des calculs pour exclure les cases trop proches, j&#8217;appelle juste deux fois l&#8217;aglo précédent, puis fait une différence entre les deux résultats, pour retirer les cases proches du grand carré.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="929" height="188" src="/camelopard/wp-content/uploads/2025/01/image-13.png" alt="" class="wp-image-237" srcset="/camelopard/wp-content/uploads/2025/01/image-13.png 929w, /camelopard/wp-content/uploads/2025/01/image-13-300x61.png 300w, /camelopard/wp-content/uploads/2025/01/image-13-768x155.png 768w" sizes="auto, (max-width: 929px) 100vw, 929px"></figure>
+</div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="671" height="566" src="/camelopard/wp-content/uploads/2025/01/image-14.png" alt="" class="wp-image-238" srcset="/camelopard/wp-content/uploads/2025/01/image-14.png 671w, /camelopard/wp-content/uploads/2025/01/image-14-300x253.png 300w" sizes="auto, (max-width: 671px) 100vw, 671px"><figcaption class="wp-element-caption"><em>Portée minimum à 2 cases</em></figcaption></figure>
+</div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="196" height="185" src="/camelopard/wp-content/uploads/2025/01/image-15.png" alt="" class="wp-image-239" style="width:270px;height:auto"><figcaption class="wp-element-caption"><em>portée min: 0 case</em></figcaption></figure>
+</div>
+
+
+<p>Maintenant que j&#8217;ai cette base, vient le moment de déterminer, parmi ces cases potentiellement visibles, lesquelles le sont vraiment. À nouveau, je pourrai juste faire Bresenham + ray casting sur toutes ces cases.  Des gens bien plus intelligents que moi ont déjà trouvé des <a href="https://williame.github.io/post/13269950091.html" data-type="link" data-id="https://williame.github.io/post/13269950091.html">méthodes bien plus efficaces</a> pour ne pas avoir à le faire de façon aussi brute. Mais comme j&#8217;aime bien expérimenté et apprendre, et que même la solution de faire tous les calculs ne serait probablement pas vraiment un problème niveau performance, je préfère m&#8217;essayer moi même à un petit algo plus efficace.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="790" height="719" src="/camelopard/wp-content/uploads/2025/01/image-23.png" alt="" class="wp-image-252" srcset="/camelopard/wp-content/uploads/2025/01/image-23.png 790w, /camelopard/wp-content/uploads/2025/01/image-23-300x273.png 300w, /camelopard/wp-content/uploads/2025/01/image-23-768x699.png 768w" sizes="auto, (max-width: 790px) 100vw, 790px"></figure>
+
+
+
+<p>La simplification qui me semble évidente vient des obstacles situés sur la croix autour du personnage (les 2 traits bleus sur la capture). Chaque obstacle sur ces deux lignes cache au final autre carré derrière lui (en jaune). J&#8217;ai déjà une petite fonction pour calculer les cases d&#8217;un, donc je pourrai simplement retirer ces carrés des cases potentielles.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="466" src="/camelopard/wp-content/uploads/2025/01/image-26-1024x466.png" alt="" class="wp-image-256" srcset="/camelopard/wp-content/uploads/2025/01/image-26-1024x466.png 1024w, /camelopard/wp-content/uploads/2025/01/image-26-300x136.png 300w, /camelopard/wp-content/uploads/2025/01/image-26-768x349.png 768w, /camelopard/wp-content/uploads/2025/01/image-26.png 1247w" sizes="auto, (max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption"><em>Le nom de la fonction commence à être obsolète, mais pour l&#8217;instant j&#8217;explore, j&#8217;améliorerai l&#8217;organisation du code une fois l&#8217;algo final obtenu</em></figcaption></figure>
+</div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="695" height="505" src="/camelopard/wp-content/uploads/2025/01/image-22.png" alt="" class="wp-image-251" srcset="/camelopard/wp-content/uploads/2025/01/image-22.png 695w, /camelopard/wp-content/uploads/2025/01/image-22-300x218.png 300w" sizes="auto, (max-width: 695px) 100vw, 695px"><figcaption class="wp-element-caption"><em>Le résultat avec les carrés retirés</em></figcaption></figure>
+</div>
+
+
+<p>Autre point un peu similaire où l&#8217;on peut faire des éliminations simples, c&#8217;est sur les diagonales. Un obstacles sur une diagonale bloque les cases derrière elle:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="877" height="789" src="/camelopard/wp-content/uploads/2025/01/image-20.png" alt="" class="wp-image-248" srcset="/camelopard/wp-content/uploads/2025/01/image-20.png 877w, /camelopard/wp-content/uploads/2025/01/image-20-300x270.png 300w, /camelopard/wp-content/uploads/2025/01/image-20-768x691.png 768w" sizes="auto, (max-width: 877px) 100vw, 877px"></figure>
+</div>
+
+
+<p>En au final, la forme que je cherche est juste un ensemble de triangle ou de petites flèches répétées un certain nombre de fois</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="729" height="654" src="/camelopard/wp-content/uploads/2025/01/image-29.png" alt="" class="wp-image-260" srcset="/camelopard/wp-content/uploads/2025/01/image-29.png 729w, /camelopard/wp-content/uploads/2025/01/image-29-300x269.png 300w" sizes="auto, (max-width: 729px) 100vw, 729px"><figcaption class="wp-element-caption">Les fameuses flèches, ensembles de 3 cases</figcaption></figure>
+</div>
+
+
+<p>Une fois ce pattern identifié, il n&#8217;y a plus qu&#8217;à coder ça</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="783" src="/camelopard/wp-content/uploads/2025/01/image-30-1024x783.png" alt="" class="wp-image-261" srcset="/camelopard/wp-content/uploads/2025/01/image-30-1024x783.png 1024w, /camelopard/wp-content/uploads/2025/01/image-30-300x229.png 300w, /camelopard/wp-content/uploads/2025/01/image-30-768x587.png 768w, /camelopard/wp-content/uploads/2025/01/image-30.png 1057w" sizes="auto, (max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption"><em>Le code ajouté</em></figcaption></figure>
+</div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="683" height="624" src="/camelopard/wp-content/uploads/2025/01/image-28.png" alt="" class="wp-image-259" srcset="/camelopard/wp-content/uploads/2025/01/image-28.png 683w, /camelopard/wp-content/uploads/2025/01/image-28-300x274.png 300w" sizes="auto, (max-width: 683px) 100vw, 683px"><figcaption class="wp-element-caption"><em>L&#8217;algo a pensé aux cases masquées par l&#8217;unité en haut à gauche, que j&#8217;avais oublié</em></figcaption></figure>
+</div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="784" height="683" src="/camelopard/wp-content/uploads/2025/01/image-27.png" alt="" class="wp-image-258" srcset="/camelopard/wp-content/uploads/2025/01/image-27.png 784w, /camelopard/wp-content/uploads/2025/01/image-27-300x261.png 300w, /camelopard/wp-content/uploads/2025/01/image-27-768x669.png 768w" sizes="auto, (max-width: 784px) 100vw, 784px"><figcaption class="wp-element-caption"><em>Petit test en augmentant la portée de l&#8217;arme, ça marche toujours</em></figcaption></figure>
+</div>
+
+
+<p>En rassemblant les deux logiques, ont obtient ça:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="614" height="501" src="/camelopard/wp-content/uploads/2025/01/image-31.png" alt="" class="wp-image-262" srcset="/camelopard/wp-content/uploads/2025/01/image-31.png 614w, /camelopard/wp-content/uploads/2025/01/image-31-300x245.png 300w" sizes="auto, (max-width: 614px) 100vw, 614px"></figure>
+</div>
+
+
+<p>Dans ce cas particulier, c&#8217;est presque résultat attendu. Néanmoins l&#8217;algo ne couvre pas en l&#8217;état tous les cas de figures. Si un obstacle n&#8217;est ni dans les diagonales, ni dans la croix central, sont effet n&#8217;est pas prit en compte. Il y a surement moyen d&#8217;affiner encore les patterns précédents, mais ça devient moins évident.</p>
+
+
+
+<p>Du coup, sur cet échantillon restreint, on va maintenant faire la technique brute et vérifier pour toutes ces cases si on peut les cibler. J&#8217;implémente donc un Bresenham généralisé (le code est à la fin) et je fais passer toutes les cases restantes dans une moulinette validant si rien n&#8217;empêche la vision dans la ligne. Et miracle, ça marche</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="615" height="333" src="/camelopard/wp-content/uploads/2025/01/image-33.png" alt="" class="wp-image-266" srcset="/camelopard/wp-content/uploads/2025/01/image-33.png 615w, /camelopard/wp-content/uploads/2025/01/image-33-300x162.png 300w" sizes="auto, (max-width: 615px) 100vw, 615px"></figure>
+</div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="715" height="533" src="/camelopard/wp-content/uploads/2025/01/image-32.png" alt="" class="wp-image-265" srcset="/camelopard/wp-content/uploads/2025/01/image-32.png 715w, /camelopard/wp-content/uploads/2025/01/image-32-300x224.png 300w" sizes="auto, (max-width: 715px) 100vw, 715px"><figcaption class="wp-element-caption"><em>La version finale</em></figcaption></figure>
+</div>
+
+
+<p>Pour me convaincre que ça marche, je désactive les optimisations avec les lignes et les diagonales, pour tout calculer avec Bresenham. Et j&#8217;obtient un résultat légèrement différent, le long des diagonales.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="742" height="513" src="/camelopard/wp-content/uploads/2025/01/image-35.png" alt="" class="wp-image-269" srcset="/camelopard/wp-content/uploads/2025/01/image-35.png 742w, /camelopard/wp-content/uploads/2025/01/image-35-300x207.png 300w" sizes="auto, (max-width: 742px) 100vw, 742px"><figcaption class="wp-element-caption"><em>Le résultat selon Bresenham</em></figcaption></figure>
+</div>
+
+
+<p>Si on regarde la ligne trace par Bresenham, effectivement ces cases sont visibles.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="486" height="400" src="/camelopard/wp-content/uploads/2025/01/image-36.png" alt="" class="wp-image-270" srcset="/camelopard/wp-content/uploads/2025/01/image-36.png 486w, /camelopard/wp-content/uploads/2025/01/image-36-300x247.png 300w" sizes="auto, (max-width: 486px) 100vw, 486px"><figcaption class="wp-element-caption"><em>Résultat de Bresenham pour une des cases ajoutées</em></figcaption></figure>
+</div>
+
+
+<p>Pour le coup il ne s&#8217;agit pas ici d&#8217;un bug, mais plutôt d&#8217;une décision que je dois prendre niveau gameplay, d&#8217;intégrer ou non ces cases. Pour l&#8217;instant, je pense préférer ma version, mais cela pourra évoluer avec le temps. </p>
+
+
+
+<p>Dans tous les cas, je suis satisfait avec ma version actuelle, qui réduit un peu les calculs par rapport à la solution brute force. Il y aurait pleins d&#8217;autres améliorations à faire (calculer la ligne vers un des points les plus éloigner, et ne pas recalculer pour les autres points de la ligne, d&#8217;autres formes géométriques que j&#8217;ai raté, &#8230;), mais je verrai ça au besoin, si les perfs sont problématiques.</p>
+
+
+
+<p>D&#8217;autres modifications pourrait également venir, la méthode des carrés à l&#8217;air problématiques à longue portée.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<p>Et le lendemain je me rends compte que tous ces patterns ne sont valables que sur les cases directement adjacentes à l&#8217;unité source. Ex, en s&#8217;éloignant, la zone cachée par un obstacle n&#8217;a pas le même angle, et ne cache donc pas la même zone :</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="723" height="653" src="/camelopard/wp-content/uploads/2025/01/image-37.png" alt="" class="wp-image-274" srcset="/camelopard/wp-content/uploads/2025/01/image-37.png 723w, /camelopard/wp-content/uploads/2025/01/image-37-300x271.png 300w" sizes="auto, (max-width: 723px) 100vw, 723px"></figure>
+</div>
+
+
+<p>Bref, mes algos sont faux, ma pseudo optimisation encore plus niche que prévue, et au final je me dis qu&#8217;il serait probablement beaucoup plus pertinent de faire le Bresenham sur les cases les plus éloignées, puis de calculer la visibilité de toutes les cases du chemin&#8230;. Le classique du développement. Au moins ça illustre bien les problématiques que l&#8217;on rencontre en codant.</p>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow"><summary>Le code complet (avec ses problèmes), avant nettoyage</summary>
+<div class="hcb_wrap"><pre class="prism line-numbers lang-cpp" data-lang="C++"><code>TSet&lt;FStruct_Position&gt; UClass_Grid::GetAllPositionsAround(FStruct_Position startingPosition, int minRange, int maxRange)
+{
+	if (minRange &gt; maxRange) {
+		UE_LOGFMT(LogCore, Error, &quot;Grid - GetAllPositionsAround: minRange &gt; maxRange ({0}, {1})&quot;, minRange, maxRange);
+		throw std::exception(&quot;Grid::GetAllPositionsAround, invalid ranges - See log&quot;);
+	}
+	TSet&lt;FStruct_Position&gt; result = GetAllPositionsAround(startingPosition, maxRange);
+	TSet&lt;FStruct_Position&gt; minRangeSquare = GetAllPositionsAround(startingPosition, minRange);
+	result = result.Difference(minRangeSquare);
+
+	std::vector&lt;std::pair&lt;int, int&gt;&gt; directions = { {1, 0}, {-1, 0}, {0, 1}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1} };
+
+	for (std::pair&lt;int, int&gt; direction : directions) {
+		int maxShift = (direction.first == 0 || direction.second == 0) ? maxRange : ceil(maxRange / 2);
+		for (int shift = 1; shift &lt;= maxShift; shift++) {
+			FStruct_Position position = FStruct_Position(startingPosition.X + direction.first * shift, startingPosition.Y + direction.second * shift);
+			if (Cells.Contains(position) && !Cells.FindRef(position)-&gt;IsSeeThrough()) {
+				TSet&lt;FStruct_Position&gt; excludedPositions;
+				if (direction.first == 0 || direction.second == 0) {
+					int exclusionRange = ceil(static_cast&lt;double&gt;(maxRange - shift) / 2);
+					FStruct_Position exclusionCenter = FStruct_Position(position.X + direction.first * exclusionRange, position.Y + direction.second * exclusionRange);
+					excludedPositions = GetAllPositionsAround(exclusionCenter, exclusionRange);
+				}
+				else {
+					excludedPositions = GetDiagonalPositions(position, maxRange - (shift * 2), direction);
+				}
+				excludedPositions.Remove(position);
+				result = result.Difference(excludedPositions);
+				break;
+			}
+		}
+	}
+
+	TSet&lt;FStruct_Position&gt; toVerify = result;
+	for (FStruct_Position position : toVerify)
+	{
+		if (!IsLineClearExeceptExtremities(GetLine(startingPosition, position))) {
+			result.Remove(position);
+		}
+	}
+	return result;
+}
+
+bool UClass_Grid::IsLineClearExeceptExtremities(TArray&lt;FStruct_Position&gt; line)
+{
+	// ignore first and last positions of the line
+	for (int i = line.Num() - 2; i &gt; 0; i--)
+	{
+		if (!Cells.FindRef(line[i])-&gt;IsSeeThrough()) {
+			return false;
+		}
+	}
+	return true;
+}
+
+TSet&lt;FStruct_Position&gt; UClass_Grid::GetAllPositionsAround(FStruct_Position startingPosition, int maxRange)
+{
+	TSet&lt;FStruct_Position&gt; result;
+	int delta = 0;
+	for (int y = startingPosition.Y + maxRange; y &gt;= startingPosition.Y - maxRange; y--)
+	{
+		for (int x = startingPosition.X + delta; x &gt;= startingPosition.X - delta; x--)
+		{
+			FStruct_Position position = FStruct_Position(x, y);
+			if (Cells.Contains(position)) {
+				result.Add(position);
+			}
+		}
+		delta += (y &gt; startingPosition.Y) ? 1 : -1;
+	}
+	return result;
+}
+
+TSet&lt;FStruct_Position&gt; UClass_Grid::GetDiagonalPositions(FStruct_Position startingPosition, int range, std::pair&lt;int, int&gt; direction)
+{
+	TSet&lt;FStruct_Position&gt; result;
+
+	int diagonalLength = floor(range / 2);
+	for (int shift = 0; shift &lt;= diagonalLength; shift++) {
+		FStruct_Position tip = FStruct_Position(startingPosition.X + direction.first * shift, startingPosition.Y + direction.second * shift);
+		if (Cells.Contains(tip)) {
+			result.Add(tip);
+		}
+		FStruct_Position sideX = FStruct_Position(tip.X + direction.first, tip.Y);
+		if (Cells.Contains(sideX)) {
+			result.Add(sideX);
+		}
+		FStruct_Position sideY = FStruct_Position(tip.X, tip.Y + direction.second);
+		if (Cells.Contains(sideY)) {
+			result.Add(sideY);
+		}
+	}
+
+	if (range % 2 == 1) {
+		FStruct_Position lastPosition = FStruct_Position(startingPosition.X + direction.first * (diagonalLength + 1), 
+			startingPosition.Y + direction.second * (diagonalLength + 1));
+		if (Cells.Contains(lastPosition)) {
+			result.Add(lastPosition);
+		}
+	}
+
+	return result;
+}
+
+// Bresenham&#39;s line algorithm, result[0] is the end position, start is the last index
+TArray&lt;FStruct_Position&gt; UClass_Grid::GetLine(FStruct_Position start, FStruct_Position end)
+{
+	TArray&lt;FStruct_Position&gt; result;
+
+	int x, y, dx, dy, dx1, dy1, px, py, xe, ye, i;
+	dx = end.X - start.X;
+	dy = end.Y - start.Y;
+	dx1 = std::abs(dx);
+	dy1 = std::abs(dy);
+	px = 2 * dy1 - dx1;
+	py = 2 * dx1 - dy1;
+
+	if (dy1 &lt;= dx1) {
+		if (dx &gt;= 0) {
+			x = start.X;
+			y = start.Y;
+			xe = end.X;
+		}
+		else {
+			x = end.X;
+			y = end.Y;
+			xe = start.X;
+		}
+		result.Add(FStruct_Position(x, y));
+		for (i = 0; x &lt; xe; i++) {
+			x = x + 1;
+			if (px &lt; 0) {
+				px = px + 2 * dy1;
+			}
+			else {
+				if ((dx &lt; 0 && dy &lt; 0) || (dx &gt; 0 && dy &gt; 0)) {
+					y = y + 1;
+				}
+				else {
+					y = y - 1;
+				}
+				px = px + 2 * (dy1 - dx1);
+			}
+			result.Add(FStruct_Position(x, y));
+		}
+	}
+	else {
+		if (dy &gt;= 0) {
+			x = start.X;
+			y = start.Y;
+			ye = end.Y;
+		}
+		else {
+			x = end.X;
+			y = end.Y;
+			ye = start.Y;
+		}
+		result.Add(FStruct_Position(x, y));
+		for (i = 0; y &lt; ye; i++) {
+			y = y + 1;
+			if (py &lt;= 0) {
+				py = py + 2 * dx1;
+			}
+			else {
+				if ((dx &lt; 0 && dy &lt; 0) || (dx &gt; 0 && dy &gt; 0)) {
+					x = x + 1;
+				}
+				else {
+					x = x - 1;
+				}
+				py = py + 2 * (dx1 - dy1);
+			}
+			result.Add(FStruct_Position(x, y));
+		}
+	}
+	return result;
+</code></pre></div>
+</details>
+</div></div>
+
+
+
+<h2 class="wp-block-heading">Le reste de la semaine</h2>
+
+
+
+<p>mardi 14/01: affichage de la portée d&#8217;une compétence, refacto passage gestion du mouvement côté engine, avec affichage observateur, début IA (interfaces choix cible et compétence)</p>
+
+
+
+<p>Après avoir retouché le calcul de la ligne de vue pour utiliser systématiquement Bresenham systématiquement, en attendant de remettre de meilleures optimisations, j&#8217;ai enchainé sur l&#8217;affichage de la porté des compétences, pour ne pas juste montrer  les cases où la compétence peut être utilisée, mais aussi celles qui sont à portée, mais si aucune unité ennemie ne s&#8217;y trouve.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="581" height="337" src="/camelopard/wp-content/uploads/2025/01/image-38.png" alt="" class="wp-image-276" srcset="/camelopard/wp-content/uploads/2025/01/image-38.png 581w, /camelopard/wp-content/uploads/2025/01/image-38-300x174.png 300w" sizes="auto, (max-width: 581px) 100vw, 581px"><figcaption class="wp-element-caption"><em>Les cases </em>visibles et ciblables</figcaption></figure>
+</div>
+
+
+<p>J&#8217;ai ensuite commencé la reprise de tout ce qui est gestion d&#8217;affichage des actions (déplacement ,attaque, &#8230;)</p>
+
+
+
+<p>J&#8217;ai en gros 3 composants dans mon jeu:</p>
+
+
+
+<ul class="wp-block-list">
+<li>
+<strong>L&#8217;input</strong>, où actuellement le joueur via les clics et des raccourcis clavier, prends les décisions: où se déplacer, qui attaquer, quand passer son tour, &#8230; L&#8217;objectif est que l&#8217;IA remplisse aussi cette fonction, pour les unités non contrôlées par le joueur.</li>
+
+
+
+<li>
+<strong>Le moteur de jeu</strong>, qui contient les règles du jeu, qui peut se déplacer de combien de cases et vers où, qui peut cibler qui, qui est mort ou non, etc&#8230;</li>
+
+
+
+<li>
+<strong>Le display</strong>, qui va afficher les événements qui se produisent dans le moteur de jeu, de façon graphique.</li>
+</ul>
+
+
+
+<p>Actuellement, comme j&#8217;ai construit le système de façon un empirique, en fonction des besoins, certaines remontées du moteur se font via l&#8217;input pour l&#8217;affichage, à certains endroit le display va interroger le moteur pour savoir ce qui s&#8217;est passé, et à d&#8217;autres le moteur renvoi un événement au display pour lui dire que quelque chose est arrivé.</p>
+
+
+
+<p>Cette division en 3 couches était voulue dès le départ, mais les modes d&#8217;échanges entre eux pas forcément très clairs / strict. Ce qui risque à terme de rendre le code très fouillis, et dans l&#8217;immédiat compliquer l&#8217;implémentation de l&#8217;IA et l&#8217;affichage de ses actions.</p>
+
+
+
+<p>J&#8217;ai retouché toutes les communications existantes, pour respecter un shéma clair et systématique:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="899" height="472" src="/camelopard/wp-content/uploads/2025/01/interactions-couches.png" alt="" class="wp-image-286" srcset="/camelopard/wp-content/uploads/2025/01/interactions-couches.png 899w, /camelopard/wp-content/uploads/2025/01/interactions-couches-300x158.png 300w, /camelopard/wp-content/uploads/2025/01/interactions-couches-768x403.png 768w" sizes="auto, (max-width: 899px) 100vw, 899px"></figure>
+</div>
+
+
+<ul class="wp-block-list">
+<li>L&#8217;input appelle directement le moteur de jeu quand il prend un décision (IA ou action du joueur)</li>
+
+
+
+<li>Le moteur de jeu prévient, via des callbacks, l&#8217;input quand il attend une action de ce dernier</li>
+
+
+
+<li>Enfin, le display est au courant des actions qui se passent dans le moteur de jeu, grâce à un <a href="https://refactoring.guru/fr/design-patterns/observer" data-type="link" data-id="https://refactoring.guru/fr/design-patterns/observer">observateur </a>placé dans ce dernier</li>
+</ul>
+
+
+
+<p>Ainsi, peut importe depuis quel input les actions proviennent, le display affichera tous ce qui se passe dans le moteur de jeu, et je garde aussi une séparation des responsabilités entre mes couches (ça c&#8217;est un peu d&#8217;architecture logiciel).</p>
+
+
+
+<p>J&#8217;enchaîne donc sur l&#8217;IA. Je commence en tâtonnant un peu, j&#8217;essaie notamment de résoudre le problème de l&#8217;ordre de décision. Je choisi d&#8217;abord une compétence puis j&#8217;essaie de voir qui je peux toucher avec, ou je commence par choisir une cible puis je vois ce que je peux lui faire ?</p>
+
+
+
+<p>J&#8217;avance doucement, notamment pour trouver une solution de comment savoir qui une unité peut atteindre, sachant qu&#8217;il faut additionner la portée de déplacement à celle de la visée de la compétence. Ça me fait des algos complexes et peu efficaces, qui ne marchent pas très fort et ne me satisfont pas du tout.</p>
+
+
+
+<p>Heureusement, au gré du énième discussion avec <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging" data-type="link" data-id="https://en.wikipedia.org/wiki/Rubber_duck_debugging">ma femme</a>, je finis par trouver une solution simple et élégante (dans le sens que je peux réutiliser des choses déjà existantes) pour faire un premier jet d&#8217;IA basique.</p>
+
+
+
+<p>Pour faire simple, je calcule la portée de la compétence de l&#8217;attaquant, ce qui me donne un ensemble de cases. Ensuite, je calcul la portée de déplacement de l&#8217;unité attaquante, mais pas à partir de sa position, à partir de la position de l&#8217;ennemi qu&#8217;elle cible. J&#8217;obtient un autre ensemble de cases. <br>Si j&#8217;ai des cases qui se retrouvent dans les deux ensembles (leur intersection en terme mathématique), alors je sais que l&#8217;unité peut attaquer l&#8217;unité qu&#8217;elle vise, avec la compétence choisie, il faut juste qu&#8217;elle se déplace sur une des cases de l&#8217;intersection. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="771" height="500" src="/camelopard/wp-content/uploads/2025/01/image-39.png" alt="" class="wp-image-288" srcset="/camelopard/wp-content/uploads/2025/01/image-39.png 771w, /camelopard/wp-content/uploads/2025/01/image-39-300x195.png 300w, /camelopard/wp-content/uploads/2025/01/image-39-768x498.png 768w" sizes="auto, (max-width: 771px) 100vw, 771px"><figcaption class="wp-element-caption"><em>Entourées en vert, les cases à que l&#8217;unité à droite peut atteindre et à partir desquelles elle pourrait attaquer l&#8217;unité à droite</em></figcaption></figure>
+</div>
+
+
+<p>Une fois cette IA en place, le moteur de jeu me donne bien un déroulement cohérent d&#8217;un combat. Par contre niveau affichage, toutes les animations se font en même temps, ça donne un joyeux chaos.</p>
+
+
+
+<p>En effet, lorsque le joueur faisait les actions, j&#8217;avais un délai entre deux évènements à afficher. Or maintenant, l&#8217;IA prend joue le tour d&#8217;une unité en une fraction de seconde, donc les évènements de déplacement, d&#8217;attaque et de fin de tour de toutes les unités ennemis arrivent quasiment en même temps. Donc tout s&#8217;affiche en même temps.</p>
+
+
+
+<p>J&#8217;attaque donc un nouveau chantier, pour faire que l&#8217;affichage gère une file d&#8217;évènements.<br>À chaque instant, le display prend le premier évènement de la file (une attaque a été faite, un déplacement, une unité à finit son tour, &#8230;), puis l&#8217;affiche. Une fois qu&#8217;il est finit, il passe au suivant. Ainsi, le tour de l&#8217;IA va remplir cette file avec tout un tas d&#8217;évènements très rapidement, puis l&#8217;affichage va les dépiler petit à petit, au fur et à mesure que les animations se jouent.</p>
+
+
+
+<p>Après pas mal d&#8217;adaptations et de corrections, on arrive en fin de semaine à un combat qui fonctionne à peu prêt:</p>
+
+
+
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2025/01/fight-vs-AI.mp4"></video><figcaption class="wp-element-caption"><em>Le coup fatal est étrange, mais l&#8217;IA marche pas trop mal pour un premier jet très basique</em></figcaption></figure>
+
+
+
+<p>Semaine prochaine, je corrige les derniers soucis d&#8217;affichage (première unité du tour grisée, décès des unités de joueur qui ne joue pas d&#8217;animation), puis je passerai à l&#8217;affichage de &#8220;cinématique&#8221;, en gros juste des dialogues entre unités. Une fois que j&#8217;aurai tout ces composants en version basique, je passerai à la construction d&#8217;un premier vrai niveau, beau graphiquement. Ça avance !</p>
+</div>
+		<div class="section section-blog-info">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="entry-categories">Categories:						<span class="label label-primary"><a href="/camelopard/category/devlog/">Devlog</a></span>					</div>
+									</div>
+				
+        <div class="col-md-6">
+            <div class="entry-social">
+                <a target="_blank" rel="tooltip" data-original-title="Share on Facebook" class="btn btn-just-icon btn-round btn-facebook" href="https://www.facebook.com/sharer.php?u=/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512" width="20" height="17"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                </a>
+                
+                <a target="_blank" rel="tooltip" data-original-title="Share on X" class="btn btn-just-icon btn-round btn-twitter" href="https://x.com/share?url=/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/&#038;text=DevLog%20semaine%207%20%E2%80%93%20Ligne%20de%20vue%20et%20IA">
+                   <svg width="20" height="17" viewbox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="#FFFFFF"></path>
+                   </svg>
+
+                </a>
+                
+                <a rel="tooltip" data-original-title=" Share on Email" class="btn btn-just-icon btn-round" href="mailto:?subject=DevLog%20semaine%207%20%26#8211;%20Ligne%20de%20vue%20et%20IA&#038;body=/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" width="20" height="17"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+               </a>
+            </div>
+		</div>			</div>
+			<hr>
+					</div>
+		</div>		</div>
+</article>
+
+		</div>
+	</div>
+</div>
+
+			<div class="section related-posts">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="hestia-title text-center">Related Posts</h2>
+							<div class="row">
+																	<div class="col-md-4">
+										<div class="card card-blog">
+																							<div class="card-image">
+													<a href="/camelopard/devlog-semaine-6-animations-de-combat/" title="DevLog Semaine 6 &#8211; Animations de combat">
+														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/01/devlog6-1-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
+												</div>
+																						<div class="content">
+												<span class="category text-info"><a href="/camelopard/category/devlog/" title="View all posts in Devlog">Devlog</a> </span>
+												<h4 class="card-title">
+													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-6-animations-de-combat/" title="DevLog Semaine 6 &#8211; Animations de combat" rel="bookmark">
+														DevLog Semaine 6 &#8211; Animations de combat													</a>
+												</h4>
+												<p class="card-description">Semaine assez productive. Pour commencer gentiment, je me suis penché pour la première fois sur les modèles 3d. Pour l&#8217;instant j&#8217;utilise des placeholders, des éléments un peu par défaut, le temps que je produise les<a class="moretag" href="/camelopard/devlog-semaine-6-animations-de-combat/"> Read more&hellip;</a></p>
+											</div>
+										</div>
+									</div>
+																	<div class="col-md-4">
+										<div class="card card-blog">
+																							<div class="card-image">
+													<a href="/camelopard/devlog-semaine-5-appliquer-une-competence/" title="DevLog Semaine 5 &#8211; Appliquer une compétence">
+														<img width="360" height="240" src="/camelopard/wp-content/uploads/2024/12/24-12-34-target_hover-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
+												</div>
+																						<div class="content">
+												<span class="category text-info"><a href="/camelopard/category/devlog/" title="View all posts in Devlog">Devlog</a> </span>
+												<h4 class="card-title">
+													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-5-appliquer-une-competence/" title="DevLog Semaine 5 &#8211; Appliquer une compétence" rel="bookmark">
+														DevLog Semaine 5 &#8211; Appliquer une compétence													</a>
+												</h4>
+												<p class="card-description">Pour reprendre tranquillement, j&#8217;ai amélioré un peu la sélection des compétences, pour éviter d&#8217;en sélectionner plusieurs à la fois ou de pouvoir cliquer sur un slot vide. Je n&#8217;y passe pas trop de temps, on<a class="moretag" href="/camelopard/devlog-semaine-5-appliquer-une-competence/"> Read more&hellip;</a></p>
+											</div>
+										</div>
+									</div>
+																	<div class="col-md-4">
+										<div class="card card-blog">
+																							<div class="card-image">
+													<a href="/camelopard/devlog-semaine-4-armes-et-debut-des-competences/" title="DevLog Semaine 4 &#8211; Armes et début des compétences">
+														<img width="360" height="240" src="/camelopard/wp-content/uploads/2024/12/skill-menu-init-360x240.webp" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
+												</div>
+																						<div class="content">
+												<span class="category text-info"><a href="/camelopard/category/devlog/" title="View all posts in Devlog">Devlog</a> </span>
+												<h4 class="card-title">
+													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-4-armes-et-debut-des-competences/" title="DevLog Semaine 4 &#8211; Armes et début des compétences" rel="bookmark">
+														DevLog Semaine 4 &#8211; Armes et début des compétences													</a>
+												</h4>
+												<p class="card-description">Nouvelle semaine, qui s&#8217;est étirée sur plusieurs, ça a été assez chaotique. Petite amélioration avant de commencer à creuser les mécanismes offensifs, pour ajouter une première commande afin de terminer un tour, sans avoir à<a class="moretag" href="/camelopard/devlog-semaine-4-armes-et-debut-des-competences/"> Read more&hellip;</a></p>
+											</div>
+										</div>
+									</div>
+																							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+							<footer class="footer footer-black footer-big">
+						<div class="container">
+																<div class="hestia-bottom-footer-content">
+<ul class="footer-menu pull-left"></ul>
+<div class="copyright pull-right">Hestia | Developed by <a href="https://themeisle.com/" rel="nofollow">ThemeIsle</a>
+</div>
+</div>			</div>
+					</footer>
+			</div>
+
+		<button class="hestia-scroll-to-top">
+			<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512" width="12.5px" height="20px"><path d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z"></path></svg>
+		</button>
+		<script type="text/javascript" src="/camelopard/wp-includes/js/comment-reply.min.js?ver=6.7.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="/camelopard/wp-content/themes/hestia/assets/bootstrap/js/bootstrap.min.js?ver=1.0.2" id="jquery-bootstrap-js"></script>
+<script type="text/javascript" src="/camelopard/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="hestia_scripts-js-extra">
+/* <![CDATA[ */
+var requestpost = {"ajaxurl":"\/camelopard\/wp-admin\/admin-ajax.php","disable_autoslide":"","masonry":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/camelopard/wp-content/themes/hestia/assets/js/script.min.js?ver=3.2.7" id="hestia_scripts-js"></script>
+<script type="text/javascript" src="/camelopard/wp-content/plugins/highlighting-code-block/assets/js/prism.js?ver=2.0.1" id="hcb-prism-js"></script>
+<script type="text/javascript" src="/camelopard/wp-includes/js/clipboard.min.js?ver=2.0.11" id="clipboard-js"></script>
+<script type="text/javascript" id="hcb-script-js-extra">
+/* <![CDATA[ */
+var hcbVars = {"showCopyBtn":"1","copyBtnLabel":"Copy code to clipboard"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/camelopard/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1" id="hcb-script-js"></script>
+</body>
+</html>

@@ -46,6 +46,8 @@ body,ul,.tooltip-inner{font-family:Roboto}
 @media(min-width:769px){.page-header.header-small .hestia-title,.page-header.header-small .title,h1.hestia-title.title-in-content,.main article.section .has-title-font-size{font-size:42px}}</style>
 <link rel="stylesheet" id="hestia_fonts-css" href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CRoboto+Slab%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=3.2.7" type="text/css" media="all">
 <link rel="stylesheet" id="hestia-google-font-roboto-css" href="//fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700&#038;subset=latin&#038;ver=6.7.1" type="text/css" media="all">
+<link rel="stylesheet" id="hcb-style-css" href="/camelopard/wp-content/plugins/highlighting-code-block/build/css/hcb--light.css?ver=2.0.1" type="text/css" media="all">
+<style id="hcb-style-inline-css" type="text/css">:root{--hcb--fz--base: 14px}:root{--hcb--fz--mobile: 13px}:root{--hcb--ff:Menlo, Consolas, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;}</style>
 <script type="text/javascript" src="/camelopard/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script type="text/javascript" src="/camelopard/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="/camelopard/wp-json/">
@@ -96,14 +98,24 @@ body,ul,.tooltip-inner{font-family:Roboto}
 		<div class="container">
 			<div class="row">
 								<div class="col-md-10 col-md-offset-1 blog-posts-wrap">
-					<article id="post-107" class="card card-blog card-plain post-107 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
-<div class="col-ms-5 col-sm-5"><div class="card-image"><a href="/camelopard/devlog-semaine-6-animations-de-combat/" title="Devlog Semaine 6 &#8211; Animations de combat"><img width="360" height="240" src="/camelopard/wp-content/uploads/2025/01/devlog6-1-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" fetchpriority="high"></a></div></div>
+					<article id="post-223" class="card card-blog card-plain post-223 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
+<div class="col-ms-5 col-sm-5"><div class="card-image"><a href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/" title="DevLog semaine 7 &#8211; Ligne de vue et IA"><img width="360" height="240" src="/camelopard/wp-content/uploads/2025/01/interactions-couches-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" fetchpriority="high"></a></div></div>
 <div class="col-ms-7 col-sm-7">
-<span class="category text-info"><a href="/camelopard/category/devlog/" title="View all posts in Devlog" rel="tag">Devlog</a> </span><h2 class="card-title entry-title"><a href="/camelopard/devlog-semaine-6-animations-de-combat/" title="Devlog Semaine 6 &#8211; Animations de combat" rel="bookmark">Devlog Semaine 6 &#8211; Animations de combat</a></h2>
+<span class="category text-info"><a href="/camelopard/category/devlog/" title="View all posts in Devlog" rel="tag">Devlog</a> </span><h2 class="card-title entry-title"><a href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/" title="DevLog semaine 7 &#8211; Ligne de vue et IA" rel="bookmark">DevLog semaine 7 &#8211; Ligne de vue et IA</a></h2>
+<div class="card-description entry-summary ">
+<p>Pour commencer la semaine, je reprend un tâche que j&#8217;avais mise de côté durant la semaine 5, à savoir le calcul des lignes de vue. Une fois n&#8217;est pas coutume, comme c&#8217;est quelque chose d&#8217;assez visuel, je vais vous expliquer pas à pas le fonctionnement de ces calculs. Je me<a class="moretag" href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/"> Read more&hellip;</a></p>
+</div>
+<div class="posted-by vcard author">By <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, <a href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/"><time class="entry-date published" datetime="2025-01-18T11:48:34+00:00" content="2025-01-18">3 minutes</time><time class="updated hestia-hidden" datetime="2025-01-18T11:50:05+00:00">January 18, 2025</time> ago </a>
+</div>
+</div>
+</div></article><article id="post-107" class="card card-blog card-plain post-107 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
+<div class="col-ms-5 col-sm-5"><div class="card-image"><a href="/camelopard/devlog-semaine-6-animations-de-combat/" title="DevLog Semaine 6 &#8211; Animations de combat"><img width="360" height="240" src="/camelopard/wp-content/uploads/2025/01/devlog6-1-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy"></a></div></div>
+<div class="col-ms-7 col-sm-7">
+<span class="category text-info"><a href="/camelopard/category/devlog/" title="View all posts in Devlog" rel="tag">Devlog</a> </span><h2 class="card-title entry-title"><a href="/camelopard/devlog-semaine-6-animations-de-combat/" title="DevLog Semaine 6 &#8211; Animations de combat" rel="bookmark">DevLog Semaine 6 &#8211; Animations de combat</a></h2>
 <div class="card-description entry-summary ">
 <p>Semaine assez productive. Pour commencer gentiment, je me suis penché pour la première fois sur les modèles 3d. Pour l&#8217;instant j&#8217;utilise des placeholders, des éléments un peu par défaut, le temps que je produise les vrai visuels du jeu. Néanmoins, j&#8217;essaie de prendre des objets qui ressemblent à ce que<a class="moretag" href="/camelopard/devlog-semaine-6-animations-de-combat/"> Read more&hellip;</a></p>
 </div>
-<div class="posted-by vcard author">By <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, <a href="/camelopard/devlog-semaine-6-animations-de-combat/"><time class="entry-date published" datetime="2025-01-10T18:10:56+00:00" content="2025-01-10">2 days</time><time class="updated hestia-hidden" datetime="2025-01-11T16:25:55+00:00">January 10, 2025</time> ago </a>
+<div class="posted-by vcard author">By <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, <a href="/camelopard/devlog-semaine-6-animations-de-combat/"><time class="entry-date published" datetime="2025-01-10T18:10:56+00:00" content="2025-01-10">1 week</time><time class="updated hestia-hidden" datetime="2025-01-13T08:37:25+00:00">January 10, 2025</time> ago </a>
 </div>
 </div>
 </div></article><article id="post-95" class="card card-blog card-plain post-95 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
@@ -113,7 +125,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 <div class="card-description entry-summary ">
 <p>Pour reprendre tranquillement, j&#8217;ai amélioré un peu la sélection des compétences, pour éviter d&#8217;en sélectionner plusieurs à la fois ou de pouvoir cliquer sur un slot vide. Je n&#8217;y passe pas trop de temps, on est loin d&#8217;avoir l&#8217;interface finale. Cette semaine aura été assez peu visuelle, avec surtout beaucoup<a class="moretag" href="/camelopard/devlog-semaine-5-appliquer-une-competence/"> Read more&hellip;</a></p>
 </div>
-<div class="posted-by vcard author">By <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, <a href="/camelopard/devlog-semaine-5-appliquer-une-competence/"><time class="entry-date published" datetime="2025-01-04T17:59:34+00:00" content="2025-01-04">1 week</time><time class="updated hestia-hidden" datetime="2025-01-11T16:23:21+00:00">January 4, 2025</time> ago </a>
+<div class="posted-by vcard author">By <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, <a href="/camelopard/devlog-semaine-5-appliquer-une-competence/"><time class="entry-date published" datetime="2025-01-04T17:59:34+00:00" content="2025-01-04">2 weeks</time><time class="updated hestia-hidden" datetime="2025-01-11T16:23:21+00:00">January 4, 2025</time> ago </a>
 </div>
 </div>
 </div></article><article id="post-11" class="card card-blog card-plain post-11 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
@@ -123,7 +135,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 <div class="card-description entry-summary ">
 <p>Nouvelle semaine, qui s&#8217;est étirée sur plusieurs, ça a été assez chaotique. Petite amélioration avant de commencer à creuser les mécanismes offensifs, pour ajouter une première commande afin de terminer un tour, sans avoir à dépenser l&#8217;ensemble des points de mouvements. Ça m&#8217;a permis de creuser le fonctionnement du Enhanced<a class="moretag" href="/camelopard/devlog-semaine-4-armes-et-debut-des-competences/"> Read more&hellip;</a></p>
 </div>
-<div class="posted-by vcard author">By <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, <a href="/camelopard/devlog-semaine-4-armes-et-debut-des-competences/"><time class="entry-date published" datetime="2024-12-21T10:23:00+00:00" content="2024-12-21">3 weeks</time><time class="updated hestia-hidden" datetime="2025-01-11T16:21:30+00:00">December 21, 2024</time> ago </a>
+<div class="posted-by vcard author">By <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, <a href="/camelopard/devlog-semaine-4-armes-et-debut-des-competences/"><time class="entry-date published" datetime="2024-12-21T10:23:00+00:00" content="2024-12-21">4 weeks</time><time class="updated hestia-hidden" datetime="2025-01-11T16:21:30+00:00">December 21, 2024</time> ago </a>
 </div>
 </div>
 </div></article><article id="post-12" class="card card-blog card-plain post-12 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
@@ -164,10 +176,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 					<footer class="footer footer-black footer-big">
 						<div class="container">
 																<div class="hestia-bottom-footer-content">
-<ul class="footer-menu pull-left">
-<li class="page_item page-item-8"><a href="/camelopard/page-d-exemple/">Page d’exemple</a></li>
-<li class="page_item page-item-2"><a href="/camelopard/sample-page/">Sample Page</a></li>
-</ul>
+<ul class="footer-menu pull-left"></ul>
 <div class="copyright pull-right">Hestia | Developed by <a href="https://themeisle.com/" rel="nofollow">ThemeIsle</a>
 </div>
 </div>			</div>
@@ -185,5 +194,13 @@ var requestpost = {"ajaxurl":"\/camelopard\/wp-admin\/admin-ajax.php","disable_a
 /* ]]> */
 </script>
 <script type="text/javascript" src="/camelopard/wp-content/themes/hestia/assets/js/script.min.js?ver=3.2.7" id="hestia_scripts-js"></script>
+<script type="text/javascript" src="/camelopard/wp-content/plugins/highlighting-code-block/assets/js/prism.js?ver=2.0.1" id="hcb-prism-js"></script>
+<script type="text/javascript" src="/camelopard/wp-includes/js/clipboard.min.js?ver=2.0.11" id="clipboard-js"></script>
+<script type="text/javascript" id="hcb-script-js-extra">
+/* <![CDATA[ */
+var hcbVars = {"showCopyBtn":"1","copyBtnLabel":"Copy code to clipboard"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/camelopard/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1" id="hcb-script-js"></script>
 </body>
 </html>
