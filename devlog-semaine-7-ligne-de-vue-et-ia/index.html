@@ -97,7 +97,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 <div id="primary" class="boxed-layout-header page-header header-small" data-parallax="active">
 <div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center">
 <h1 class="hestia-title entry-title">DevLog semaine 7 &#8211; Ligne de vue et IA</h1>
-<h4 class="author">Published by <a href="/camelopard/author/nbarlogis/" class="vcard author"><strong class="fn">nbarlogis</strong></a> on <time class="entry-date published" datetime="2025-01-18T11:48:34+00:00" content="2025-01-18">January 18, 2025</time><time class="updated hestia-hidden" datetime="2025-01-18T11:50:05+00:00">January 18, 2025</time>
+<h4 class="author">Published by <a href="/camelopard/author/nbarlogis/" class="vcard author"><strong class="fn">nbarlogis</strong></a> on <time class="entry-date published" datetime="2025-01-18T11:48:34+00:00" content="2025-01-18">January 18, 2025</time><time class="updated hestia-hidden" datetime="2025-01-18T12:13:38+00:00">January 18, 2025</time>
 </h4>
 </div></div></div>
 <div class="header-filter" style="background-image: url(/camelopard/wp-content/uploads/2025/01/cropped-test2-detourre-colore.png);"></div>
@@ -110,7 +110,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 				<div class="col-md-8 single-post-container col-md-offset-2" data-layout="full-width">
 
 			<div class="single-post-wrap entry-content">
-<p>Pour commencer la semaine, je reprend un tâche que j&#8217;avais mise de côté durant la semaine 5, à savoir le calcul des lignes de vue. Une fois n&#8217;est pas coutume, comme c&#8217;est quelque chose d&#8217;assez visuel, je vais vous expliquer pas à pas le fonctionnement de ces calculs. Je me dis que ça peut être intéressant pour ceux qui ne connaissent pas de voir un peu le schéma de pensé d&#8217;un développeur. Enfin du mien au moins. Et qui sait, ça aidera peut être même un autre dév qui fait face au même problème.</p>
+<p>Pour commencer la semaine, je reprend un tâche que j&#8217;avais mise de côté durant la semaine 5, à savoir le calcul des lignes de vue. Une fois n&#8217;est pas coutume, comme c&#8217;est quelque chose d&#8217;assez visuel, je vais vous expliquer pas à pas le fonctionnement de ces calculs. Je me dis que ça peut être intéressant pour ceux qui ne connaissent pas de voir un peu le schéma de pensée d&#8217;un développeur. Enfin du mien au moins. Et qui sait, ça aidera peut être même un autre dév qui fait face au même problème.</p>
 
 
 
@@ -118,7 +118,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>Avant toute chose, je défini une petite map simple qui me permettra facilement de voir si mes calculs fonctionnent ou non. Des tests unitaires font la même chose, mais c&#8217;est moins sympa pour illustrer un article.</p>
+<p>Avant toute chose, je définis une petite map simple qui me permettra facilement de voir si mes calculs fonctionnent ou non. Des tests unitaires font la même chose, mais c&#8217;est moins sympa pour illustrer un article.</p>
 
 
 <div class="wp-block-image">
@@ -142,7 +142,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 </div>
 
 
-<p>Une solution simple, lors de la visée, serait de lister les ennemis, puis tester pour chacun d&#8217;eux de tracer la ligne et de voir si ils sont accessibles, en prenant aussi en compte la notion de portée des armes/compétences.  Le problème de cette solution, c&#8217;est que ça ne permet pas de mettre un aperçu de la portée des attaques, ce que je souhaiterais faire, pas uniquement afficher les unités atteignables comme actuellement.</p>
+<p>Une solution simple, lors de la visée, serait de lister les ennemis, puis tester pour chacun d&#8217;eux de tracer la ligne et de voir s&#8217;ils sont accessibles, en prenant aussi en compte la notion de portée des armes/compétences. Le problème de cette solution, c&#8217;est que ça ne permet pas de mettre un aperçu de la portée des attaques, ce que je souhaiterais faire, pas uniquement afficher les unités atteignables comme actuellement.</p>
 
 
 <div class="wp-block-image">
@@ -154,7 +154,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>Première étape, lister la liste des cases potentiellement visibles, tracer le carré autour de l&#8217;unité, selon la portée de la compétence utilisée. Un simple algorithme, qui commence par la case la plus haute, puis descends ligne par ligne, permet de faire ça:</p>
+<p>Première étape, lister les cases potentiellement visibles, tracer le carré autour de l&#8217;unité, selon la portée de la compétence utilisée. Un simple algorithme, qui commence par la case la plus haute, puis descends ligne par ligne, permet de faire ça:</p>
 
 
 <div class="wp-block-image">
@@ -186,11 +186,11 @@ body,ul,.tooltip-inner{font-family:Roboto}
 </div>
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="196" height="185" src="/camelopard/wp-content/uploads/2025/01/image-15.png" alt="" class="wp-image-239" style="width:270px;height:auto"><figcaption class="wp-element-caption"><em>portée min: 0 case</em></figcaption></figure>
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="196" height="185" src="/camelopard/wp-content/uploads/2025/01/image-15.png" alt="" class="wp-image-239" style="width:270px;height:auto"><figcaption class="wp-element-caption">P<em>ortée min: 0 case</em></figcaption></figure>
 </div>
 
 
-<p>Maintenant que j&#8217;ai cette base, vient le moment de déterminer, parmi ces cases potentiellement visibles, lesquelles le sont vraiment. À nouveau, je pourrai juste faire Bresenham + ray casting sur toutes ces cases.  Des gens bien plus intelligents que moi ont déjà trouvé des <a href="https://williame.github.io/post/13269950091.html" data-type="link" data-id="https://williame.github.io/post/13269950091.html">méthodes bien plus efficaces</a> pour ne pas avoir à le faire de façon aussi brute. Mais comme j&#8217;aime bien expérimenté et apprendre, et que même la solution de faire tous les calculs ne serait probablement pas vraiment un problème niveau performance, je préfère m&#8217;essayer moi même à un petit algo plus efficace.</p>
+<p>Maintenant que j&#8217;ai cette base, vient le moment de déterminer, parmi ces cases potentiellement visibles, lesquelles le sont vraiment. À nouveau, je pourrai juste faire Bresenham + ray casting sur toutes ces cases. Des gens bien plus intelligents que moi ont déjà trouvé des <a href="https://williame.github.io/post/13269950091.html" data-type="link" data-id="https://williame.github.io/post/13269950091.html">méthodes bien plus efficaces</a> pour ne pas avoir à le faire de façon aussi brute. Mais comme j&#8217;aime bien expérimenter et apprendre, et que même la solution de faire tous les calculs ne serait probablement pas vraiment un problème niveau performance, je préfère m&#8217;essayer moi même à un petit algo plus efficace.</p>
 
 
 
@@ -210,7 +210,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 </div>
 
 
-<p>Autre point un peu similaire où l&#8217;on peut faire des éliminations simples, c&#8217;est sur les diagonales. Un obstacles sur une diagonale bloque les cases derrière elle:</p>
+<p>Autre point un peu similaire où l&#8217;on peut faire des éliminations simples, c&#8217;est sur les diagonales. Un obstacle sur une diagonale bloque les cases derrière elle:</p>
 
 
 <div class="wp-block-image">
@@ -250,11 +250,11 @@ body,ul,.tooltip-inner{font-family:Roboto}
 </div>
 
 
-<p>Dans ce cas particulier, c&#8217;est presque résultat attendu. Néanmoins l&#8217;algo ne couvre pas en l&#8217;état tous les cas de figures. Si un obstacle n&#8217;est ni dans les diagonales, ni dans la croix central, sont effet n&#8217;est pas prit en compte. Il y a surement moyen d&#8217;affiner encore les patterns précédents, mais ça devient moins évident.</p>
+<p>Dans ce cas particulier, c&#8217;est presque résultat attendu. Néanmoins l&#8217;algo ne couvre pas en l&#8217;état tous les cas de figures. Si un obstacle n&#8217;est ni dans les diagonales, ni dans la croix centrale, son effet n&#8217;est pas pris en compte. Il y a surement moyen d&#8217;affiner encore les patterns précédents, mais ça devient moins évident.</p>
 
 
 
-<p>Du coup, sur cet échantillon restreint, on va maintenant faire la technique brute et vérifier pour toutes ces cases si on peut les cibler. J&#8217;implémente donc un Bresenham généralisé (le code est à la fin) et je fais passer toutes les cases restantes dans une moulinette validant si rien n&#8217;empêche la vision dans la ligne. Et miracle, ça marche</p>
+<p>Du coup, sur cet échantillon restreint, on va maintenant faire la technique brute et vérifier pour toutes ces cases si on peut les cibler. J&#8217;implémente donc un Bresenham généralisé (le code est à la fin) et je fais passer toutes les cases restantes dans une moulinette validant si rien n&#8217;empêche la vision dans la ligne. Et miracle, ça marche!</p>
 
 
 <div class="wp-block-image">
@@ -266,7 +266,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 </div>
 
 
-<p>Pour me convaincre que ça marche, je désactive les optimisations avec les lignes et les diagonales, pour tout calculer avec Bresenham. Et j&#8217;obtient un résultat légèrement différent, le long des diagonales.</p>
+<p>Pour me convaincre que ça marche, je désactive les optimisations avec les lignes et les diagonales, pour tout calculer avec Bresenham. Et j&#8217;obtiens un résultat légèrement différent, le long des diagonales.</p>
 
 
 <div class="wp-block-image">
@@ -274,7 +274,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 </div>
 
 
-<p>Si on regarde la ligne trace par Bresenham, effectivement ces cases sont visibles.</p>
+<p>Si on regarde la ligne tracée par Bresenham, effectivement ces cases sont visibles.</p>
 
 
 <div class="wp-block-image">
@@ -286,11 +286,11 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>Dans tous les cas, je suis satisfait avec ma version actuelle, qui réduit un peu les calculs par rapport à la solution brute force. Il y aurait pleins d&#8217;autres améliorations à faire (calculer la ligne vers un des points les plus éloigner, et ne pas recalculer pour les autres points de la ligne, d&#8217;autres formes géométriques que j&#8217;ai raté, &#8230;), mais je verrai ça au besoin, si les perfs sont problématiques.</p>
+<p>Dans tous les cas, je suis satisfait avec ma version actuelle, qui réduit un peu les calculs par rapport à la solution brute force. Il y aurait pleins d&#8217;autres améliorations à faire (calculer la ligne vers un des points les plus éloignés, et ne pas recalculer pour les autres points de la ligne, d&#8217;autres formes géométriques que j&#8217;ai raté, &#8230;), mais je verrai ça au besoin, si les perfs sont problématiques.</p>
 
 
 
-<p>D&#8217;autres modifications pourrait également venir, la méthode des carrés à l&#8217;air problématiques à longue portée.</p>
+<p>D&#8217;autres modifications pourraient également venir, la méthode des carrés a l&#8217;air problématique à longue portée.</p>
 
 
 
@@ -498,11 +498,7 @@ TArray&lt;FStruct_Position&gt; UClass_Grid::GetLine(FStruct_Position start, FStr
 
 
 
-<p>mardi 14/01: affichage de la portée d&#8217;une compétence, refacto passage gestion du mouvement côté engine, avec affichage observateur, début IA (interfaces choix cible et compétence)</p>
-
-
-
-<p>Après avoir retouché le calcul de la ligne de vue pour utiliser systématiquement Bresenham systématiquement, en attendant de remettre de meilleures optimisations, j&#8217;ai enchainé sur l&#8217;affichage de la porté des compétences, pour ne pas juste montrer  les cases où la compétence peut être utilisée, mais aussi celles qui sont à portée, mais si aucune unité ennemie ne s&#8217;y trouve.</p>
+<p>Après avoir retouché le calcul de la ligne de vue pour utiliser systématiquement Bresenham, en attendant de remettre de meilleures optimisations, j&#8217;ai enchainé sur l&#8217;affichage de la portée des compétences, pour ne pas juste montrer les cases où la compétence peut être utilisée, mais aussi celles qui sont à portée, mais si aucune unité ennemie ne s&#8217;y trouve.</p>
 
 
 <div class="wp-block-image">
@@ -510,11 +506,7 @@ TArray&lt;FStruct_Position&gt; UClass_Grid::GetLine(FStruct_Position start, FStr
 </div>
 
 
-<p>J&#8217;ai ensuite commencé la reprise de tout ce qui est gestion d&#8217;affichage des actions (déplacement ,attaque, &#8230;)</p>
-
-
-
-<p>J&#8217;ai en gros 3 composants dans mon jeu:</p>
+<p>J&#8217;ai ensuite commencé la reprise de tout ce qui est gestion d&#8217;affichage des actions (déplacement ,attaque, &#8230;). J&#8217;ai en gros 3 composants dans mon jeu:</p>
 
 
 
@@ -535,11 +527,11 @@ TArray&lt;FStruct_Position&gt; UClass_Grid::GetLine(FStruct_Position start, FStr
 
 
 
-<p>Actuellement, comme j&#8217;ai construit le système de façon un empirique, en fonction des besoins, certaines remontées du moteur se font via l&#8217;input pour l&#8217;affichage, à certains endroit le display va interroger le moteur pour savoir ce qui s&#8217;est passé, et à d&#8217;autres le moteur renvoi un événement au display pour lui dire que quelque chose est arrivé.</p>
+<p>Actuellement, comme j&#8217;ai construit le système de façon empirique, en fonction des besoins, certaines remontées du moteur se font via l&#8217;input pour l&#8217;affichage, à certains endroit le display va interroger le moteur pour savoir ce qui s&#8217;est passé, et à d&#8217;autres le moteur renvoi un événement au display pour lui dire que quelque chose est arrivé.</p>
 
 
 
-<p>Cette division en 3 couches était voulue dès le départ, mais les modes d&#8217;échanges entre eux pas forcément très clairs / strict. Ce qui risque à terme de rendre le code très fouillis, et dans l&#8217;immédiat compliquer l&#8217;implémentation de l&#8217;IA et l&#8217;affichage de ses actions.</p>
+<p>Cette division en 3 couches était voulue dès le départ, mais les modes d&#8217;échanges entre eux ne sont pas forcément très clairs / stricts. Ce qui risque à terme de rendre le code très fouillis, et dans l&#8217;immédiat de compliquer l&#8217;implémentation de l&#8217;IA et l&#8217;affichage de ses actions.</p>
 
 
 
@@ -565,11 +557,11 @@ TArray&lt;FStruct_Position&gt; UClass_Grid::GetLine(FStruct_Position start, FStr
 
 
 
-<p>Ainsi, peut importe depuis quel input les actions proviennent, le display affichera tous ce qui se passe dans le moteur de jeu, et je garde aussi une séparation des responsabilités entre mes couches (ça c&#8217;est un peu d&#8217;architecture logiciel).</p>
+<p>Ainsi, peu importe depuis quel input les actions proviennent, le display affichera tout ce qui se passe dans le moteur de jeu, et je garde aussi une séparation des responsabilités entre mes couches (ça c&#8217;est un peu d&#8217;architecture logicielle).</p>
 
 
 
-<p>J&#8217;enchaîne donc sur l&#8217;IA. Je commence en tâtonnant un peu, j&#8217;essaie notamment de résoudre le problème de l&#8217;ordre de décision. Je choisi d&#8217;abord une compétence puis j&#8217;essaie de voir qui je peux toucher avec, ou je commence par choisir une cible puis je vois ce que je peux lui faire ?</p>
+<p>J&#8217;enchaîne donc sur l&#8217;IA. Je commence en tâtonnant un peu, j&#8217;essaie notamment de résoudre le problème de l&#8217;ordre de décision. Je choisis d&#8217;abord une compétence puis j&#8217;essaie de voir qui je peux toucher avec, ou je commence par choisir une cible puis je vois ce que je peux lui faire ?</p>
 
 
 
@@ -581,7 +573,7 @@ TArray&lt;FStruct_Position&gt; UClass_Grid::GetLine(FStruct_Position start, FStr
 
 
 
-<p>Pour faire simple, je calcule la portée de la compétence de l&#8217;attaquant, ce qui me donne un ensemble de cases. Ensuite, je calcul la portée de déplacement de l&#8217;unité attaquante, mais pas à partir de sa position, à partir de la position de l&#8217;ennemi qu&#8217;elle cible. J&#8217;obtient un autre ensemble de cases. <br>Si j&#8217;ai des cases qui se retrouvent dans les deux ensembles (leur intersection en terme mathématique), alors je sais que l&#8217;unité peut attaquer l&#8217;unité qu&#8217;elle vise, avec la compétence choisie, il faut juste qu&#8217;elle se déplace sur une des cases de l&#8217;intersection. </p>
+<p>Pour faire simple, je calcule la portée de la compétence de l&#8217;attaquant, ce qui me donne un ensemble de cases. Ensuite, je calcule la portée de déplacement de l&#8217;unité attaquante, mais pas à partir de sa position, à partir de la position de l&#8217;ennemi qu&#8217;elle cible. J&#8217;obtiens un autre ensemble de cases. <br>Si j&#8217;ai des cases qui se retrouvent dans les deux ensembles (leur intersection en terme mathématique), alors je sais que l&#8217;unité peut attaquer l&#8217;unité qu&#8217;elle vise, avec la compétence choisie, il faut juste qu&#8217;elle se déplace sur une des cases de l&#8217;intersection.</p>
 
 
 <div class="wp-block-image">
@@ -593,11 +585,11 @@ TArray&lt;FStruct_Position&gt; UClass_Grid::GetLine(FStruct_Position start, FStr
 
 
 
-<p>En effet, lorsque le joueur faisait les actions, j&#8217;avais un délai entre deux évènements à afficher. Or maintenant, l&#8217;IA prend joue le tour d&#8217;une unité en une fraction de seconde, donc les évènements de déplacement, d&#8217;attaque et de fin de tour de toutes les unités ennemis arrivent quasiment en même temps. Donc tout s&#8217;affiche en même temps.</p>
+<p>En effet, lorsque le joueur faisait les actions, j&#8217;avais un délai entre deux évènements à afficher. Or maintenant, l&#8217;IA joue le tour d&#8217;une unité en une fraction de seconde, donc les évènements de déplacement, d&#8217;attaque et de fin de tour de toutes les unités ennemis arrivent quasiment en même temps. Donc tout s&#8217;affiche aussi en même temps.</p>
 
 
 
-<p>J&#8217;attaque donc un nouveau chantier, pour faire que l&#8217;affichage gère une file d&#8217;évènements.<br>À chaque instant, le display prend le premier évènement de la file (une attaque a été faite, un déplacement, une unité à finit son tour, &#8230;), puis l&#8217;affiche. Une fois qu&#8217;il est finit, il passe au suivant. Ainsi, le tour de l&#8217;IA va remplir cette file avec tout un tas d&#8217;évènements très rapidement, puis l&#8217;affichage va les dépiler petit à petit, au fur et à mesure que les animations se jouent.</p>
+<p>J&#8217;attaque alors un nouveau chantier, pour faire que l&#8217;affichage gère une file d&#8217;évènements.<br>À chaque instant, le display prend le premier évènement de la file (une attaque a été faite, un déplacement, une unité à finit son tour, &#8230;), puis l&#8217;affiche. Une fois qu&#8217;il est finit, il passe au suivant. Ainsi, le tour de l&#8217;IA va remplir cette file avec tout un tas d&#8217;évènements très rapidement, puis l&#8217;affichage va les dépiler petit à petit, au fur et à mesure que les animations se jouent.</p>
 
 
 
