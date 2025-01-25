@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="fr-FR">
 
 <head>
 	<meta charset="UTF-8">
@@ -10,9 +10,9 @@
 <meta name="robots" content="max-image-preview:large">
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Feed" href="/camelopard/feed/">
-<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Comments Feed" href="/camelopard/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; DevLog Semaine 2 &#8211; Gestion des tours Comments Feed" href="/camelopard/devlog-semaine-2-gestion-des-tours/feed/">
+<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Flux" href="/camelopard/feed/">
+<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Flux des commentaires" href="/camelopard/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; DevLog Semaine 2 &#8211; Gestion des tours Flux des commentaires" href="/camelopard/devlog-semaine-2-gestion-des-tours/feed/">
 <script type="text/javascript">
 /* <![CDATA[ */
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/camelopard\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
@@ -97,7 +97,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 <div id="primary" class="boxed-layout-header page-header header-small" data-parallax="active">
 <div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center">
 <h1 class="hestia-title entry-title">DevLog Semaine 2 &#8211; Gestion des tours</h1>
-<h4 class="author">Published by <a href="/camelopard/author/nbarlogis/" class="vcard author"><strong class="fn">nbarlogis</strong></a> on <time class="entry-date published" datetime="2024-11-15T17:45:00+00:00" content="2024-11-15">November 15, 2024</time><time class="updated hestia-hidden" datetime="2025-01-11T10:33:35+00:00">November 15, 2024</time>
+<h4 class="author">Published by <a href="/camelopard/author/nbarlogis/" class="vcard author"><strong class="fn">nbarlogis</strong></a> on <time class="entry-date published" datetime="2024-11-15T17:45:00+01:00" content="2024-11-15">novembre 15, 2024</time><time class="updated hestia-hidden" datetime="2025-01-11T10:33:35+01:00">novembre 15, 2024</time>
 </h4>
 </div></div></div>
 <div class="header-filter" style="background-image: url(/camelopard/wp-content/uploads/2025/01/cropped-test2-detourre-colore.png);"></div>
@@ -110,7 +110,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 				<div class="col-md-8 single-post-container col-md-offset-2" data-layout="full-width">
 
 			<div class="single-post-wrap entry-content">
-<p>Pour cette deuxième semaine, je continue sur la lancée des travaux précédents, à savoir la génération des niveaux à partir de descriptifs de texte. Au fur et à mesure de l&#8217;implémentation du chargement de ces fichiers, j&#8217;affine ma réflexion sur les éléments dont j&#8217;ai besoin, et je termine avec deux fichiers nécessaires:</p>
+<p>Pour cette deuxième semaine, je continue sur la lancée des travaux précédents, à savoir la génération des niveaux à partir de descriptifs de texte. Au fur et à mesure de l&rsquo;implémentation du chargement de ces fichiers, j&rsquo;affine ma réflexion sur les éléments dont j&rsquo;ai besoin, et je termine avec deux fichiers nécessaires:</p>
 
 
 
@@ -122,7 +122,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 </div>
 
 
-<p>On notera aussi l&#8217;apparition&nbsp; d&#8217;une dernière section, qui précise les cases sur lesquelles le joueur pourra placer ses unités en début de partie. Un grand classique des jeux de combat tactique (ici dans Fire Emblem: Path of Radiance):</p>
+<p>On notera aussi l&rsquo;apparition&nbsp; d&rsquo;une dernière section, qui précise les cases sur lesquelles le joueur pourra placer ses unités en début de partie. Un grand classique des jeux de combat tactique (ici dans Fire Emblem: Path of Radiance):</p>
 
 
 
@@ -130,19 +130,19 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p><strong>2. le fichier qui décrit l&#8217;actuelle équipe du joueur.</strong></p>
+<p><strong>2. le fichier qui décrit l&rsquo;actuelle équipe du joueur.</strong></p>
 
 
 
-<p>Elle est séparée car ne sera pas statique. Elle ne sera probablement pas dans un fichier à terme, mais c&#8217;est bien pour commencer, et je peux réutiliser la même logique que j&#8217;ai déjà codé donc c&#8217;est tout bénef</p>
+<p>Elle est séparée car ne sera pas statique. Elle ne sera probablement pas dans un fichier à terme, mais c&rsquo;est bien pour commencer, et je peux réutiliser la même logique que j&rsquo;ai déjà codé donc c&rsquo;est tout bénef</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img decoding="async" width="354" height="307" src="/camelopard/wp-content/uploads/2024/12/player-team-descriptor.webp" alt="" class="wp-image-158" srcset="/camelopard/wp-content/uploads/2024/12/player-team-descriptor.webp 354w, /camelopard/wp-content/uploads/2024/12/player-team-descriptor-300x260.webp 300w" sizes="(max-width: 354px) 100vw, 354px"><figcaption class="wp-element-caption"><em>Le fichier de description de l&#8217;équipe du joueur</em></figcaption></figure>
+<figure class="aligncenter size-full"><img decoding="async" width="354" height="307" src="/camelopard/wp-content/uploads/2024/12/player-team-descriptor.webp" alt="" class="wp-image-158" srcset="/camelopard/wp-content/uploads/2024/12/player-team-descriptor.webp 354w, /camelopard/wp-content/uploads/2024/12/player-team-descriptor-300x260.webp 300w" sizes="(max-width: 354px) 100vw, 354px"><figcaption class="wp-element-caption"><em>Le fichier de description de l&rsquo;équipe du joueur</em></figcaption></figure>
 </div>
 
 
-<p>Après m&#8217;être bien battu avec Unreal Engine pour lire les fichiers (problème de packaging et d&#8217;accès aux ressources, pas forcément très intéressant a raconter), j&#8217;ai finalement bien la structure complète de mon niveau.</p>
+<p>Après m&rsquo;être bien battu avec Unreal Engine pour lire les fichiers (problème de packaging et d&rsquo;accès aux ressources, pas forcément très intéressant a raconter), j&rsquo;ai finalement bien la structure complète de mon niveau.</p>
 
 
 
@@ -150,27 +150,27 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>Petit aparté sur les stats. Plutôt que de mettre en dur la quantité de point de vie et de points de mouvement que possède une unité, j&#8217;ai directement été faire quelque chose qui s&#8217;approche plus du système final, où les attributs d&#8217;une unité dépendront principalement de ses statistiques.&nbsp;</p>
+<p>Petit aparté sur les stats. Plutôt que de mettre en dur la quantité de point de vie et de points de mouvement que possède une unité, j&rsquo;ai directement été faire quelque chose qui s&rsquo;approche plus du système final, où les attributs d&rsquo;une unité dépendront principalement de ses statistiques.&nbsp;</p>
 
 
 
-<p>La force influencera les attaques au corps à corps, la précision celles à distance, la constitution détermine les points de vie et la vitesse les points de mouvement. Donc actuellement, je calcule les points de vie et de mouvement d&#8217;une unité à partir de sa constitution&nbsp;et de sa vitesse.</p>
+<p>La force influencera les attaques au corps à corps, la précision celles à distance, la constitution détermine les points de vie et la vitesse les points de mouvement. Donc actuellement, je calcule les points de vie et de mouvement d&rsquo;une unité à partir de sa constitution&nbsp;et de sa vitesse.</p>
 
 
 
-<p>A priori, je n&#8217;aurai pas besoin d&#8217;autre chose, j&#8217;aimerais éviter de trop compliquer le système. Exemple parmi tant d&#8217;autres, Final Fantasy 7, qui a 13 stats différentes:</p>
+<p>A priori, je n&rsquo;aurai pas besoin d&rsquo;autre chose, j&rsquo;aimerais éviter de trop compliquer le système. Exemple parmi tant d&rsquo;autres, Final Fantasy 7, qui a 13 stats différentes:</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img decoding="async" width="640" height="480" src="/camelopard/wp-content/uploads/2024/12/ff7-stats.webp" alt="" class="wp-image-138" style="width:497px;height:373px" srcset="/camelopard/wp-content/uploads/2024/12/ff7-stats.webp 640w, /camelopard/wp-content/uploads/2024/12/ff7-stats-300x225.webp 300w" sizes="(max-width: 640px) 100vw, 640px"><figcaption class="wp-element-caption"><em>Final Fantasy 7: fiche d&#8217;un personnage</em></figcaption></figure>
+<figure class="aligncenter size-full is-resized"><img decoding="async" width="640" height="480" src="/camelopard/wp-content/uploads/2024/12/ff7-stats.webp" alt="" class="wp-image-138" style="width:497px;height:373px" srcset="/camelopard/wp-content/uploads/2024/12/ff7-stats.webp 640w, /camelopard/wp-content/uploads/2024/12/ff7-stats-300x225.webp 300w" sizes="(max-width: 640px) 100vw, 640px"><figcaption class="wp-element-caption"><em>Final Fantasy 7: fiche d&rsquo;un personnage</em></figcaption></figure>
 </div>
 
 
-<p>Dernier ajustement, j&#8217;ai découpé les points de santé (health point HP) en points de vie (life point LP) et points de bouclier (shield point SP). Les points de vie découlent de la stat de constitution du personnage, alors que ses points de bouclier viennent de son armure. Les équipements viendront bien plus tard, donc pour l&#8217;instant tout le monde commence avec 5 points de bouclier par défaut.</p>
+<p>Dernier ajustement, j&rsquo;ai découpé les points de santé (health point HP) en points de vie (life point LP) et points de bouclier (shield point SP). Les points de vie découlent de la stat de constitution du personnage, alors que ses points de bouclier viennent de son armure. Les équipements viendront bien plus tard, donc pour l&rsquo;instant tout le monde commence avec 5 points de bouclier par défaut.</p>
 
 
 
-<p>L&#8217;idée de cette différentiation est de pouvoir par la suite ajouter une couche de réflexion tactique en plus. Les attaques normales devront d&#8217;abord réduire les SP d&#8217;une unité à 0 avant de pourvoir grignoter les LP et tuer l&#8217;unité, là où certaines attaques pourront directement attaquer les LP, et donc se débarrasser d&#8217;un personnage plus facilement. On pourra même introduire des équipements / compétences qui empêcheront de toucher les LP tant qu&#8217;il reste des SP.&nbsp;</p>
+<p>L&rsquo;idée de cette différentiation est de pouvoir par la suite ajouter une couche de réflexion tactique en plus. Les attaques normales devront d&rsquo;abord réduire les SP d&rsquo;une unité à 0 avant de pourvoir grignoter les LP et tuer l&rsquo;unité, là où certaines attaques pourront directement attaquer les LP, et donc se débarrasser d&rsquo;un personnage plus facilement. On pourra même introduire des équipements / compétences qui empêcheront de toucher les LP tant qu&rsquo;il reste des SP.&nbsp;</p>
 
 
 
@@ -182,11 +182,11 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>Maintenant que tout système est correctement généré en code, il reste à l&#8217;afficher. Pour la partie grille de jeu, pas de soucis, c&#8217;était déjà en place, il n&#8217;y a donc plus qu&#8217;à faire apparaître les personnages.</p>
+<p>Maintenant que tout système est correctement généré en code, il reste à l&rsquo;afficher. Pour la partie grille de jeu, pas de soucis, c&rsquo;était déjà en place, il n&rsquo;y a donc plus qu&rsquo;à faire apparaître les personnages.</p>
 
 
 
-<p>Ceux du joueur spawn pour l&#8217;instant sur les premières cases décrites dans le fichier du niveau, la mécanique de choix des cases viendra plus tard.</p>
+<p>Ceux du joueur spawn pour l&rsquo;instant sur les premières cases décrites dans le fichier du niveau, la mécanique de choix des cases viendra plus tard.</p>
 
 
 
@@ -198,7 +198,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 </div>
 
 
-<p>J&#8217;en profite pour améliorer un petit peu mon algo de déplacement, en empêchant qu&#8217;une unité puisse passer au travers d&#8217;une autre, ou pire, que deux unités s&#8217;arrêtent sur la même case. C&#8217;est un peu mieux:</p>
+<p>J&rsquo;en profite pour améliorer un petit peu mon algo de déplacement, en empêchant qu&rsquo;une unité puisse passer au travers d&rsquo;une autre, ou pire, que deux unités s&rsquo;arrêtent sur la même case. C&rsquo;est un peu mieux:</p>
 
 
 
@@ -206,27 +206,27 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>Je continue ensuite sur l&#8217;affichage, en décidant de m&#8217;attaque à mon premier widget, un composant graphique permettant d&#8217;afficher des infos.</p>
+<p>Je continue ensuite sur l&rsquo;affichage, en décidant de m&rsquo;attaque à mon premier widget, un composant graphique permettant d&rsquo;afficher des infos.</p>
 
 
 
-<p>Ça a été un peu long pour pas grand chose, le fonctionnement me rappelle des mauvais souvenir de Qt en Java avec des structures assez complexes pour un affichage simple. Ici, pour deux barres de progression avec deux textes, j&#8217;ai 10 composants&#8230;</p>
-
-
-<div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="170" src="/camelopard/wp-content/uploads/2024/12/health-widget.webp" alt="" class="wp-image-143" srcset="/camelopard/wp-content/uploads/2024/12/health-widget.webp 640w, /camelopard/wp-content/uploads/2024/12/health-widget-300x80.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px"><figcaption class="wp-element-caption"><em>Le widget dans l&#8217;éditeur d&#8217;Unreal Engine</em></figcaption></figure>
-</div>
-
-
-<p>Mais j&#8217;avance bien et j&#8217;arrive à afficher ces infos (en bleu les points de bouclier SP et en rouge les points de vie LP). Sans trop de difficulté, je peux faire en sorte que l&#8217;affichage suive la caméra. Il y a quand même des choses sympa dans l&#8217;Unreal Engine, j&#8217;ai juste beaucoup tendance à me plaindre.</p>
+<p>Ça a été un peu long pour pas grand chose, le fonctionnement me rappelle des mauvais souvenir de Qt en Java avec des structures assez complexes pour un affichage simple. Ici, pour deux barres de progression avec deux textes, j&rsquo;ai 10 composants&#8230;</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="639" height="470" src="/camelopard/wp-content/uploads/2024/12/health-on-units.webp" alt="" class="wp-image-142" srcset="/camelopard/wp-content/uploads/2024/12/health-on-units.webp 639w, /camelopard/wp-content/uploads/2024/12/health-on-units-300x221.webp 300w" sizes="auto, (max-width: 639px) 100vw, 639px"><figcaption class="wp-element-caption"><em>L&#8217;aperçu des points de vie s&#8217;affiche au dessus des unités</em></figcaption></figure>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="640" height="170" src="/camelopard/wp-content/uploads/2024/12/health-widget.webp" alt="" class="wp-image-143" srcset="/camelopard/wp-content/uploads/2024/12/health-widget.webp 640w, /camelopard/wp-content/uploads/2024/12/health-widget-300x80.webp 300w" sizes="auto, (max-width: 640px) 100vw, 640px"><figcaption class="wp-element-caption"><em>Le widget dans l&rsquo;éditeur d&rsquo;Unreal Engine</em></figcaption></figure>
 </div>
 
 
-<p>Pour tester un peu, et parce que je trouve que l&#8217;affichage prend beaucoup de place, je décide de faire en sorte que la barre soit un peu transparent, et qu&#8217;elle n&#8217;apparaisse qu&#8217;au survol de l&#8217;unité:</p>
+<p>Mais j&rsquo;avance bien et j&rsquo;arrive à afficher ces infos (en bleu les points de bouclier SP et en rouge les points de vie LP). Sans trop de difficulté, je peux faire en sorte que l&rsquo;affichage suive la caméra. Il y a quand même des choses sympa dans l&rsquo;Unreal Engine, j&rsquo;ai juste beaucoup tendance à me plaindre.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="639" height="470" src="/camelopard/wp-content/uploads/2024/12/health-on-units.webp" alt="" class="wp-image-142" srcset="/camelopard/wp-content/uploads/2024/12/health-on-units.webp 639w, /camelopard/wp-content/uploads/2024/12/health-on-units-300x221.webp 300w" sizes="auto, (max-width: 639px) 100vw, 639px"><figcaption class="wp-element-caption"><em>L&rsquo;aperçu des points de vie s&rsquo;affiche au dessus des unités</em></figcaption></figure>
+</div>
+
+
+<p>Pour tester un peu, et parce que je trouve que l&rsquo;affichage prend beaucoup de place, je décide de faire en sorte que la barre soit un peu transparent, et qu&rsquo;elle n&rsquo;apparaisse qu&rsquo;au survol de l&rsquo;unité:</p>
 
 
 
@@ -234,7 +234,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>J&#8217;ai aussi réussi à faire en sorte que la barre s&#8217;affiche lorsque c&#8217;est l&#8217;unité qui vient sous la souris et non l&#8217;inverse. Un cas d&#8217;usage particulier mais qui m&#8217;a permis d&#8217;expérimenter un peu plus.</p>
+<p>J&rsquo;ai aussi réussi à faire en sorte que la barre s&rsquo;affiche lorsque c&rsquo;est l&rsquo;unité qui vient sous la souris et non l&rsquo;inverse. Un cas d&rsquo;usage particulier mais qui m&rsquo;a permis d&rsquo;expérimenter un peu plus.</p>
 
 
 
@@ -242,35 +242,35 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>Enfin, pour finir la semaine en apothéose, je m&#8217;attaque à un gros morceau, la gestion des tours.</p>
+<p>Enfin, pour finir la semaine en apothéose, je m&rsquo;attaque à un gros morceau, la gestion des tours.</p>
 
 
 
-<p>Maintenant que j&#8217;ai un plateau de jeu, des équipes avec des unités, et que je peux les déplacer, j&#8217;aimerais pouvoir alterner entre toutes pour dans un premier les déplacer, puis à terme les faire se taper.</p>
+<p>Maintenant que j&rsquo;ai un plateau de jeu, des équipes avec des unités, et que je peux les déplacer, j&rsquo;aimerais pouvoir alterner entre toutes pour dans un premier les déplacer, puis à terme les faire se taper.</p>
 
 
 
-<p>Je passe un peu de temps en conception car je dois mélanger plusieurs étapes (choix du joueur de l&#8217;équipe, fin du tour d&#8217;un joueur, fin du tour d&#8217;une équipe, passage à l&#8217;équipe suivante,&#8230;). Certaines peuvent être enchainées de façon synchrone, c&#8217;est à dire instantanément.</p>
+<p>Je passe un peu de temps en conception car je dois mélanger plusieurs étapes (choix du joueur de l&rsquo;équipe, fin du tour d&rsquo;un joueur, fin du tour d&rsquo;une équipe, passage à l&rsquo;équipe suivante,&#8230;). Certaines peuvent être enchainées de façon synchrone, c&rsquo;est à dire instantanément.</p>
 
 
 
-<p>Par exemple l&#8217;ordinateur va mettre quelques millièmes de seconde à choisir quelle unité il souhaite faire agir, avant d&#8217;enchaîner sur l&#8217;action de cette unité. Alors que d&#8217;autres actions seront asynchrones, donc avec potentiellement beaucoup de délai. C&#8217;est le cas de toutes les actions du joueurs, qui pourra mettre de quelques secondes à quelques minutes, à choisir une unité ou une case où déplacer l&#8217;unité active.</p>
+<p>Par exemple l&rsquo;ordinateur va mettre quelques millièmes de seconde à choisir quelle unité il souhaite faire agir, avant d&rsquo;enchaîner sur l&rsquo;action de cette unité. Alors que d&rsquo;autres actions seront asynchrones, donc avec potentiellement beaucoup de délai. C&rsquo;est le cas de toutes les actions du joueurs, qui pourra mettre de quelques secondes à quelques minutes, à choisir une unité ou une case où déplacer l&rsquo;unité active.</p>
 
 
 
-<p>J&#8217;arrive finalement à faire un système modulaire, sur lequel je pourrait construire la suite. Je commence très simplement avec des unités qui passent leur tour, les IA viendront plus tard, et le choix de l&#8217;unité qui joue qui consiste juste à prendre la première unité de la liste. Pour l&#8217;instant rien de graphique, mais j&#8217;arrive à confirmer que le système marche, avec les logs:</p>
+<p>J&rsquo;arrive finalement à faire un système modulaire, sur lequel je pourrait construire la suite. Je commence très simplement avec des unités qui passent leur tour, les IA viendront plus tard, et le choix de l&rsquo;unité qui joue qui consiste juste à prendre la première unité de la liste. Pour l&rsquo;instant rien de graphique, mais j&rsquo;arrive à confirmer que le système marche, avec les logs:</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="586" height="477" src="/camelopard/wp-content/uploads/2024/12/turns-in-logs.webp" alt="" class="wp-image-162" srcset="/camelopard/wp-content/uploads/2024/12/turns-in-logs.webp 586w, /camelopard/wp-content/uploads/2024/12/turns-in-logs-300x244.webp 300w" sizes="auto, (max-width: 586px) 100vw, 586px"><figcaption class="wp-element-caption"><em>Les tours se passent pour l&#8217;instant uniquement dans les logs</em></figcaption></figure>
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="586" height="477" src="/camelopard/wp-content/uploads/2024/12/turns-in-logs.webp" alt="" class="wp-image-162" srcset="/camelopard/wp-content/uploads/2024/12/turns-in-logs.webp 586w, /camelopard/wp-content/uploads/2024/12/turns-in-logs-300x244.webp 300w" sizes="auto, (max-width: 586px) 100vw, 586px"><figcaption class="wp-element-caption"><em>Les tours se passent pour l&rsquo;instant uniquement dans les logs</em></figcaption></figure>
 </div>
 
 
-<p>J&#8217;ai pas mal souffert pour faire tout ça, et compris encore un peu plus pourquoi les développeurs de jeu vidéos ont du mal à faire du code propre. Beaucoup des choses considérées comme normales dans des langages de développement classique deviennent une corvée avec un résultat affreux en C++ de l&#8217;Unreal Engine. Voici deux exemples pour ceux qui savent lire du code, sur&nbsp;<a href="https://www.blogger.com/blog/post/edit/2835547799185233851/5190876584672150498#">comment créer une interface</a>&nbsp;et&nbsp;<a href="https://www.blogger.com/blog/post/edit/2835547799185233851/5190876584672150498#">comment instancier un blueprint en C++</a>.</p>
+<p>J&rsquo;ai pas mal souffert pour faire tout ça, et compris encore un peu plus pourquoi les développeurs de jeu vidéos ont du mal à faire du code propre. Beaucoup des choses considérées comme normales dans des langages de développement classique deviennent une corvée avec un résultat affreux en C++ de l&rsquo;Unreal Engine. Voici deux exemples pour ceux qui savent lire du code, sur&nbsp;<a href="https://www.blogger.com/blog/post/edit/2835547799185233851/5190876584672150498#">comment créer une interface</a>&nbsp;et&nbsp;<a href="https://www.blogger.com/blog/post/edit/2835547799185233851/5190876584672150498#">comment instancier un blueprint en C++</a>.</p>
 
 
 
-<p>Bref. J&#8217;enchaine en créant mes deux composants pour prendre en charge les actions du joueurs. Un pour l&#8217;étape où il choisi un personnage qui n&#8217;a pas encore joué ce tour, et l&#8217;autre pour gérer le déplacement du personnage sélectionné. Les ennemis continueront à passer leur tour, c&#8217;est tout ce qu&#8217;ils méritent !</p>
+<p>Bref. J&rsquo;enchaine en créant mes deux composants pour prendre en charge les actions du joueurs. Un pour l&rsquo;étape où il choisi un personnage qui n&rsquo;a pas encore joué ce tour, et l&rsquo;autre pour gérer le déplacement du personnage sélectionné. Les ennemis continueront à passer leur tour, c&rsquo;est tout ce qu&rsquo;ils méritent !</p>
 
 
 
@@ -278,11 +278,11 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>Ça fonctionne, mais pour l&#8217;instant le gros des informations sont dans les logs. La semaine prochaine je travaillerai sur l&#8217;affichage de ces infos dans le jeu, au moins de façon basique.</p>
+<p>Ça fonctionne, mais pour l&rsquo;instant le gros des informations sont dans les logs. La semaine prochaine je travaillerai sur l&rsquo;affichage de ces infos dans le jeu, au moins de façon basique.</p>
 
 
 
-<p>Ensuite ça sera soit l&#8217;amélioration des déplacements (ne pouvoir se déplacer que de x cases, avoir une prévisualisation de la portée de déplacement), soit le début du système de combat. Surprise dans le prochain devlog.</p>
+<p>Ensuite ça sera soit l&rsquo;amélioration des déplacements (ne pouvoir se déplacer que de x cases, avoir une prévisualisation de la portée de déplacement), soit le début du système de combat. Surprise dans le prochain devlog.</p>
 </div>
 		<div class="section section-blog-info">
 			<div class="row">
@@ -319,16 +319,16 @@ body,ul,.tooltip-inner{font-family:Roboto}
 							</div>
 			<div class="media-body">
 					<div id="respond" class="comment-respond">
-		<h3 class="hestia-title text-center">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/camelopard/devlog-semaine-2-gestion-des-tours/#respond" style="display:none;">Cancel reply</a></small>
+		<h3 class="hestia-title text-center">Laisser un commentaire <small><a rel="nofollow" id="cancel-comment-reply-link" href="/camelopard/devlog-semaine-2-gestion-des-tours/#respond" style="display:none;">Annuler la réponse</a></small>
 </h3>
 <span class="pull-left author"><div class="avatar"><img src="/camelopard/wp-content/themes/hestia/assets/img/placeholder.jpg" alt="Avatar placeholder" height="64" width="64"></div></span><form autocomplete="off" action="/camelopard/wp-comments-post.php" method="post" id="commentform" class="form media-body">
-<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p>
+<p class="comment-notes"><span id="email-notes">Votre adresse e-mail ne sera pas publiée.</span> <span class="required-field-message">Les champs obligatoires sont indiqués avec <span class="required">*</span></span></p>
 <div class="row"> <div class="col-md-4"> <div class="form-group label-floating is-empty"> <label class="control-label">Name <span class="required">*</span></label><input id="author" name="author" class="form-control" type="text" aria-required="true"> <span class="hestia-input"></span> </div> </div>
 <div class="col-md-4"> <div class="form-group label-floating is-empty"> <label class="control-label">Email <span class="required">*</span></label><input id="email" name="email" class="form-control" type="email" aria-required="true"> <span class="hestia-input"></span> </div> </div>
 <div class="col-md-4"> <div class="form-group label-floating is-empty"> <label class="control-label">Website</label><input id="url" name="url" class="form-control" type="url" aria-required="true"> <span class="hestia-input"></span> </div> </div> </div>
 <div class="form-group label-floating is-empty"> <label class="control-label">What&#039;s on your mind?</label><textarea id="comment" name="comment" class="form-control" rows="6" aria-required="true"></textarea><span class="hestia-input"></span> </div>
-<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="btn btn-primary pull-right" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="13" id="comment_post_ID">
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Enregistrer mon nom, mon e-mail et mon site dans le navigateur pour mon prochain commentaire.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="btn btn-primary pull-right" value="Laisser un commentaire"> <input type="hidden" name="comment_post_ID" value="13" id="comment_post_ID">
 <input type="hidden" name="comment_parent" id="comment_parent" value="0">
 </p>
 </form>	</div>
@@ -354,6 +354,22 @@ body,ul,.tooltip-inner{font-family:Roboto}
 																	<div class="col-md-4">
 										<div class="card card-blog">
 																							<div class="card-image">
+													<a href="/camelopard/devlog-semaine-8-camera-et-dialogues/" title="Devlog Semaine 8 &#8211; Caméra et Dialogues">
+														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/01/s8-mini-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
+												</div>
+																						<div class="content">
+												<span class="category text-info"><a href="/camelopard/category/devlog/" title="View all posts in Devlog">Devlog</a> </span>
+												<h4 class="card-title">
+													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-8-camera-et-dialogues/" title="Devlog Semaine 8 &#8211; Caméra et Dialogues" rel="bookmark">
+														Devlog Semaine 8 &#8211; Caméra et Dialogues													</a>
+												</h4>
+												<p class="card-description">Après réflexion, il reste encore un peu de travail pour avoir un premier jet d&rsquo;un niveau de combat, avant de réaliser le premier vrai niveau. J&rsquo;attaque tout de même comme prévu par le nettoyage des<a class="moretag" href="/camelopard/devlog-semaine-8-camera-et-dialogues/"> Read more&hellip;</a></p>
+											</div>
+										</div>
+									</div>
+																	<div class="col-md-4">
+										<div class="card card-blog">
+																							<div class="card-image">
 													<a href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/" title="DevLog semaine 7 &#8211; Ligne de vue et IA">
 														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/01/interactions-couches-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
 												</div>
@@ -363,7 +379,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/" title="DevLog semaine 7 &#8211; Ligne de vue et IA" rel="bookmark">
 														DevLog semaine 7 &#8211; Ligne de vue et IA													</a>
 												</h4>
-												<p class="card-description">Pour commencer la semaine, je reprend un tâche que j&#8217;avais mise de côté durant la semaine 5, à savoir le calcul des lignes de vue. Une fois n&#8217;est pas coutume, comme c&#8217;est quelque chose d&#8217;assez<a class="moretag" href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/"> Read more&hellip;</a></p>
+												<p class="card-description">Pour commencer la semaine, je reprend un tâche que j&rsquo;avais mise de côté durant la semaine 5, à savoir le calcul des lignes de vue. Une fois n&rsquo;est pas coutume, comme c&rsquo;est quelque chose d&rsquo;assez<a class="moretag" href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/"> Read more&hellip;</a></p>
 											</div>
 										</div>
 									</div>
@@ -379,23 +395,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-6-animations-de-combat/" title="DevLog Semaine 6 &#8211; Animations de combat" rel="bookmark">
 														DevLog Semaine 6 &#8211; Animations de combat													</a>
 												</h4>
-												<p class="card-description">Semaine assez productive. Pour commencer gentiment, je me suis penché pour la première fois sur les modèles 3d. Pour l&#8217;instant j&#8217;utilise des placeholders, des éléments un peu par défaut, le temps que je produise les<a class="moretag" href="/camelopard/devlog-semaine-6-animations-de-combat/"> Read more&hellip;</a></p>
-											</div>
-										</div>
-									</div>
-																	<div class="col-md-4">
-										<div class="card card-blog">
-																							<div class="card-image">
-													<a href="/camelopard/devlog-semaine-5-appliquer-une-competence/" title="DevLog Semaine 5 &#8211; Appliquer une compétence">
-														<img width="360" height="240" src="/camelopard/wp-content/uploads/2024/12/24-12-34-target_hover-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
-												</div>
-																						<div class="content">
-												<span class="category text-info"><a href="/camelopard/category/devlog/" title="View all posts in Devlog">Devlog</a> </span>
-												<h4 class="card-title">
-													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-5-appliquer-une-competence/" title="DevLog Semaine 5 &#8211; Appliquer une compétence" rel="bookmark">
-														DevLog Semaine 5 &#8211; Appliquer une compétence													</a>
-												</h4>
-												<p class="card-description">Pour reprendre tranquillement, j&#8217;ai amélioré un peu la sélection des compétences, pour éviter d&#8217;en sélectionner plusieurs à la fois ou de pouvoir cliquer sur un slot vide. Je n&#8217;y passe pas trop de temps, on<a class="moretag" href="/camelopard/devlog-semaine-5-appliquer-une-competence/"> Read more&hellip;</a></p>
+												<p class="card-description">Semaine assez productive. Pour commencer gentiment, je me suis penché pour la première fois sur les modèles 3d. Pour l&rsquo;instant j&rsquo;utilise des placeholders, des éléments un peu par défaut, le temps que je produise les<a class="moretag" href="/camelopard/devlog-semaine-6-animations-de-combat/"> Read more&hellip;</a></p>
 											</div>
 										</div>
 									</div>

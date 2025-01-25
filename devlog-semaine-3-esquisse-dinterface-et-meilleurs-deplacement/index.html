@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="fr-FR">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 			<link rel="pingback" href="/camelopard/xmlrpc.php">
-		<title>DevLog Semaine 3 &#8211; Esquisse d&#8217;interface et meilleurs déplacement &#8211; Camélopard</title>
+		<title>DevLog Semaine 3 &#8211; Esquisse d&rsquo;interface et meilleurs déplacement &#8211; Camélopard</title>
 <meta name="robots" content="max-image-preview:large">
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Feed" href="/camelopard/feed/">
-<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Comments Feed" href="/camelopard/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; DevLog Semaine 3 &#8211; Esquisse d&#8217;interface et meilleurs déplacement Comments Feed" href="/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/feed/">
+<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Flux" href="/camelopard/feed/">
+<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Flux des commentaires" href="/camelopard/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; DevLog Semaine 3 &#8211; Esquisse d&rsquo;interface et meilleurs déplacement Flux des commentaires" href="/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/feed/">
 <script type="text/javascript">
 /* <![CDATA[ */
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/camelopard\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
@@ -96,8 +96,8 @@ body,ul,.tooltip-inner{font-family:Roboto}
 				</header>
 <div id="primary" class="boxed-layout-header page-header header-small" data-parallax="active">
 <div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center">
-<h1 class="hestia-title entry-title">DevLog Semaine 3 &#8211; Esquisse d&#8217;interface et meilleurs déplacement</h1>
-<h4 class="author">Published by <a href="/camelopard/author/nbarlogis/" class="vcard author"><strong class="fn">nbarlogis</strong></a> on <time class="entry-date published" datetime="2024-11-23T17:52:00+00:00" content="2024-11-23">November 23, 2024</time><time class="updated hestia-hidden" datetime="2025-01-11T16:17:52+00:00">November 23, 2024</time>
+<h1 class="hestia-title entry-title">DevLog Semaine 3 &#8211; Esquisse d&rsquo;interface et meilleurs déplacement</h1>
+<h4 class="author">Published by <a href="/camelopard/author/nbarlogis/" class="vcard author"><strong class="fn">nbarlogis</strong></a> on <time class="entry-date published" datetime="2024-11-23T17:52:00+01:00" content="2024-11-23">novembre 23, 2024</time><time class="updated hestia-hidden" datetime="2025-01-11T16:17:52+01:00">novembre 23, 2024</time>
 </h4>
 </div></div></div>
 <div class="header-filter" style="background-image: url(/camelopard/wp-content/uploads/2025/01/cropped-test2-detourre-colore.png);"></div>
@@ -110,11 +110,11 @@ body,ul,.tooltip-inner{font-family:Roboto}
 				<div class="col-md-8 single-post-container col-md-offset-2" data-layout="full-width">
 
 			<div class="single-post-wrap entry-content">
-<p>Petite semaine de trois jours cette fois ci, ça n&#8217;a pas empêché des avancées intéressantes.</p>
+<p>Petite semaine de trois jours cette fois ci, ça n&rsquo;a pas empêché des avancées intéressantes.</p>
 
 
 
-<p>J&#8217;ai commencé par étudier le fonctionnement du HUD dans Unreal Engine. Le Heads-Up Display, ou affichage tête haute, fait référence à toute l&#8217;interface que l&#8217;on voit constamment à l&#8217;écran, qui reste immobile malgré les mouvements de la caméra.</p>
+<p>J&rsquo;ai commencé par étudier le fonctionnement du HUD dans Unreal Engine. Le Heads-Up Display, ou affichage tête haute, fait référence à toute l&rsquo;interface que l&rsquo;on voit constamment à l&rsquo;écran, qui reste immobile malgré les mouvements de la caméra.</p>
 
 
 
@@ -126,31 +126,31 @@ body,ul,.tooltip-inner{font-family:Roboto}
 </div>
 
 
-<p>Le design de l&#8217;interface graphique et du HUD en particulier est un point très important, car il vient fortement impacter le ressenti d&#8217;un jeu. Par exemple, les jeux Ubisoft sont assez réputés pour leur interface trop pleine, <a href="https://www.reddit.com/r/forhonor/comments/hq2bj9/ubisoft_need_to_reduce_the_amount_of_ui_clutter/">comme dans For Honor</a>, qui rend le jeu assez dur à lire, avec beaucoup d&#8217;informations superflues / pas toujours utiles :</p>
+<p>Le design de l&rsquo;interface graphique et du HUD en particulier est un point très important, car il vient fortement impacter le ressenti d&rsquo;un jeu. Par exemple, les jeux Ubisoft sont assez réputés pour leur interface trop pleine, <a href="https://www.reddit.com/r/forhonor/comments/hq2bj9/ubisoft_need_to_reduce_the_amount_of_ui_clutter/">comme dans For Honor</a>, qui rend le jeu assez dur à lire, avec beaucoup d&rsquo;informations superflues / pas toujours utiles :</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img decoding="async" width="640" height="357" src="/camelopard/wp-content/uploads/2024/11/forhonor-hud.png" alt="" class="wp-image-186" srcset="/camelopard/wp-content/uploads/2024/11/forhonor-hud.png 640w, /camelopard/wp-content/uploads/2024/11/forhonor-hud-300x167.png 300w" sizes="(max-width: 640px) 100vw, 640px"><figcaption class="wp-element-caption"><em>For Honor: La majorité des informations à l&#8217;écran ne méritent probablement pas d&#8217;être toujours visibles&#8230;</em></figcaption></figure>
+<figure class="aligncenter size-full"><img decoding="async" width="640" height="357" src="/camelopard/wp-content/uploads/2024/11/forhonor-hud.png" alt="" class="wp-image-186" srcset="/camelopard/wp-content/uploads/2024/11/forhonor-hud.png 640w, /camelopard/wp-content/uploads/2024/11/forhonor-hud-300x167.png 300w" sizes="(max-width: 640px) 100vw, 640px"><figcaption class="wp-element-caption"><em>For Honor: La majorité des informations à l&rsquo;écran ne méritent probablement pas d&rsquo;être toujours visibles&#8230;</em></figcaption></figure>
 </div>
 
 
-<p>Bref, on en est pas encore là, d&#8217;autant que pour l&#8217;instant je me concentre plus sur la mise en place des composants et de leur logique, l&#8217;aspect graphique final viendra plus tard.</p>
+<p>Bref, on en est pas encore là, d&rsquo;autant que pour l&rsquo;instant je me concentre plus sur la mise en place des composants et de leur logique, l&rsquo;aspect graphique final viendra plus tard.</p>
 
 
 
-<p>Je commence donc par faire une ébauche de fiche d&#8217;unité, qui permet de voir les info d&#8217;une unité lorsque l&#8217;on clique sur elle.</p>
+<p>Je commence donc par faire une ébauche de fiche d&rsquo;unité, qui permet de voir les info d&rsquo;une unité lorsque l&rsquo;on clique sur elle.</p>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img decoding="async" width="640" height="403" src="/camelopard/wp-content/uploads/2024/11/unit-hud.png" alt="" class="wp-image-188" srcset="/camelopard/wp-content/uploads/2024/11/unit-hud.png 640w, /camelopard/wp-content/uploads/2024/11/unit-hud-300x189.png 300w" sizes="(max-width: 640px) 100vw, 640px"><figcaption class="wp-element-caption"><em>Les infos de l&#8217;unité, en bas à gauche de l&#8217;écran</em></figcaption></figure>
+<figure class="aligncenter size-full"><img decoding="async" width="640" height="403" src="/camelopard/wp-content/uploads/2024/11/unit-hud.png" alt="" class="wp-image-188" srcset="/camelopard/wp-content/uploads/2024/11/unit-hud.png 640w, /camelopard/wp-content/uploads/2024/11/unit-hud-300x189.png 300w" sizes="(max-width: 640px) 100vw, 640px"><figcaption class="wp-element-caption"><em>Les infos de l&rsquo;unité, en bas à gauche de l&rsquo;écran</em></figcaption></figure>
 </div>
 
 
-<p>Certaines infos sont manquantes, d&#8217;autres statiques, mais c&#8217;est un début.</p>
+<p>Certaines infos sont manquantes, d&rsquo;autres statiques, mais c&rsquo;est un début.</p>
 
 
 
-<p>Je continue à améliorer un peu l&#8217;interface pour montrer les mécaniques implémentées. J&#8217;ajoute un effet brillant sur l&#8217;unité active, celle qui va bouger. Une fois son action faite, l&#8217;unité est grisée, pour que l&#8217;on sache qu&#8217;elle ne peut plus être déplacée. Enfin, j&#8217;ajoute un petit texte en haut à gauche du HUD, pour indiquer le tour et l&#8217;unité active.</p>
+<p>Je continue à améliorer un peu l&rsquo;interface pour montrer les mécaniques implémentées. J&rsquo;ajoute un effet brillant sur l&rsquo;unité active, celle qui va bouger. Une fois son action faite, l&rsquo;unité est grisée, pour que l&rsquo;on sache qu&rsquo;elle ne peut plus être déplacée. Enfin, j&rsquo;ajoute un petit texte en haut à gauche du HUD, pour indiquer le tour et l&rsquo;unité active.</p>
 
 
 
@@ -158,19 +158,19 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>Pour l&#8217;instant, c&#8217;est toujours le tour du joueur, car l&#8217;équipe ennemie passe instantanément. L&#8217;IA viendra plus tard.</p>
+<p>Pour l&rsquo;instant, c&rsquo;est toujours le tour du joueur, car l&rsquo;équipe ennemie passe instantanément. L&rsquo;IA viendra plus tard.</p>
 
 
 
-<p>Enfin je m&#8217;attaque un peu plus au déplacement.</p>
+<p>Enfin je m&rsquo;attaque un peu plus au déplacement.</p>
 
 
 
-<p>Actuellement les unités avaient des points de mouvement, mais je n&#8217;en tenais pas compte. Je commence donc par implémenter un simple algo de&nbsp;<a href="https://fr.wikipedia.org/wiki/Algorithme_de_parcours_en_largeur">Breadth-First Search</a>, que j&#8217;adapte un peu pour tenir compte du coût de traversée de chaque case, qui peut être différent (ex: actuellement les demi murs en brique peuvent être enjambés, mais cela coûte 5 pm). Il me permet de déterminer quelles sont les cases accessibles par l&#8217;unité, avec ses pm actuels.</p>
+<p>Actuellement les unités avaient des points de mouvement, mais je n&rsquo;en tenais pas compte. Je commence donc par implémenter un simple algo de&nbsp;<a href="https://fr.wikipedia.org/wiki/Algorithme_de_parcours_en_largeur">Breadth-First Search</a>, que j&rsquo;adapte un peu pour tenir compte du coût de traversée de chaque case, qui peut être différent (ex: actuellement les demi murs en brique peuvent être enjambés, mais cela coûte 5 pm). Il me permet de déterminer quelles sont les cases accessibles par l&rsquo;unité, avec ses pm actuels.</p>
 
 
 
-<p>J&#8217;ajoute la visualisation, et j&#8217;en profite pour refactoriser (améliorer) le code des mes cases. Ça nous donne ça :</p>
+<p>J&rsquo;ajoute la visualisation, et j&rsquo;en profite pour refactoriser (améliorer) le code des mes cases. Ça nous donne ça :</p>
 
 
 
@@ -178,11 +178,11 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>La deuxième unité est bloquée par la première, et l&#8217;aperçu de la portée nous le montre bien.</p>
+<p>La deuxième unité est bloquée par la première, et l&rsquo;aperçu de la portée nous le montre bien.</p>
 
 
 
-<p>Actuellement, l&#8217;unité se déplace une fois et son tour se termine. Je décide donc de faire en sorte qu&#8217;elle puisse se déplacer plusieurs fois dans un tour, du moment qu&#8217;il lui reste des points de mouvements:</p>
+<p>Actuellement, l&rsquo;unité se déplace une fois et son tour se termine. Je décide donc de faire en sorte qu&rsquo;elle puisse se déplacer plusieurs fois dans un tour, du moment qu&rsquo;il lui reste des points de mouvements:</p>
 
 
 
@@ -190,11 +190,11 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>Enfin, je termine la semaine en améliorant un peu ma fiche unité, et en lui faisant afficher le nombre de MP (movement points, les points de mouvements) que l&#8217;unité possède. On les voit réduire à chaque déplacement:</p>
+<p>Enfin, je termine la semaine en améliorant un peu ma fiche unité, et en lui faisant afficher le nombre de MP (movement points, les points de mouvements) que l&rsquo;unité possède. On les voit réduire à chaque déplacement:</p>
 
 
 
-<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/multiple-movement-ui.mp4"></video><figcaption class="wp-element-caption"><em>L&#8217;affichage du nombre de points de mouvement restant est à jour</em></figcaption></figure>
+<figure class="wp-block-video aligncenter"><video autoplay controls loop muted src="/camelopard/wp-content/uploads/2024/12/multiple-movement-ui.mp4"></video><figcaption class="wp-element-caption"><em>L&rsquo;affichage du nombre de points de mouvement restant est à jour</em></figcaption></figure>
 
 
 
@@ -223,7 +223,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
                 </a>
                 
-                <a rel="tooltip" data-original-title=" Share on Email" class="btn btn-just-icon btn-round" href="mailto:?subject=DevLog%20Semaine%203%20%26#8211;%20Esquisse%20d%26#8217;interface%20et%20meilleurs%20déplacement&#038;body=/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/">
+                <a rel="tooltip" data-original-title=" Share on Email" class="btn btn-just-icon btn-round" href="mailto:?subject=DevLog%20Semaine%203%20%26#8211;%20Esquisse%20d%26rsquo;interface%20et%20meilleurs%20déplacement&#038;body=/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/">
                     <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" width="20" height="17"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
                </a>
             </div>
@@ -239,16 +239,16 @@ body,ul,.tooltip-inner{font-family:Roboto}
 							</div>
 			<div class="media-body">
 					<div id="respond" class="comment-respond">
-		<h3 class="hestia-title text-center">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/#respond" style="display:none;">Cancel reply</a></small>
+		<h3 class="hestia-title text-center">Laisser un commentaire <small><a rel="nofollow" id="cancel-comment-reply-link" href="/camelopard/devlog-semaine-3-esquisse-dinterface-et-meilleurs-deplacement/#respond" style="display:none;">Annuler la réponse</a></small>
 </h3>
 <span class="pull-left author"><div class="avatar"><img src="/camelopard/wp-content/themes/hestia/assets/img/placeholder.jpg" alt="Avatar placeholder" height="64" width="64"></div></span><form autocomplete="off" action="/camelopard/wp-comments-post.php" method="post" id="commentform" class="form media-body">
-<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p>
+<p class="comment-notes"><span id="email-notes">Votre adresse e-mail ne sera pas publiée.</span> <span class="required-field-message">Les champs obligatoires sont indiqués avec <span class="required">*</span></span></p>
 <div class="row"> <div class="col-md-4"> <div class="form-group label-floating is-empty"> <label class="control-label">Name <span class="required">*</span></label><input id="author" name="author" class="form-control" type="text" aria-required="true"> <span class="hestia-input"></span> </div> </div>
 <div class="col-md-4"> <div class="form-group label-floating is-empty"> <label class="control-label">Email <span class="required">*</span></label><input id="email" name="email" class="form-control" type="email" aria-required="true"> <span class="hestia-input"></span> </div> </div>
 <div class="col-md-4"> <div class="form-group label-floating is-empty"> <label class="control-label">Website</label><input id="url" name="url" class="form-control" type="url" aria-required="true"> <span class="hestia-input"></span> </div> </div> </div>
 <div class="form-group label-floating is-empty"> <label class="control-label">What&#039;s on your mind?</label><textarea id="comment" name="comment" class="form-control" rows="6" aria-required="true"></textarea><span class="hestia-input"></span> </div>
-<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="btn btn-primary pull-right" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="12" id="comment_post_ID">
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Enregistrer mon nom, mon e-mail et mon site dans le navigateur pour mon prochain commentaire.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="btn btn-primary pull-right" value="Laisser un commentaire"> <input type="hidden" name="comment_post_ID" value="12" id="comment_post_ID">
 <input type="hidden" name="comment_parent" id="comment_parent" value="0">
 </p>
 </form>	</div>
@@ -274,6 +274,22 @@ body,ul,.tooltip-inner{font-family:Roboto}
 																	<div class="col-md-4">
 										<div class="card card-blog">
 																							<div class="card-image">
+													<a href="/camelopard/devlog-semaine-8-camera-et-dialogues/" title="Devlog Semaine 8 &#8211; Caméra et Dialogues">
+														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/01/s8-mini-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
+												</div>
+																						<div class="content">
+												<span class="category text-info"><a href="/camelopard/category/devlog/" title="View all posts in Devlog">Devlog</a> </span>
+												<h4 class="card-title">
+													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-8-camera-et-dialogues/" title="Devlog Semaine 8 &#8211; Caméra et Dialogues" rel="bookmark">
+														Devlog Semaine 8 &#8211; Caméra et Dialogues													</a>
+												</h4>
+												<p class="card-description">Après réflexion, il reste encore un peu de travail pour avoir un premier jet d&rsquo;un niveau de combat, avant de réaliser le premier vrai niveau. J&rsquo;attaque tout de même comme prévu par le nettoyage des<a class="moretag" href="/camelopard/devlog-semaine-8-camera-et-dialogues/"> Read more&hellip;</a></p>
+											</div>
+										</div>
+									</div>
+																	<div class="col-md-4">
+										<div class="card card-blog">
+																							<div class="card-image">
 													<a href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/" title="DevLog semaine 7 &#8211; Ligne de vue et IA">
 														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/01/interactions-couches-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
 												</div>
@@ -283,7 +299,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/" title="DevLog semaine 7 &#8211; Ligne de vue et IA" rel="bookmark">
 														DevLog semaine 7 &#8211; Ligne de vue et IA													</a>
 												</h4>
-												<p class="card-description">Pour commencer la semaine, je reprend un tâche que j&#8217;avais mise de côté durant la semaine 5, à savoir le calcul des lignes de vue. Une fois n&#8217;est pas coutume, comme c&#8217;est quelque chose d&#8217;assez<a class="moretag" href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/"> Read more&hellip;</a></p>
+												<p class="card-description">Pour commencer la semaine, je reprend un tâche que j&rsquo;avais mise de côté durant la semaine 5, à savoir le calcul des lignes de vue. Une fois n&rsquo;est pas coutume, comme c&rsquo;est quelque chose d&rsquo;assez<a class="moretag" href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/"> Read more&hellip;</a></p>
 											</div>
 										</div>
 									</div>
@@ -299,23 +315,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-6-animations-de-combat/" title="DevLog Semaine 6 &#8211; Animations de combat" rel="bookmark">
 														DevLog Semaine 6 &#8211; Animations de combat													</a>
 												</h4>
-												<p class="card-description">Semaine assez productive. Pour commencer gentiment, je me suis penché pour la première fois sur les modèles 3d. Pour l&#8217;instant j&#8217;utilise des placeholders, des éléments un peu par défaut, le temps que je produise les<a class="moretag" href="/camelopard/devlog-semaine-6-animations-de-combat/"> Read more&hellip;</a></p>
-											</div>
-										</div>
-									</div>
-																	<div class="col-md-4">
-										<div class="card card-blog">
-																							<div class="card-image">
-													<a href="/camelopard/devlog-semaine-5-appliquer-une-competence/" title="DevLog Semaine 5 &#8211; Appliquer une compétence">
-														<img width="360" height="240" src="/camelopard/wp-content/uploads/2024/12/24-12-34-target_hover-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
-												</div>
-																						<div class="content">
-												<span class="category text-info"><a href="/camelopard/category/devlog/" title="View all posts in Devlog">Devlog</a> </span>
-												<h4 class="card-title">
-													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-5-appliquer-une-competence/" title="DevLog Semaine 5 &#8211; Appliquer une compétence" rel="bookmark">
-														DevLog Semaine 5 &#8211; Appliquer une compétence													</a>
-												</h4>
-												<p class="card-description">Pour reprendre tranquillement, j&#8217;ai amélioré un peu la sélection des compétences, pour éviter d&#8217;en sélectionner plusieurs à la fois ou de pouvoir cliquer sur un slot vide. Je n&#8217;y passe pas trop de temps, on<a class="moretag" href="/camelopard/devlog-semaine-5-appliquer-une-competence/"> Read more&hellip;</a></p>
+												<p class="card-description">Semaine assez productive. Pour commencer gentiment, je me suis penché pour la première fois sur les modèles 3d. Pour l&rsquo;instant j&rsquo;utilise des placeholders, des éléments un peu par défaut, le temps que je produise les<a class="moretag" href="/camelopard/devlog-semaine-6-animations-de-combat/"> Read more&hellip;</a></p>
 											</div>
 										</div>
 									</div>
