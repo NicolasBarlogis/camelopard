@@ -5,13 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-		<title>nbarlogis &#8211; Camélopard</title>
+			<link rel="pingback" href="/camelopard/xmlrpc.php">
+		<title>Devlog Semaine 14 &#8211; Améliorations suite aux tests &#8211; Camélopard</title>
 <meta name="robots" content="max-image-preview:large">
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Flux" href="/camelopard/feed/">
 <link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Flux des commentaires" href="/camelopard/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Flux des articles écrits par nbarlogis" href="/camelopard/author/nbarlogis/feed/">
+<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Devlog Semaine 14 &#8211; Améliorations suite aux tests Flux des commentaires" href="/camelopard/devlog-semaine-14-ameliorations-suite-aux-tests/feed/">
 <script type="text/javascript">
 /* <![CDATA[ */
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/camelopard\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2"}};
@@ -54,16 +55,20 @@ body,ul,.tooltip-inner{font-family:Roboto}
 <script type="text/javascript" src="/camelopard/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script type="text/javascript" src="/camelopard/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="/camelopard/wp-json/">
-<link rel="alternate" title="JSON" type="application/json" href="/camelopard/wp-json/wp/v2/users/1">
+<link rel="alternate" title="JSON" type="application/json" href="/camelopard/wp-json/wp/v2/posts/523">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/camelopard/xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.7.2">
+<link rel="canonical" href="/camelopard/devlog-semaine-14-ameliorations-suite-aux-tests/">
+<link rel="shortlink" href="/camelopard/?p=523">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/camelopard/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fdevlog-semaine-14-ameliorations-suite-aux-tests%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/camelopard/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fdevlog-semaine-14-ameliorations-suite-aux-tests%2F#038;format=xml">
 		<style type="text/css" id="wp-custom-css">#comments {
   display: none;
 }</style>
 		</head>
 
-<body class="archive author author-nbarlogis author-1 wp-custom-logo header-layout-default">
-		<div class="wrapper  default ">
+<body class="post-template-default single single-post postid-523 single-format-standard wp-custom-logo blog-post header-layout-default">
+		<div class="wrapper post-523 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog default ">
 		<header class="header ">
 			<div style="display: none"></div>		<nav class="navbar navbar-default  hestia_left navbar-not-transparent navbar-fixed-top">
 						<div class="container">
@@ -87,133 +92,182 @@ body,ul,.tooltip-inner{font-family:Roboto}
 					</div>
 				</div>
 		<div id="main-navigation" class="collapse navbar-collapse"><ul id="menu-base" class="nav navbar-nav">
-<li id="menu-item-31" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31"><a title="Devlog" href="/camelopard/category/devlog/">Devlog</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-31"><a title="Devlog" href="/camelopard/category/devlog/">Devlog</a></li>
 </ul></div>			</div>
 					</nav>
 				</header>
 <div id="primary" class="boxed-layout-header page-header header-small" data-parallax="active">
-<div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center"><h1 class="hestia-title"><span class="vcard">nbarlogis</span></h1></div></div></div>
+<div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center">
+<h1 class="hestia-title entry-title">Devlog Semaine 14 &#8211; Améliorations suite aux tests</h1>
+<h4 class="author">Publié par <a href="/camelopard/author/nbarlogis/" class="vcard author"><strong class="fn">nbarlogis</strong></a> le <time class="entry-date published" datetime="2025-03-15T11:52:26+01:00" content="2025-03-15">mars 15, 2025</time><time class="updated hestia-hidden" datetime="2025-03-15T11:52:27+01:00">mars 15, 2025</time>
+</h4>
+</div></div></div>
 <div class="header-filter" style="background-image: url(/camelopard/wp-content/uploads/2025/03/cropped-test2-detourre-colore-2.png);"></div>
 </div>
 <div class="main  main-raised ">
-	<div class="hestia-blogs" data-layout="full-width">
+	<div class="blog-post blog-post-wrapper">
 		<div class="container">
+			<article id="post-523" class="section section-text">
+	<div class="row">
+				<div class="col-md-8 single-post-container col-md-offset-2" data-layout="full-width">
+
+			<div class="single-post-wrap entry-content">
+<p>Semaine dédiée aux premiers retours des tests externes. J&rsquo;ai tenté un premier test en essayant de le faire à l&rsquo;aveugle complet (en donnant très peu d&rsquo;instructions), ça a donné des retours intéressants mais ça n&rsquo;était peut être pas la meilleure façon de procéder, vu la pauvreté de l&rsquo;interface et le manque d&rsquo;explications des contrôles. Un crash pouvait aussi arriver si la caméra était déplacée trop vite, ce qui n&rsquo;a pas aidé.</p>
+
+
+
+<p>Globalement le niveau semble pas trop mal en l&rsquo;état. J&rsquo;ai juste déplacé le point de départ des unités de l&rsquo;équipe pour que l&rsquo;unité au cac puisse attaquer dès le premier tour. C&rsquo;est effectivement plus intuitif de pouvoir se lancer dans l&rsquo;action directement.</p>
+
+
+
+<p>Depuis que j&rsquo;ai implémenté le contrôle de la caméra à la souris, je n&rsquo;utilise plus beaucoup les contrôles au clavier (ZQSD). Or la vitesse de la caméra était très ralentie lors de la navigation au clavier, je ne sais pas depuis quand. J&rsquo;ai retouché ça pour rendre la caméra plus utilisable.</p>
+
+
+
+<p>J&rsquo;ai ensuite attaqué un morceau basique et important, à savoir pouvoir changer d&rsquo;unité active sans finir son tour. C&rsquo;est extrêmement pratique de pouvoir bouger alterner les déplacements / attaques des différentes unités à la fois. Je m&rsquo;étais habitué à contourner cette limite, mais c&rsquo;est quelque chose que je voulais mettre en place, et les tests m&rsquo;ont montré que c&rsquo;était contraignant pour les joueurs.</p>
+
+
+
+<p>J&rsquo;ai aussi mis en place un tooltip de prévisualisation des dégâts. Idem, l&rsquo;objectif est de communiquer plus de clarté, et d&rsquo;aider à faire comprendre la mécanique des compétences et des couverts. Personne n&rsquo;a compris les couvertures dans les tests, et tout le monde n&rsquo;a pas pensé à survoler les compétences pour voir le détail.<br>Cette première indication des dégâts indique donc la couverture effective, les dégâts qui vont être fait, et ajoute une petite icône de tête de mort quand le coup est assuré d&rsquo;être fatal.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img fetchpriority="high" decoding="async" width="1024" height="570" src="/camelopard/wp-content/uploads/2025/03/image-32-1024x570.png" alt="" class="wp-image-525" srcset="/camelopard/wp-content/uploads/2025/03/image-32-1024x570.png 1024w, /camelopard/wp-content/uploads/2025/03/image-32-300x167.png 300w, /camelopard/wp-content/uploads/2025/03/image-32-768x427.png 768w, /camelopard/wp-content/uploads/2025/03/image-32.png 1136w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption"><em>Le tooltip de prévisualisation des dégâts</em></figcaption></figure>
+</div>
+
+
+<p>Après avoir fait ce tooltip, j&rsquo;ai fais quelques retouches à celui-ci et au tooltip qui décrivait les effets d&rsquo;une compétence. Je pensais à la base que chaque tooltip serait un peu unique, mais au final je peux rassembler la base de chacun dans un seul « master » tooltip. Ça me permettra de modifier le style de tous les tooltips (couleur, forme, décorations, &#8230;) à la fois à l&rsquo;avenir.</p>
+
+
+
+<p>Profitant de ce master tooltip, j&rsquo;ai développé la même prévisualisation pour les compétences de soin.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="851" height="562" src="/camelopard/wp-content/uploads/2025/03/image-33.png" alt="" class="wp-image-527" srcset="/camelopard/wp-content/uploads/2025/03/image-33.png 851w, /camelopard/wp-content/uploads/2025/03/image-33-300x198.png 300w, /camelopard/wp-content/uploads/2025/03/image-33-768x507.png 768w" sizes="(max-width: 851px) 100vw, 851px"><figcaption class="wp-element-caption"><em>La visibilité sera probablement à améliorer dans l&rsquo;avenir</em></figcaption></figure>
+</div>
+
+
+<p>Avec tout ça, j&rsquo;ai fini de traiter les problèmes et améliorations que j&rsquo;ai identifié grâce aux tests. La suite du programme est donc la finalisation de ce premier niveau.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<p>Grosse maille, je compte faire la cinématique d&rsquo;intro correctement, la modélisation et les décors du niveau puis la cinématique de fin. Le design des personnages se fera au fur et à mesure de ces étapes.</p>
+
+
+
+<p>J&rsquo;ai donc commencé avec le dialogue d&rsquo;introduction du niveau. J&rsquo;avais déjà une bonne idée des personnages, de la situation et des informations que je voulais faire passer. </p>
+
+
+
+<p>Le problème est d&rsquo;écrire ça efficacement. En faisant passer le détail des personnalités des personnages, un peu d&rsquo;exposition qui reste naturelle (éviter le « comme tu le sais déjà, &#8230; » typiquement), sans que ce soit trop long ni trop dur à lire.</p>
+
+
+
+<p>C&rsquo;est un peu la complexité de ce genre de jeu. Certains offrent des pavés de textes qui peuvent rebuter, mais il est aussi difficile de faire une histoire et des personnages accrocheurs et convaincants avec au final peu d&rsquo;échanges.<br>Mon but est d&rsquo;être plutôt du côté léger en dialogue, (presque) personne n&rsquo;aime passer une demi heure à lire du texte dans des boîtes de dialogue. Du coup j&rsquo;ai été obligé de détailler plus mes personnages, et de forcer leurs traits principaux dans les dialogues, sans tomber dans la caricature, mais pour montrer efficacement qui ils sont. Ça m&rsquo;aidera aussi à l&rsquo;avenir à rendre plus visible leur évolution au cours de l&rsquo;histoire.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="733" height="704" src="/camelopard/wp-content/uploads/2025/03/image-36.png" alt="" class="wp-image-531" srcset="/camelopard/wp-content/uploads/2025/03/image-36.png 733w, /camelopard/wp-content/uploads/2025/03/image-36-300x288.png 300w" sizes="(max-width: 733px) 100vw, 733px"><figcaption class="wp-element-caption">Le dialogue que j&rsquo;écris avec un plugin dans Obsidian, qui me permet de déjà penser à ma mise en scène (didascalies et indications de qui est à gauche ou à droite de l&rsquo;écran)</figcaption></figure>
+</div>
+</div>
+		<div class="section section-blog-info">
 			<div class="row">
-								<div class="col-md-10 col-md-offset-1 blog-posts-wrap">
-					<article id="post-523" class="card card-blog card-plain post-523 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
-<div class="col-ms-5 col-sm-5"><div class="card-image"><a href="/camelopard/devlog-semaine-14-ameliorations-suite-aux-tests/" title="Devlog Semaine 14 &#8211; Améliorations suite aux tests"><img width="360" height="240" src="/camelopard/wp-content/uploads/2025/03/image-32-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" fetchpriority="high"></a></div></div>
-<div class="col-ms-7 col-sm-7">
-<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog" rel="tag">Devlog</a> </span><h2 class="card-title entry-title"><a href="/camelopard/devlog-semaine-14-ameliorations-suite-aux-tests/" title="Devlog Semaine 14 &#8211; Améliorations suite aux tests" rel="bookmark">Devlog Semaine 14 &#8211; Améliorations suite aux tests</a></h2>
-<div class="card-description entry-summary ">
-<p>Semaine dédiée aux premiers retours des tests externes. J&rsquo;ai tenté un premier test en essayant de le faire à l&rsquo;aveugle complet (en donnant très peu d&rsquo;instructions), ça a donné des retours intéressants mais ça n&rsquo;était peut être pas la meilleure façon de procéder, vu la pauvreté de l&rsquo;interface et le<a class="moretag" href="/camelopard/devlog-semaine-14-ameliorations-suite-aux-tests/"> Lire la suite&hellip;</a></p>
-</div>
-<div class="posted-by vcard author">Par <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, il y a <a href="/camelopard/devlog-semaine-14-ameliorations-suite-aux-tests/"><time class="entry-date published" datetime="2025-03-15T11:52:26+01:00" content="2025-03-15">3 minutes</time><time class="updated hestia-hidden" datetime="2025-03-15T11:52:27+01:00">mars 15, 2025</time> </a>
-</div>
-</div>
-</div></article><article id="post-418" class="card card-blog card-plain post-418 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
-<div class="col-ms-5 col-sm-5"><div class="card-image"><a href="/camelopard/devlog-semaine-13-premier-tests-externes/" title="Devlog Semaine 13 &#8211; Premier tests externes"><img width="360" height="240" src="/camelopard/wp-content/uploads/2025/03/static-level-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy"></a></div></div>
-<div class="col-ms-7 col-sm-7">
-<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog" rel="tag">Devlog</a> </span><h2 class="card-title entry-title"><a href="/camelopard/devlog-semaine-13-premier-tests-externes/" title="Devlog Semaine 13 &#8211; Premier tests externes" rel="bookmark">Devlog Semaine 13 &#8211; Premier tests externes</a></h2>
-<div class="card-description entry-summary ">
-<p>Après quelques tests avec Margaux dans le week-end, j&rsquo;attaque les dernières, vraiment les dernières cette fois, retouches du niveau avant de le partager à d&rsquo;autres personnes. De la même façon que la barre des compétences se verrouille lorsque l&rsquo;unité est en déplacement, j&rsquo;ajoute le fait qu&rsquo;elle se verrouille aussi lorsqu&rsquo;une<a class="moretag" href="/camelopard/devlog-semaine-13-premier-tests-externes/"> Lire la suite&hellip;</a></p>
-</div>
-<div class="posted-by vcard author">Par <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, il y a <a href="/camelopard/devlog-semaine-13-premier-tests-externes/"><time class="entry-date published" datetime="2025-03-07T15:53:30+01:00" content="2025-03-07">1 semaine</time><time class="updated hestia-hidden" datetime="2025-03-07T16:30:46+01:00">mars 7, 2025</time> </a>
-</div>
-</div>
-</div></article><article id="post-428" class="card card-blog card-plain post-428 post type-post status-publish format-standard has-post-thumbnail hentry category-autre"><div class="row ">
-<div class="col-ms-5 col-sm-5"><div class="card-image"><a href="/camelopard/faire-un-test-du-jeu/" title="Faire un test du jeu"><img width="360" height="240" src="/camelopard/wp-content/uploads/2025/03/image-17-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy"></a></div></div>
-<div class="col-ms-7 col-sm-7">
-<span class="category text-info"><a href="/camelopard/category/autre/" title="Voir tout les articles dans Autre" rel="tag">Autre</a> </span><h2 class="card-title entry-title"><a href="/camelopard/faire-un-test-du-jeu/" title="Faire un test du jeu" rel="bookmark">Faire un test du jeu</a></h2>
-<div class="card-description entry-summary ">
-<p>Pourquoi ces tests ? Si vous lisez cet article, c&rsquo;est probablement que je vous ai sollicité pour un type de test ou un autre. Le but de ces tests peuvent être multiples, et selon ce que je recherche vous aurez probablement des instructions spécifiques. Globalement l&rsquo;idée est que j&rsquo;ai une<a class="moretag" href="/camelopard/faire-un-test-du-jeu/"> Lire la suite&hellip;</a></p>
-</div>
-<div class="posted-by vcard author">Par <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, il y a <a href="/camelopard/faire-un-test-du-jeu/"><time class="entry-date published" datetime="2025-03-06T17:25:30+01:00" content="2025-03-06">1 semaine</time><time class="updated hestia-hidden" datetime="2025-03-06T21:08:03+01:00">mars 6, 2025</time> </a>
-</div>
-</div>
-</div></article><article id="post-395" class="card card-blog card-plain post-395 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
-<div class="col-ms-5 col-sm-5"><div class="card-image"><a href="/camelopard/devlog-semaine-12-preparation-premiers-tests/" title="Devlog Semaine 12 &#8211; Préparation premiers tests"><img width="360" height="240" src="/camelopard/wp-content/uploads/2025/02/image-8-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy"></a></div></div>
-<div class="col-ms-7 col-sm-7">
-<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog" rel="tag">Devlog</a> </span><h2 class="card-title entry-title"><a href="/camelopard/devlog-semaine-12-preparation-premiers-tests/" title="Devlog Semaine 12 &#8211; Préparation premiers tests" rel="bookmark">Devlog Semaine 12 &#8211; Préparation premiers tests</a></h2>
-<div class="card-description entry-summary ">
-<p>Semaine de bric et de broc, avec de nombreuses petites améliorations, toujours dans l&rsquo;optique de pouvoir tester un embryon de gameplay. Première étape, l&rsquo;IA se met maintenant à couvert de sa cible si cela est possible. Ensuite, j&rsquo;ai ajouté deux tooltip (une fenêtre qui apparaît au survol de la souris):<a class="moretag" href="/camelopard/devlog-semaine-12-preparation-premiers-tests/"> Lire la suite&hellip;</a></p>
-</div>
-<div class="posted-by vcard author">Par <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, il y a <a href="/camelopard/devlog-semaine-12-preparation-premiers-tests/"><time class="entry-date published" datetime="2025-03-01T12:23:51+01:00" content="2025-03-01">2 semaines</time><time class="updated hestia-hidden" datetime="2025-03-07T14:46:41+01:00">mars 1, 2025</time> </a>
-</div>
-</div>
-</div></article><article id="post-376" class="card card-blog card-plain post-376 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
-<div class="col-ms-5 col-sm-5"><div class="card-image"><a href="/camelopard/devlog-semaine-11-remontee-dinformations/" title="DevLog Semaine 11 &#8211; Remontée d&rsquo;informations"><img width="360" height="240" src="/camelopard/wp-content/uploads/2025/02/image-5-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy"></a></div></div>
-<div class="col-ms-7 col-sm-7">
-<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog" rel="tag">Devlog</a> </span><h2 class="card-title entry-title"><a href="/camelopard/devlog-semaine-11-remontee-dinformations/" title="DevLog Semaine 11 &#8211; Remontée d&rsquo;informations" rel="bookmark">DevLog Semaine 11 &#8211; Remontée d&rsquo;informations</a></h2>
-<div class="card-description entry-summary ">
-<p>Nouvelle semaine, nouvelles réflexions et donc nouveaux objectifs. L&rsquo;objectif est toujours de rendre le niveau jouable et intéressant avant de passer à la partie graphisme. Mais j&rsquo;aimerais profiter de cette première phase de tests pour le donner à d&rsquo;autres personnes et prendre des retours le plus tôt possible. Or pour<a class="moretag" href="/camelopard/devlog-semaine-11-remontee-dinformations/"> Lire la suite&hellip;</a></p>
-</div>
-<div class="posted-by vcard author">Par <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, il y a <a href="/camelopard/devlog-semaine-11-remontee-dinformations/"><time class="entry-date published" datetime="2025-02-22T14:14:00+01:00" content="2025-02-22">3 semaines</time><time class="updated hestia-hidden" datetime="2025-02-22T15:20:14+01:00">février 22, 2025</time> </a>
-</div>
-</div>
-</div></article><article id="post-359" class="card card-blog card-plain post-359 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
-<div class="col-ms-5 col-sm-5"><div class="card-image"><a href="/camelopard/devlog-10-mecaniques-de-combat/" title="DevLog Semaine 10 &#8211; Mécaniques de combat"><img width="360" height="240" src="/camelopard/wp-content/uploads/2025/02/level1-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy"></a></div></div>
-<div class="col-ms-7 col-sm-7">
-<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog" rel="tag">Devlog</a> </span><h2 class="card-title entry-title"><a href="/camelopard/devlog-10-mecaniques-de-combat/" title="DevLog Semaine 10 &#8211; Mécaniques de combat" rel="bookmark">DevLog Semaine 10 &#8211; Mécaniques de combat</a></h2>
-<div class="card-description entry-summary ">
-<p>Cette semaine je commence à designer la map du premier niveau. L&rsquo;objectif est de pouvoir tester les bases du jeu en étant assez proche de ce qu&rsquo;il devrait être niveau gameplay, et une fois que ça tient la route, construire les graphismes de ce niveau 1. J&rsquo;ai pu commencer par<a class="moretag" href="/camelopard/devlog-10-mecaniques-de-combat/"> Lire la suite&hellip;</a></p>
-</div>
-<div class="posted-by vcard author">Par <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, il y a <a href="/camelopard/devlog-10-mecaniques-de-combat/"><time class="entry-date published" datetime="2025-02-16T10:55:02+01:00" content="2025-02-16">4 semaines</time><time class="updated hestia-hidden" datetime="2025-02-19T10:51:48+01:00">février 16, 2025</time> </a>
-</div>
-</div>
-</div></article><article id="post-321" class="card card-blog card-plain post-321 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
-<div class="col-ms-5 col-sm-5"><div class="card-image"><a href="/camelopard/devlog-semaine-9-cinematique-et-modelisation/" title="Devlog Semaine 9 &#8211; Cinématique et modélisation"><img width="360" height="240" src="/camelopard/wp-content/uploads/2025/01/joie-ia-3D-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy"></a></div></div>
-<div class="col-ms-7 col-sm-7">
-<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog" rel="tag">Devlog</a> </span><h2 class="card-title entry-title"><a href="/camelopard/devlog-semaine-9-cinematique-et-modelisation/" title="Devlog Semaine 9 &#8211; Cinématique et modélisation" rel="bookmark">Devlog Semaine 9 &#8211; Cinématique et modélisation</a></h2>
-<div class="card-description entry-summary ">
-<p>Pour faire suite aux travaux de la semaine dernière, j&rsquo;enchaîne avec la suite des cinématiques, les commandes qu&rsquo;il manque, et des nouvelles que j&rsquo;ajoute au vu des besoins qui arrivent. Il faudra probablement d&rsquo;autres commandes, notamment pour dire à une unité d&rsquo;en regarder une autre, ça rendra tout ça plus<a class="moretag" href="/camelopard/devlog-semaine-9-cinematique-et-modelisation/"> Lire la suite&hellip;</a></p>
-</div>
-<div class="posted-by vcard author">Par <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, il y a <a href="/camelopard/devlog-semaine-9-cinematique-et-modelisation/"><time class="entry-date published" datetime="2025-01-31T21:40:39+01:00" content="2025-01-31">1 mois</time><time class="updated hestia-hidden" datetime="2025-01-31T21:40:40+01:00">janvier 31, 2025</time> </a>
-</div>
-</div>
-</div></article><article id="post-296" class="card card-blog card-plain post-296 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
-<div class="col-ms-5 col-sm-5"><div class="card-image"><a href="/camelopard/devlog-semaine-8-camera-et-dialogues/" title="Devlog Semaine 8 &#8211; Caméra et Dialogues"><img width="360" height="240" src="/camelopard/wp-content/uploads/2025/01/s8-mini-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy"></a></div></div>
-<div class="col-ms-7 col-sm-7">
-<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog" rel="tag">Devlog</a> </span><h2 class="card-title entry-title"><a href="/camelopard/devlog-semaine-8-camera-et-dialogues/" title="Devlog Semaine 8 &#8211; Caméra et Dialogues" rel="bookmark">Devlog Semaine 8 &#8211; Caméra et Dialogues</a></h2>
-<div class="card-description entry-summary ">
-<p>Après réflexion, il reste encore un peu de travail pour avoir un premier jet d&rsquo;un niveau de combat, avant de réaliser le premier vrai niveau. J&rsquo;attaque tout de même comme prévu par le nettoyage des problèmes qui persistent dans les animations et le code, suite à l&rsquo;implémentation de l&rsquo;IA et<a class="moretag" href="/camelopard/devlog-semaine-8-camera-et-dialogues/"> Lire la suite&hellip;</a></p>
-</div>
-<div class="posted-by vcard author">Par <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, il y a <a href="/camelopard/devlog-semaine-8-camera-et-dialogues/"><time class="entry-date published" datetime="2025-01-25T10:23:33+01:00" content="2025-01-25">2 mois</time><time class="updated hestia-hidden" datetime="2025-01-25T10:24:19+01:00">janvier 25, 2025</time> </a>
-</div>
-</div>
-</div></article><article id="post-223" class="card card-blog card-plain post-223 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
-<div class="col-ms-5 col-sm-5"><div class="card-image"><a href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/" title="DevLog Semaine 7 &#8211; Ligne de vue et IA"><img width="360" height="240" src="/camelopard/wp-content/uploads/2025/01/interactions-couches-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy"></a></div></div>
-<div class="col-ms-7 col-sm-7">
-<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog" rel="tag">Devlog</a> </span><h2 class="card-title entry-title"><a href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/" title="DevLog Semaine 7 &#8211; Ligne de vue et IA" rel="bookmark">DevLog Semaine 7 &#8211; Ligne de vue et IA</a></h2>
-<div class="card-description entry-summary ">
-<p>Pour commencer la semaine, je reprend un tâche que j&rsquo;avais mise de côté durant la semaine 5, à savoir le calcul des lignes de vue. Une fois n&rsquo;est pas coutume, comme c&rsquo;est quelque chose d&rsquo;assez visuel, je vais vous expliquer pas à pas le fonctionnement de ces calculs. Je me<a class="moretag" href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/"> Lire la suite&hellip;</a></p>
-</div>
-<div class="posted-by vcard author">Par <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, il y a <a href="/camelopard/devlog-semaine-7-ligne-de-vue-et-ia/"><time class="entry-date published" datetime="2025-01-18T11:48:34+01:00" content="2025-01-18">2 mois</time><time class="updated hestia-hidden" datetime="2025-02-19T10:51:34+01:00">janvier 18, 2025</time> </a>
-</div>
-</div>
-</div></article><article id="post-107" class="card card-blog card-plain post-107 post type-post status-publish format-standard has-post-thumbnail hentry category-devlog"><div class="row ">
-<div class="col-ms-5 col-sm-5"><div class="card-image"><a href="/camelopard/devlog-semaine-6-animations-de-combat/" title="DevLog Semaine 6 &#8211; Animations de combat"><img width="360" height="240" src="/camelopard/wp-content/uploads/2025/01/devlog6-1-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy"></a></div></div>
-<div class="col-ms-7 col-sm-7">
-<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog" rel="tag">Devlog</a> </span><h2 class="card-title entry-title"><a href="/camelopard/devlog-semaine-6-animations-de-combat/" title="DevLog Semaine 6 &#8211; Animations de combat" rel="bookmark">DevLog Semaine 6 &#8211; Animations de combat</a></h2>
-<div class="card-description entry-summary ">
-<p>Semaine assez productive. Pour commencer gentiment, je me suis penché pour la première fois sur les modèles 3d. Pour l&rsquo;instant j&rsquo;utilise des placeholders, des éléments un peu par défaut, le temps que je produise les vrai visuels du jeu. Néanmoins, j&rsquo;essaie de prendre des objets qui ressemblent à ce que<a class="moretag" href="/camelopard/devlog-semaine-6-animations-de-combat/"> Lire la suite&hellip;</a></p>
-</div>
-<div class="posted-by vcard author">Par <a href="/camelopard/author/nbarlogis/" title="nbarlogis" class="url"><b class="author-name fn">nbarlogis</b></a>, il y a <a href="/camelopard/devlog-semaine-6-animations-de-combat/"><time class="entry-date published" datetime="2025-01-10T18:10:56+01:00" content="2025-01-10">2 mois</time><time class="updated hestia-hidden" datetime="2025-03-07T14:45:22+01:00">janvier 10, 2025</time> </a>
-</div>
-</div>
-</div></article>
-	<nav class="navigation pagination" aria-label="Pagination des publications">
-		<h2 class="screen-reader-text">Pagination des publications</h2>
-		<div class="nav-links">
-<span aria-current="page" class="page-numbers current">1</span>
-<a class="page-numbers" href="/camelopard/author/nbarlogis/page/2/">2</a>
-<a class="next page-numbers" href="/camelopard/author/nbarlogis/page/2/">Suivant</a>
-</div>
-	</nav>				</div>
-							</div>
+				<div class="col-md-6">
+					<div class="entry-categories">Catégories :						<span class="label label-primary"><a href="/camelopard/category/devlog/">Devlog</a></span>					</div>
+									</div>
+				
+        <div class="col-md-6">
+            <div class="entry-social">
+                <a target="_blank" rel="tooltip" data-original-title="Partager sur Facebook" class="btn btn-just-icon btn-round btn-facebook" href="https://www.facebook.com/sharer.php?u=/camelopard/devlog-semaine-14-ameliorations-suite-aux-tests/">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512" width="20" height="17"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                </a>
+                
+                <a target="_blank" rel="tooltip" data-original-title="Share on X" class="btn btn-just-icon btn-round btn-twitter" href="https://x.com/share?url=/camelopard/devlog-semaine-14-ameliorations-suite-aux-tests/&#038;text=Devlog%20Semaine%2014%20%E2%80%93%20Am%C3%A9liorations%20suite%20aux%20tests">
+                   <svg width="20" height="17" viewbox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="#FFFFFF"></path>
+                   </svg>
+
+                </a>
+                
+                <a rel="tooltip" data-original-title=" Partager par e-mail" class="btn btn-just-icon btn-round" href="mailto:?subject=Devlog%20Semaine%2014%20%26#8211;%20Améliorations%20suite%20aux%20tests&#038;body=/camelopard/devlog-semaine-14-ameliorations-suite-aux-tests/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" width="20" height="17"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+               </a>
+            </div>
+		</div>			</div>
+			<hr>
+					</div>
+		</div>		</div>
+</article>
+
 		</div>
 	</div>
 </div>
-					<footer class="footer footer-black footer-big">
+
+			<div class="section related-posts">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="hestia-title text-center">Articles similaires</h2>
+							<div class="row">
+																	<div class="col-md-4">
+										<div class="card card-blog">
+																							<div class="card-image">
+													<a href="/camelopard/devlog-semaine-13-premier-tests-externes/" title="Devlog Semaine 13 &#8211; Premier tests externes">
+														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/03/static-level-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
+												</div>
+																						<div class="content">
+												<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog">Devlog</a> </span>
+												<h4 class="card-title">
+													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-13-premier-tests-externes/" title="Devlog Semaine 13 &#8211; Premier tests externes" rel="bookmark">
+														Devlog Semaine 13 &#8211; Premier tests externes													</a>
+												</h4>
+												<p class="card-description">Après quelques tests avec Margaux dans le week-end, j&rsquo;attaque les dernières, vraiment les dernières cette fois, retouches du niveau avant de le partager à d&rsquo;autres personnes. De la même façon que la barre des compétences<a class="moretag" href="/camelopard/devlog-semaine-13-premier-tests-externes/"> Lire la suite&hellip;</a></p>
+											</div>
+										</div>
+									</div>
+																	<div class="col-md-4">
+										<div class="card card-blog">
+																							<div class="card-image">
+													<a href="/camelopard/devlog-semaine-12-preparation-premiers-tests/" title="Devlog Semaine 12 &#8211; Préparation premiers tests">
+														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/02/image-8-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
+												</div>
+																						<div class="content">
+												<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog">Devlog</a> </span>
+												<h4 class="card-title">
+													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-12-preparation-premiers-tests/" title="Devlog Semaine 12 &#8211; Préparation premiers tests" rel="bookmark">
+														Devlog Semaine 12 &#8211; Préparation premiers tests													</a>
+												</h4>
+												<p class="card-description">Semaine de bric et de broc, avec de nombreuses petites améliorations, toujours dans l&rsquo;optique de pouvoir tester un embryon de gameplay. Première étape, l&rsquo;IA se met maintenant à couvert de sa cible si cela est<a class="moretag" href="/camelopard/devlog-semaine-12-preparation-premiers-tests/"> Lire la suite&hellip;</a></p>
+											</div>
+										</div>
+									</div>
+																	<div class="col-md-4">
+										<div class="card card-blog">
+																							<div class="card-image">
+													<a href="/camelopard/devlog-semaine-11-remontee-dinformations/" title="DevLog Semaine 11 &#8211; Remontée d&rsquo;informations">
+														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/02/image-5-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
+												</div>
+																						<div class="content">
+												<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog">Devlog</a> </span>
+												<h4 class="card-title">
+													<a class="blog-item-title-link" href="/camelopard/devlog-semaine-11-remontee-dinformations/" title="DevLog Semaine 11 &#8211; Remontée d&rsquo;informations" rel="bookmark">
+														DevLog Semaine 11 &#8211; Remontée d&rsquo;informations													</a>
+												</h4>
+												<p class="card-description">Nouvelle semaine, nouvelles réflexions et donc nouveaux objectifs. L&rsquo;objectif est toujours de rendre le niveau jouable et intéressant avant de passer à la partie graphisme. Mais j&rsquo;aimerais profiter de cette première phase de tests pour<a class="moretag" href="/camelopard/devlog-semaine-11-remontee-dinformations/"> Lire la suite&hellip;</a></p>
+											</div>
+										</div>
+									</div>
+																							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+							<footer class="footer footer-black footer-big">
 						<div class="container">
 																<div class="hestia-bottom-footer-content">
 <ul class="footer-menu pull-left"></ul>
@@ -226,8 +280,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 		<button class="hestia-scroll-to-top">
 			<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512" width="12.5px" height="20px"><path d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z"></path></svg>
 		</button>
-		<style id="core-block-supports-inline-css" type="text/css">.wp-container-core-group-is-layout-1{flex-wrap:nowrap;justify-content:center;}.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-2{flex-wrap:nowrap;}.wp-container-core-group-is-layout-2{flex-wrap:nowrap;}.wp-block-gallery.wp-block-gallery-1{--wp--style--unstable-gallery-gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}</style>
-<script type="text/javascript" id="ez-toc-scroll-scriptjs-js-extra">
+		<script type="text/javascript" id="ez-toc-scroll-scriptjs-js-extra">
 /* <![CDATA[ */
 var eztoc_smooth_local = {"scroll_offset":"30","add_request_uri":""};
 /* ]]> */
@@ -241,6 +294,7 @@ var ezTOC = {"smooth_scroll":"1","visibility_hide_by_default":"","scroll_offset"
 /* ]]> */
 </script>
 <script type="text/javascript" src="/camelopard/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?ver=2.0.72-1741258632" id="ez-toc-js-js"></script>
+<script type="text/javascript" src="/camelopard/wp-includes/js/comment-reply.min.js?ver=6.7.2" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
 <script type="text/javascript" src="/camelopard/wp-content/themes/hestia/assets/bootstrap/js/bootstrap.min.js?ver=1.0.2" id="jquery-bootstrap-js"></script>
 <script type="text/javascript" src="/camelopard/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
 <script type="text/javascript" id="hestia_scripts-js-extra">
