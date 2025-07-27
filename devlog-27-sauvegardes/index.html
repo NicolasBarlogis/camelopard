@@ -6,13 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 			<link rel="pingback" href="/camelopard/xmlrpc.php">
-		<title>Devlog 27 &#8211; Sauvegardes &#8211; Camélopard</title>
+		<title>Devlog 27 &#8211; Sauvegarde partie 1 &#8211; Camélopard</title>
 <meta name='robots' content="max-image-preview:large" />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel='dns-prefetch' href="//fonts.googleapis.com" />
 <link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Flux" href="/camelopard/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Flux des commentaires" href="/camelopard/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Devlog 27 &#8211; Sauvegardes Flux des commentaires" href="/camelopard/devlog-27-sauvegardes/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Camélopard &raquo; Devlog 27 &#8211; Sauvegarde partie 1 Flux des commentaires" href="/camelopard/devlog-27-sauvegardes/feed/" />
 <script type="text/javascript">
 /* <![CDATA[ */
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/camelopard\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.2"}};
@@ -100,7 +100,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 </ul></div>			</div>
 					</nav>
 				</header>
-<div id="primary" class="boxed-layout-header page-header header-small" data-parallax="active" ><div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center"><h1 class="hestia-title entry-title">Devlog 27 &#8211; Sauvegardes</h1><h4 class="author">Publié par <a href="/camelopard/author/nbarlogis/" class="vcard author"><strong class="fn">nbarlogis</strong></a> le <time class="entry-date published" datetime="2025-07-19T16:40:22+01:00" content="2025-07-19">juillet 19, 2025</time><time class="updated hestia-hidden" datetime="2025-07-19T16:40:23+01:00">juillet 19, 2025</time></h4></div></div></div><div class="header-filter" style="background-image: url(/camelopard/wp-content/uploads/2025/03/cropped-test2-detourre-colore-2.png);"></div></div>
+<div id="primary" class="boxed-layout-header page-header header-small" data-parallax="active" ><div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center"><h1 class="hestia-title entry-title">Devlog 27 &#8211; Sauvegarde partie 1</h1><h4 class="author">Publié par <a href="/camelopard/author/nbarlogis/" class="vcard author"><strong class="fn">nbarlogis</strong></a> le <time class="entry-date published" datetime="2025-07-19T16:40:22+01:00" content="2025-07-19">juillet 19, 2025</time><time class="updated hestia-hidden" datetime="2025-07-27T17:36:15+01:00">juillet 19, 2025</time></h4></div></div></div><div class="header-filter" style="background-image: url(/camelopard/wp-content/uploads/2025/03/cropped-test2-detourre-colore-2.png);"></div></div>
 <div class="main  main-raised ">
 	<div class="blog-post blog-post-wrapper">
 		<div class="container">
@@ -128,15 +128,15 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>Bref, ensuite pour les sauvegardes. Pas mal de réflexion et beaucoup de code. J&rsquo;ai augmenté les builders de niveau que j&rsquo;avais fais il y a un moment, qui me permettent de passer du texte décrivant des composants (unités, grille, compétences, &#8230;) vers les objets qui vont bien et qui font marcher le jeu. <br>Je leur ai ajouté des fonctions inverses au besoin, pour passer, par exemple, d&rsquo;une unité au texte décrivant l&rsquo;unité, avec la même syntaxe que les descripteurs de niveau. Ainsi, je peux réutiliser les premières méthodes texte -> objet pour le chargement des sauvegardes.</p>
+<p>Bref, ensuite pour les sauvegardes. Pas mal de réflexion et beaucoup de code. J&rsquo;ai augmenté les builders de niveau que j&rsquo;avais fais il y a un moment, qui me permettent de passer du texte décrivant des composants (unités, grille, compétences, &#8230;) vers les objets qui vont bien et qui font marcher le jeu. <br>Je leur ai ajouté des fonctions inverses au besoin, pour passer, par exemple, d&rsquo;une unité au texte décrivant l&rsquo;unité, avec la même syntaxe que les descripteurs de niveau. Ainsi, je peux réutiliser les premières méthodes texte -&gt; objet pour le chargement des sauvegardes.</p>
 
 
 
-<p>Après un peu de temps, j&rsquo;ai réussi à stringifier à peu prêt toutes les informations dont j&rsquo;ai besoin pour l&rsquo;instant. D&rsquo;autres arriveront quand j&rsquo;en aurai besoin.</p>
+<p>Après un peu de temps, j&rsquo;ai réussi à stringifier à peu près toutes les informations dont j&rsquo;ai besoin pour l&rsquo;instant. D&rsquo;autres arriveront quand j&rsquo;en aurai besoin.</p>
 
 
 
-<p>Une fois le format de la sauvegarde de base (hors combat) est ok, j&rsquo;ai pu avancer sur les notions suivantes. L&rsquo;idée est d&rsquo;avoir une partie, qui contiendra plusieurs sauvegardes (une au début du niveau 1, en milieu de combat du niveau 1, puis au début du niveau 2, etc&#8230;). Comme le terme « game » est déjà trop présent dans mon code, je vais ici parler de profil. Un profil contiendra donc plusieurs sauvegardes, et un joueur pourra avoir plusieurs profils dans le jeu. </p>
+<p>Une fois le format de base (hors combat) est ok, j&rsquo;ai pu avancer sur les notions suivantes. L&rsquo;idée est d&rsquo;avoir une partie, qui contiendra plusieurs sauvegardes (une au début du niveau 1, en milieu de combat du niveau 1, puis au début du niveau 2, etc&#8230;). Comme le terme « game » est déjà trop présent dans mon code, je vais ici parler de profil. Un profil contiendra donc plusieurs sauvegardes, et un joueur pourra avoir plusieurs profils dans le jeu.</p>
 
 
 
@@ -183,7 +183,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
                 <a target="_blank" rel="tooltip"
                    data-original-title="Share on X"
                    class="btn btn-just-icon btn-round btn-twitter"
-                   href="https://x.com/share?url=/camelopard/devlog-27-sauvegardes/&#038;text=Devlog%2027%20%E2%80%93%20Sauvegardes">
+                   href="https://x.com/share?url=/camelopard/devlog-27-sauvegardes/&#038;text=Devlog%2027%20%E2%80%93%20Sauvegarde%20partie%201">
                    <svg width="20" height="17" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
                    <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="#FFFFFF"/>
                    </svg>
@@ -193,7 +193,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
                 <a rel="tooltip"
                    data-original-title=" Partager par e-mail"
                    class="btn btn-just-icon btn-round"
-                   href="mailto:?subject=Devlog%2027%20%26#8211;%20Sauvegardes&#038;body=/camelopard/devlog-27-sauvegardes/">
+                   href="mailto:?subject=Devlog%2027%20%26#8211;%20Sauvegarde%20partie%201&#038;body=/camelopard/devlog-27-sauvegardes/">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="17"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
                </a>
             </div>
@@ -213,6 +213,22 @@ body,ul,.tooltip-inner{font-family:Roboto}
 						<div class="col-md-12">
 							<h2 class="hestia-title text-center">Articles similaires</h2>
 							<div class="row">
+																	<div class="col-md-4">
+										<div class="card card-blog">
+																							<div class="card-image">
+													<a href="/camelopard/devlog-28-sauvegarde-partie-2-et-premiers-tests-unitaires/" title="Devlog 28 &#8211; Sauvegarde partie 2 et premiers tests unitaires">
+														<img width="360" height="171" src="/camelopard/wp-content/uploads/2025/07/image-2-360x171.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy" />													</a>
+												</div>
+																						<div class="content">
+												<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog" >Devlog</a> </span>
+												<h4 class="card-title">
+													<a class="blog-item-title-link" href="/camelopard/devlog-28-sauvegarde-partie-2-et-premiers-tests-unitaires/" title="Devlog 28 &#8211; Sauvegarde partie 2 et premiers tests unitaires" rel="bookmark">
+														Devlog 28 &#8211; Sauvegarde partie 2 et premiers tests unitaires													</a>
+												</h4>
+												<p class="card-description">Je poursuis le long chantier des sauvegardes. Grâce à ce que j&rsquo;avais pu mettre en place la semaine dernière, j&rsquo;ai ajouté la création d&rsquo;une sauvegarde automatique à la fin de la cinématique d&rsquo;introduction, permettant de<a class="moretag" href="/camelopard/devlog-28-sauvegarde-partie-2-et-premiers-tests-unitaires/"> Lire la suite&hellip;</a></p>
+											</div>
+										</div>
+									</div>
 																	<div class="col-md-4">
 										<div class="card card-blog">
 																							<div class="card-image">
@@ -242,22 +258,6 @@ body,ul,.tooltip-inner{font-family:Roboto}
 														Devlog 25 &#8211; Stats de combat													</a>
 												</h4>
 												<p class="card-description">Semaine complexe, je me suis heurté à plusieurs problèmes que j&rsquo;ai mis trop de temps à mon goût à résoudre. Entre l&rsquo;api des widgets d&rsquo;Unreal Engine qui ne fonctionne pas comme je m&rsquo;y attendais (tous<a class="moretag" href="/camelopard/devlog-25-stats-de-combat/"> Lire la suite&hellip;</a></p>
-											</div>
-										</div>
-									</div>
-																	<div class="col-md-4">
-										<div class="card card-blog">
-																							<div class="card-image">
-													<a href="/camelopard/devlog-24-ia-et-stats-de-combat/" title="Devlog 24 &#8211; IA et stats de combat">
-														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/06/image-9-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy" />													</a>
-												</div>
-																						<div class="content">
-												<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog" >Devlog</a> </span>
-												<h4 class="card-title">
-													<a class="blog-item-title-link" href="/camelopard/devlog-24-ia-et-stats-de-combat/" title="Devlog 24 &#8211; IA et stats de combat" rel="bookmark">
-														Devlog 24 &#8211; IA et stats de combat													</a>
-												</h4>
-												<p class="card-description">Semaine variée, qui a commencé avec Margaux pour travailler sur le design de certains des personnages des niveaux 1 et 2. On est limité par ce qu&rsquo;est capable de faire l&rsquo;IA pour l&rsquo;instant, on ne<a class="moretag" href="/camelopard/devlog-24-ia-et-stats-de-combat/"> Lire la suite&hellip;</a></p>
 											</div>
 										</div>
 									</div>
