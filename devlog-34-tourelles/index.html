@@ -101,7 +101,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 </ul></div>			</div>
 					</nav>
 				</header>
-<div id="primary" class="boxed-layout-header page-header header-small" data-parallax="active"><div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center"><h1 class="hestia-title entry-title">Devlog 34 &ndash; Tourelles</h1><h4 class="author">Publi&eacute; par <a href="/camelopard/author/nbarlogis/" class="vcard author"><strong class="fn">nbarlogis</strong></a> le <time class="entry-date published" datetime="2025-09-15T09:51:58+01:00" content="2025-09-15">septembre 15, 2025</time><time class="updated hestia-hidden" datetime="2025-09-15T09:52:00+01:00">septembre 15, 2025</time></h4></div></div></div><div class="header-filter" style="background-image: url(/camelopard/wp-content/uploads/2025/03/cropped-test2-detourre-colore-2.png);"></div></div>
+<div id="primary" class="boxed-layout-header page-header header-small" data-parallax="active"><div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center"><h1 class="hestia-title entry-title">Devlog 34 &ndash; Tourelles</h1><h4 class="author">Publi&eacute; par <a href="/camelopard/author/nbarlogis/" class="vcard author"><strong class="fn">nbarlogis</strong></a> le <time class="entry-date published" datetime="2025-09-15T09:51:58+01:00" content="2025-09-15">septembre 15, 2025</time><time class="updated hestia-hidden" datetime="2025-09-15T10:31:48+01:00">septembre 15, 2025</time></h4></div></div></div><div class="header-filter" style="background-image: url(/camelopard/wp-content/uploads/2025/03/cropped-test2-detourre-colore-2.png);"></div></div>
 <div class="main  main-raised ">
 	<div class="blog-post blog-post-wrapper">
 		<div class="container">
@@ -110,7 +110,7 @@ body,ul,.tooltip-inner{font-family:Roboto}
 				<div class="col-md-8 single-post-container col-md-offset-2" data-layout="full-width">
 
 			<div class="single-post-wrap entry-content">
-<p>Pour reprendre sur les apparitions de la semaine derni&egrave;re, j&rsquo;ai impl&eacute;ment&eacute; mon id&eacute;e de direction d&rsquo;apparition. En plus du num&eacute;ro du tour de spawn, je peux aussi pr&eacute;ciser une direction d&rsquo;origine (haut, bas, droite, gauche), et l&rsquo;unit&eacute; arrivera de ce point, ind&eacute;pendamment de la grille ou des d&eacute;cors.<br>&Ccedil;a me permettra de faire sortir les unit&eacute;s de b&acirc;timents ou d&eacute;boucher d&rsquo;une ruelle, ce qui est plus logique. </p>
+<p>Pour reprendre avec les apparitions de la semaine derni&egrave;re, j&rsquo;ai impl&eacute;ment&eacute; mon id&eacute;e de direction d&rsquo;apparition. En plus du num&eacute;ro du tour de spawn, je peux aussi pr&eacute;ciser une direction d&rsquo;origine (haut, bas, droite, gauche), et l&rsquo;unit&eacute; arrivera de ce point, ind&eacute;pendamment de la grille ou des d&eacute;cors.<br>&Ccedil;a me permettra de faire sortir les unit&eacute;s de b&acirc;timents ou d&eacute;boucher d&rsquo;une ruelle, ce qui est plus logique.</p>
 
 
 
@@ -122,15 +122,15 @@ body,ul,.tooltip-inner{font-family:Roboto}
 
 
 
-<p>Pour leur cr&eacute;ation &agrave; partir du texte, j&rsquo;ai utilis&eacute; un object mother, un pattern plus adapt&eacute; &agrave; ces unit&eacute;s qui seront toutes similaires. Dans la foul&eacute;, j&rsquo;ai ajout&eacute; les comp&eacute;tences d&rsquo;attaques et des boucliers d&eacute;di&eacute;s aux tourelles, pour qu&rsquo;elles soient ok niveau code. J&rsquo;ai d&ucirc; adapter quelques autres composants, et &ccedil;a tombe finalement en marche.</p>
+<p>Pour leur cr&eacute;ation &agrave; partir du texte, j&rsquo;ai utilis&eacute; un object mother, un pattern plus adapt&eacute; &agrave; ces unit&eacute;s qui seront toutes similaires. Dans la foul&eacute;e, j&rsquo;ai ajout&eacute; les comp&eacute;tences d&rsquo;attaque et des boucliers d&eacute;di&eacute;s aux tourelles, pour qu&rsquo;elles soient ok niveau code. J&rsquo;ai d&ucirc; adapter quelques autres composants, et &ccedil;a tombe finalement en marche.</p>
 
 
 
-<p>En jeu, j&rsquo;ai d&ucirc; corriger quelques crashs velus, avant de me pencher sur la cr&eacute;ation de la tourelle. Pour l&rsquo;occasion, j&rsquo;ai cr&eacute;er un nouvel indicateur d&rsquo;unit&eacute; (la petite fl&egrave;che au dessus de la t&ecirc;te des unit&eacute;s) pour les &eacute;quipes alli&eacute;s, non contr&ocirc;l&eacute;es par le joueur.</p>
+<p>En jeu, j&rsquo;ai d&ucirc; corriger quelques crashs velus, avant de me pencher sur la cr&eacute;ation de la tourelle. Pour l&rsquo;occasion, j&rsquo;ai cr&eacute;&eacute; un nouvel indicateur d&rsquo;unit&eacute; (la petite fl&egrave;che au-dessus de la t&ecirc;te des unit&eacute;s) pour les &eacute;quipes alli&eacute;s, non contr&ocirc;l&eacute;es par le joueur.</p>
 
 
 
-<p>Ensuite, les graphismes &agrave; partir d&rsquo;un kit pr&eacute;fait, l&rsquo;animation de l&rsquo;orientation de la tourelle (seule la partie du haut doit pivoter, pas la base), l&rsquo;attaque, etc&hellip; J&rsquo;ai d&ucirc; adapt&eacute; un peu ma base d&rsquo;unit&eacute; actuelle, qui pr&eacute;voit une unit&eacute; avec un squelette humano&iuml;de, et constitu&eacute; d&rsquo;un seul tenant (l&agrave; o&ugrave; la tourelle a une base et une tir).</p>
+<p>Ensuite, les graphismes &agrave; partir d&rsquo;un kit pr&eacute;fait, l&rsquo;animation de l&rsquo;orientation de la tourelle (seule la partie du haut doit pivoter, pas la base), l&rsquo;attaque, etc&hellip; J&rsquo;ai d&ucirc; adapter un peu ma base d&rsquo;unit&eacute; actuelle, qui pr&eacute;voit une unit&eacute; avec un squelette humano&iuml;de, et constitu&eacute;e d&rsquo;un seul tenant (l&agrave; o&ugrave; la tourelle a une base et une tir).</p>
 
 
 
@@ -182,6 +182,38 @@ body,ul,.tooltip-inner{font-family:Roboto}
 																	<div class="col-md-4">
 										<div class="card card-blog">
 																							<div class="card-image">
+													<a href="/camelopard/devlog-36-mise-a-jour-et-retargeting/" title="Devlog 36 &ndash; Mise &agrave; jour et retargeting">
+														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/09/image-22-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
+												</div>
+																						<div class="content">
+												<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog">Devlog</a> </span>
+												<h4 class="card-title">
+													<a class="blog-item-title-link" href="/camelopard/devlog-36-mise-a-jour-et-retargeting/" title="Devlog 36 &ndash; Mise &agrave; jour et retargeting" rel="bookmark">
+														Devlog 36 &ndash; Mise &agrave; jour et retargeting													</a>
+												</h4>
+												<p class="card-description">Premi&egrave;re pour le projet, je me lance dans la mise &agrave; jour, s&eacute;rieuse cette fois-ci, de la version de l&rsquo;Unreal Engine que j&rsquo;utilise. On passe de la version 5.4.4, la derni&egrave;re disponible au moment o&ugrave;<a class="moretag" href="/camelopard/devlog-36-mise-a-jour-et-retargeting/"> Lire la suite</a></p>
+											</div>
+										</div>
+									</div>
+																	<div class="col-md-4">
+										<div class="card card-blog">
+																							<div class="card-image">
+													<a href="/camelopard/devlog-35-armes-definitives/" title="Devlog 35 &ndash; Armes d&eacute;finitives">
+														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/09/image-8-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
+												</div>
+																						<div class="content">
+												<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog">Devlog</a> </span>
+												<h4 class="card-title">
+													<a class="blog-item-title-link" href="/camelopard/devlog-35-armes-definitives/" title="Devlog 35 &ndash; Armes d&eacute;finitives" rel="bookmark">
+														Devlog 35 &ndash; Armes d&eacute;finitives													</a>
+												</h4>
+												<p class="card-description">Pour continuer mon niveau 2, j&rsquo;ai travaill&eacute; un peu sur les deux nouveaux personnages qui apparaissent au d&eacute;but du niveau. Je leur ai trouv&eacute; des noms et ai commenc&eacute; &agrave; avancer sur leurs comp&eacute;tences et<a class="moretag" href="/camelopard/devlog-35-armes-definitives/"> Lire la suite</a></p>
+											</div>
+										</div>
+									</div>
+																	<div class="col-md-4">
+										<div class="card card-blog">
+																							<div class="card-image">
 													<a href="/camelopard/devlog-33-spawn-differe/" title="Devlog 33 &ndash; Spawn diff&eacute;r&eacute;">
 														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/09/image-4-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
 												</div>
@@ -192,38 +224,6 @@ body,ul,.tooltip-inner{font-family:Roboto}
 														Devlog 33 &ndash; Spawn diff&eacute;r&eacute;													</a>
 												</h4>
 												<p class="card-description">On reprend avec un petit bug. En testant, Margaux a fait quelque chose que je n&rsquo;avais pas tent&eacute;, mettre le son &agrave; 0 puis le remonter directement. Probl&egrave;me, le son diminue et se coupe bien,<a class="moretag" href="/camelopard/devlog-33-spawn-differe/"> Lire la suite</a></p>
-											</div>
-										</div>
-									</div>
-																	<div class="col-md-4">
-										<div class="card card-blog">
-																							<div class="card-image">
-													<a href="/camelopard/devlog-32-placement-et-reglages/" title="DevLog 32 &ndash; Placement et r&eacute;glages">
-														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/09/image-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
-												</div>
-																						<div class="content">
-												<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog">Devlog</a> </span>
-												<h4 class="card-title">
-													<a class="blog-item-title-link" href="/camelopard/devlog-32-placement-et-reglages/" title="DevLog 32 &ndash; Placement et r&eacute;glages" rel="bookmark">
-														DevLog 32 &ndash; Placement et r&eacute;glages													</a>
-												</h4>
-												<p class="card-description">On encha&icirc;ne sur la liste des choses &agrave; faire, avec le placement en d&eacute;but de combat. L&rsquo;objectif est pour l&rsquo;instant de permettre de d&eacute;placer les unit&eacute;s, avant le d&eacute;but du combat, sur les positions d&eacute;finies<a class="moretag" href="/camelopard/devlog-32-placement-et-reglages/"> Lire la suite</a></p>
-											</div>
-										</div>
-									</div>
-																	<div class="col-md-4">
-										<div class="card card-blog">
-																							<div class="card-image">
-													<a href="/camelopard/devlog-31-sauvegarde-partie-4/" title="Devlog 31 &ndash; Sauvegarde partie 4">
-														<img width="360" height="240" src="/camelopard/wp-content/uploads/2025/08/image-3-360x240.png" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="" decoding="async" loading="lazy">													</a>
-												</div>
-																						<div class="content">
-												<span class="category text-info"><a href="/camelopard/category/devlog/" title="Voir tout les articles dans Devlog">Devlog</a> </span>
-												<h4 class="card-title">
-													<a class="blog-item-title-link" href="/camelopard/devlog-31-sauvegarde-partie-4/" title="Devlog 31 &ndash; Sauvegarde partie 4" rel="bookmark">
-														Devlog 31 &ndash; Sauvegarde partie 4													</a>
-												</h4>
-												<p class="card-description">Reprise en meilleure forme apr&egrave;s une courte pause, j&rsquo;ai repris cette derni&egrave;re semaine sur les sauvegardes. Pour commencer, j&rsquo;ai corrig&eacute; quelques petits bugs introduits par les sauvegardes, o&ugrave; le format pouvait &ecirc;tre corrompu, certaines unit&eacute;s<a class="moretag" href="/camelopard/devlog-31-sauvegarde-partie-4/"> Lire la suite</a></p>
 											</div>
 										</div>
 									</div>
